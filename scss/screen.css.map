@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "screen.scss",
+        "_settings.scss",
+        "_elements.scss"
+    ],
+    "names": [],
+    "file": "screen.css"
+}
