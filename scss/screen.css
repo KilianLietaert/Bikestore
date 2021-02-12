@@ -12128,6 +12128,10 @@ ul .c-usp__tekst--extra {
   margin-right: 80px !important;
 }
 
+.c-usp__vink {
+  margin-top: -5px;
+}
+
 .nb-usp-container {
   border: #f7f7f7, solid 1px;
   background: #705e16;
