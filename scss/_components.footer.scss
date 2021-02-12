@@ -1,0 +1,46 @@
+.footer{
+    background-color: $color-footer;
+
+    &__title{
+        color: $color-text;
+        font-size: 1rem;
+    }
+
+    &__row1{
+        display: flex;  
+        justify-content: center;     
+        padding-top: 4.18rem; 
+
+    }
+
+    &__menu{
+        &-list{
+            padding: 0;
+
+        }
+
+        &-item{
+            list-style-type: none;
+        }
+
+    }
+
+    &__informatie{
+
+        &-links{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__row2{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.56rem;
+    }
+
+    &__copyright-text{
+        text-align: end;
+        margin-bottom: none !important;
+    }
+}
