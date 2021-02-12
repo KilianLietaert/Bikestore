@@ -1,32 +1,23 @@
+body {
+    font-size: 1.6rem;
+    font-family: 'oxygen', Raleway;
+}
+
+.top-nav {
+    background-color: #EFEFEF;
+    min-height: 110px;
+}
+
 .zoekbalk {
-    max-width: 37.5rem;
-    max-height: 2.5rem;
+    margin-top: 40px;
+    margin-left: 10px;
+    max-width: 375px;
+    max-height: 25px;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #e9e9e9;
-    border-bottom: 1px solid red;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #2196F3;
-    color: white;
+    border-bottom: 1px solid black;
 }
 
 .topnav .search-container {
@@ -34,25 +25,19 @@
 }
 
 .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
+    //padding: 6px;
+    //margin-top: 8px;
+    font-size: 1.5rem;
+    font-family: raleway;
     border: none;
+    background-color: #EFEFEF;
 }
 
 .topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
+    float: left;
+    background: #EFEFEF;
     border: none;
     cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-    background: #ccc;
 }
 
 @media screen and (max-width: 600px) {
@@ -70,8 +55,8 @@
         margin: 0;
         padding: 14px;
     }
-
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
 }
+
+/*logo*/
+
+.c-logo {}
