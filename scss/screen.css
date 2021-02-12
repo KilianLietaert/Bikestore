@@ -102,4 +102,22 @@ body {
 .bg-light {
   height: 100px;
 }
+
+.c-intro {
+  min-height: 784px;
+  width: auto;
+  background-color: white;
+}
+
+.c-intro_foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=screen.css.map */

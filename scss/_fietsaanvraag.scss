@@ -1,0 +1,11 @@
+.c-intro {
+    min-height: 784px;
+    width: auto;
+    background-color: white;
+
+    &_foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
