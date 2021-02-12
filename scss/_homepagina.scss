@@ -1,0 +1,196 @@
+// img .c-image {
+//   width: 100vw !important;
+//   height: 805px !important;
+//   &:after {
+//     width: 100vw;
+//     height: 805px;
+//     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+//   }
+// }
+h1 .c-image__hoofdtitel {
+  font: $font-titel !important;
+}
+.c-banner {
+  background-image: url("/../img/man-biker-sitting-electric-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 831px;
+  position: relative;
+  color: white;
+  //margin-bottom: 112px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  //padding-left: 40px;
+  //padding-right: 40px;
+  z-index: 1;
+
+  @include media-breakpoint-down(md) {
+    min-height: 320px;
+  }
+
+  &-content {
+    text-align: left;
+    width: 721px;
+    height: auto;
+  }
+
+  &-titel {
+    margin-bottom: 2.5rem;
+    line-height: 7rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 200%;
+      line-height: 4rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 100%;
+      line-height: 2rem;
+    }
+  }
+
+  &-text {
+    width: 59rem;
+    margin-bottom: 2.3rem;
+    line-height: 3rem;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      font-size: 100%;
+      line-height: 2rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 70%;
+    }
+  }
+
+  &_button {
+    background-color: white;
+    color: green;
+    width: 22rem;
+    height: 6rem;
+  }
+}
+
+// -----------------------------------------------------------------------------------------------------------------
+
+.c-image__fixed {
+  background-image: url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+// ----------------------------------------------------------------------------------------------------------------
+
+ul .c-usp__tekst {
+  color: white;
+  list-style-type: none;
+  vertical-align: center;
+  margin-top: 10px;
+  margin-left: 80px !important;
+  margin-right: 160px;
+  &--extra {
+    margin-right: 80px !important;
+  }
+}
+
+.nb-usp-container {
+  // margin: -10px 0 0 !important;
+  border: #f7f7f7, solid 1px;
+  background: $color-nav-background;
+  height: 65px;
+}
+
+.nb-usp-content {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // justify-content: center;
+  // overflow: hidden;
+  // max-width: 900px;
+  // margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .nb-usp-container {
+    margin: -10px -10px 0 !important;
+  }
+
+  .nb-usp-content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------
+
+.c-uitleg {
+  background-color: #fff;
+  z-index: 1;
+  max-height: 684px;
+
+  &__tekst {
+    margin-top: 80px;
+  }
+
+  &__h1 {
+    font: $font-h1;
+    color: $color-title-h1;
+  }
+
+  &__p {
+    font: $font-text;
+    color: $color-tex;
+  }
+
+  &__img {
+    max-width: 600px !important;
+    float: right;
+    transform: translate(700px, -300px);
+  }
+}
+
+// -----------------------------------------------------------------------------
+
+// 470px voor transparante div
+
+.c-uitproberen {
+  background-color: transparent;
+  z-index: 1;
+  max-height: 470px;
+
+  &__h1 {
+    font: $font-h1;
+    color: $color-title-h1;
+  }
+
+  &__p {
+    font: $font-text;
+    color: $color-tex;
+  }
+}
+
+// ---------------------------------------------------------------------
+
+.o-button {
+  border-radius: 32px;
+  background-color: $color-button;
+  border: $border-button;
+  padding: 10px !important;
+}

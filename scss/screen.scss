@@ -1,6 +1,8 @@
+@import "settings";
 
-@import 'settings';
+@import "generic.normalize";
+@import "../bootstrap/scss/bootstrap";
 
-@import 'elements';
+@import "elements";
 
-
+@import "homepagina";
