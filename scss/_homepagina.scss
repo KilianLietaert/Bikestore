@@ -7,15 +7,15 @@
 //     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 //   }
 // }
-h1 .c-image__hoofdtitel {
-  font: $font-titel !important;
-}
+
 .c-banner {
-  background-image: url("/../img/man-biker-sitting-electric-bike.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/../img/man-biker-sitting-electric-bike.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 831px;
+  max-height: 805px;
+  min-height: 780px;
   position: relative;
   color: white;
   //margin-bottom: 112px;
@@ -28,59 +28,43 @@ h1 .c-image__hoofdtitel {
   //padding-right: 40px;
   z-index: 1;
 
-  @include media-breakpoint-down(md) {
-    min-height: 320px;
-  }
-
   &-content {
-    text-align: left;
-    width: 721px;
-    height: auto;
+    text-align: center;
+    min-height: 805px !important;
+    align-content: center;
   }
 
-  &-titel {
-    margin-bottom: 2.5rem;
-    line-height: 7rem;
-
-    @include media-breakpoint-down(md) {
-      font-size: 200%;
-      line-height: 4rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-      font-size: 100%;
-      line-height: 2rem;
-    }
+  &__hoofd--h1 {
+    font: $font-titel;
+    color: white;
   }
 
-  &-text {
-    width: 59rem;
-    margin-bottom: 2.3rem;
-    line-height: 3rem;
+  &__h1 {
+    font: $font-h1;
+    color: white;
 
-    @include media-breakpoint-down(md) {
-      width: 100%;
-      font-size: 100%;
-      line-height: 2rem;
-    }
-
-    @include media-breakpoint-down(sm) {
-      font-size: 70%;
+    &--onder {
+      margin-top: 100px;
+      margin-bottom: 40px;
     }
   }
 
-  &_button {
-    background-color: white;
-    color: green;
-    width: 22rem;
-    height: 6rem;
+  &__deel1 {
+    margin-top: -20px;
+    margin-bottom: 80px;
+  }
+
+  &__deel2 {
+    margin-top: 80px !important;
+    margin-bottom: -100px !important;
   }
 }
 
 // -----------------------------------------------------------------------------------------------------------------
 
 .c-image__fixed {
-  background-image: url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -92,10 +76,10 @@ h1 .c-image__hoofdtitel {
 // ----------------------------------------------------------------------------------------------------------------
 
 ul .c-usp__tekst {
-  color: white;
+  color: $color-usp;
+  font: $font-usp;
   list-style-type: none;
   vertical-align: center;
-  margin-top: 10px;
   margin-left: 80px !important;
   margin-right: 160px;
   &--extra {
@@ -144,6 +128,7 @@ ul .c-usp__tekst {
   background-color: #fff;
   z-index: 1;
   max-height: 684px;
+  min-height: 684px;
 
   &__tekst {
     margin-top: 80px;
@@ -156,13 +141,13 @@ ul .c-usp__tekst {
 
   &__p {
     font: $font-text;
-    color: $color-tex;
+    color: $color-text;
   }
 
   &__img {
     max-width: 600px !important;
     float: right;
-    transform: translate(700px, -300px);
+    transform: translate(700px, -430px);
   }
 }
 
@@ -171,18 +156,28 @@ ul .c-usp__tekst {
 // 470px voor transparante div
 
 .c-uitproberen {
-  background-color: transparent;
+  background-color: transparent !important;
   z-index: 1;
   max-height: 470px;
+  transform: translateY(-400px);
+
+  &__tekst {
+    text-align: center;
+  }
 
   &__h1 {
     font: $font-h1;
-    color: $color-title-h1;
+    color: white;
   }
 
   &__p {
     font: $font-text;
-    color: $color-tex;
+    color: white;
+  }
+
+  &__strong {
+    color: $color-text-important;
+    font: $font-text;
   }
 }
 
@@ -193,4 +188,50 @@ ul .c-usp__tekst {
   background-color: $color-button;
   border: $border-button;
   padding: 10px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  font: $font-button;
+  color: $color-text;
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+.c-repair {
+  background-color: #928f8f;
+  //transform: translateY(-300px);
+  margin-top: -300px;
+  &__img {
+    max-width: 812px;
+    margin-top: 50px;
+  }
+
+  &__h1 {
+    font: $font-h1;
+    color: $color-title-h1;
+    margin-top: -250px;
+    margin-left: -140px;
+    margin-right: 350px;
+  }
+
+  &__p {
+    margin-left: -140px;
+    margin-right: 100px;
+    font: $font-text;
+    color: $color-text2;
+  }
+
+  &__2 {
+    float: right;
+    transform: translateY(-300px);
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+
+.c-brochure {
+  text-align: center;
+
+  // &__h1{
+  //   text-align: center;
+  // }
 }
