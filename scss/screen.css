@@ -11704,11 +11704,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer {
   background-color: #574E33;
+  color: white;
+  font-family: "raleway", sans-serif;
+  font-size: 1.11rem;
 }
 
 .footer__title {
-  color: #000000;
-  font-size: 1rem;
+  font-size: 1.38rem;
+  font-weight: bold;
 }
 
 .footer__row1 {
@@ -11719,6 +11722,7 @@ a.text-dark:hover, a.text-dark:focus {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 4.18rem;
+  margin-bottom: 4.85rem;
 }
 
 .footer__menu-list {
@@ -11739,6 +11743,14 @@ a.text-dark:hover, a.text-dark:focus {
           flex-direction: column;
 }
 
+.footer__informatie-link {
+  color: white;
+}
+
+.footer__contact-gegevens {
+  margin-top: 1.25rem;
+}
+
 .footer__row2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11751,6 +11763,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer__copyright-text {
   text-align: end;
-  margin-bottom: none !important;
+  padding-top: 15px;
+}
+
+.footer__icon-facebook {
+  margin-right: 1.04rem;
 }
 /*# sourceMappingURL=screen.css.map */
