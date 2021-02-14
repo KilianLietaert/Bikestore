@@ -1,0 +1,259 @@
+// img .c-image {
+//   width: 100vw !important;
+//   height: 805px !important;
+//   &:after {
+//     width: 100vw;
+//     height: 805px;
+//     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+//   }
+// }
+
+.c-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/../img/man-biker-sitting-electric-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 805px;
+  min-height: 780px;
+  position: relative;
+  color: white;
+  //margin-bottom: 112px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  //padding-left: 40px;
+  //padding-right: 40px;
+  z-index: 1;
+
+  &-content {
+    text-align: center;
+    min-height: 805px !important;
+    align-content: center;
+  }
+
+  &__hoofd--h1 {
+    font: $font-titel;
+    color: white;
+  }
+
+  &__h1 {
+    font: $font-h1;
+    color: white;
+
+    &--onder {
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__deel1 {
+    margin-top: -20px;
+    margin-bottom: 80px;
+  }
+
+  &__deel2 {
+    margin-top: 80px !important;
+    margin-bottom: -100px !important;
+  }
+}
+
+// -----------------------------------------------------------------------------------------------------------------
+
+.c-image__fixed {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+// ----------------------------------------------------------------------------------------------------------------
+
+ul .c-usp__tekst {
+  color: $color-usp;
+  font: $font-usp;
+  list-style-type: none;
+  vertical-align: center;
+  margin-left: 80px !important;
+  margin-right: 160px;
+  &--extra {
+    margin-right: 80px !important;
+  }
+}
+
+.c-usp__vink {
+  margin-top: -5px;
+}
+
+.nb-usp-container {
+  // margin: -10px 0 0 !important;
+  border: #f7f7f7, solid 1px;
+  background: $color-nav-background;
+  height: 65px;
+}
+
+.nb-usp-content {
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: flex;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // justify-content: center;
+  // overflow: hidden;
+  // max-width: 900px;
+  // margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .nb-usp-container {
+    margin: -10px -10px 0 !important;
+  }
+
+  .nb-usp-content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------
+
+.c-uitleg {
+  background-color: #fff;
+  z-index: 1;
+  max-height: 684px;
+  min-height: 684px;
+
+  &__tekst {
+    margin-top: 80px;
+  }
+
+  &__h1 {
+    font: $font-h1;
+    color: $color-title-h1;
+  }
+
+  &__p {
+    font: $font-text;
+    color: $color-text;
+  }
+
+  &__img {
+    max-width: 600px !important;
+    float: right;
+    transform: translate(700px, -430px);
+  }
+}
+
+// -----------------------------------------------------------------------------
+
+// 470px voor transparante div
+
+.c-uitproberen {
+  background-color: transparent !important;
+  z-index: 1;
+  max-height: 470px;
+  transform: translateY(-400px);
+
+  &__tekst {
+    text-align: center;
+  }
+
+  &__h1 {
+    font: $font-h1;
+    color: white;
+  }
+
+  &__p {
+    font: $font-text;
+    color: white;
+  }
+
+  &__strong {
+    color: $color-text-important;
+    font: $font-text;
+  }
+}
+
+// ---------------------------------------------------------------------
+
+.o-button {
+  border-radius: 32px;
+  background-color: $color-button;
+  border: $border-button;
+  padding: 10px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  font: $font-button;
+  color: $color-text;
+}
+
+// -----------------------------------------------------------------------------------------------------
+
+.c-repair {
+  background-color: #928f8f;
+  //transform: translateY(-300px);
+  margin-top: -300px;
+  &__img {
+    max-width: 812px;
+    margin-top: 50px;
+  }
+
+  &__h1 {
+    font: $font-h1;
+    color: $color-title-h1;
+    margin-top: -250px;
+    margin-left: -140px;
+    margin-right: 350px;
+  }
+
+  &__p {
+    margin-left: -140px;
+    margin-right: 100px;
+    font: $font-text;
+    color: $color-text2;
+  }
+
+  &__2 {
+    float: right;
+    transform: translateY(-300px);
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+
+.c-brochure {
+  background-color: #928f8f;
+
+  &__inhoud {
+    text-align: center !important;
+    // margin: auto !important;
+    padding-bottom: 100px;
+  }
+  &__h1 {
+    color: $color-title-h1;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+
+  &__p {
+    color: $color-text;
+    font: $font-text;
+    text-align: center;
+    max-width: 812px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}

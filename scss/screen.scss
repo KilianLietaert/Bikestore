@@ -1,11 +1,17 @@
-@import 'settings';
 
-@import 'elements';
+@import "settings";
 
+@import "generic.normalize";
 @import "../bootstrap/scss/bootstrap";
+
+@import "elements";
+
+
 
 @import 'components.footer';
 
 @import 'topnav';
 @import 'nav';
 
+
+@import "homepagina";

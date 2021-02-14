@@ -3,9 +3,17 @@
 
 
 $color-nav-active: #030303;
-$color-nav-item: #FFFFFF;
-$color-nav-item-hover: #2D2201;
+$color-nav-item: #ffffff;
+$color-nav-item-hover: #2d2201;
 
+$color-title-h1: #705e16;
+$color-title-h2: #705e16;
+$color-title-h3: #000000;
+$color-title-h4: #705e16;
+
+
+$color-gold: #d2b02a;
+$color-button: #d2b02a;
 
 $color-title-h1: #705E16;
 $color-title-h2: #705E16;
@@ -13,12 +21,23 @@ $color-title-h3: #000000;
 $color-title-h4: #705E16;
 
 
-$color-gold: #D2B02A;
-$color-button: #D2B02A;
+
 $color-text: #000000;
-$color-text-important: #D2B02A;
-$color-text-form: #D2B02A;
+$color-text2: #2d2201;
+$color-text-important: #d2b02a;
+$color-text-form: #d2b02a;
 $color-nav-background: #705e16;
+
+
+$color-usp: #fff;
+
+$border-button: 2px solid #705e16;
+
+
+$font-titel: 40px "Oxygen", sans-serif;
+$font-button: 26px "oxygen", sans-serif;
+$font-usp: 24px "oxygen", sans-serif;
+
 $color-footer: #574E33;
 
 
@@ -42,4 +61,5 @@ body {
     font-size: 1.6rem;
     font-family: 'oxygen', Raleway;
 }
+
 
