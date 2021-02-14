@@ -105,8 +105,9 @@ body {
 
 .c-intro {
   min-height: 784px;
-  width: auto;
+  width: 100%;
   background-color: white;
+  margin: 0;
 }
 
 .c-intro_foto {
@@ -119,5 +120,56 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/*achtergrond-afbeelding*/
+.c-container {
+  padding: 0;
+}
+
+.c-banner {
+  background-image: url("../fotos/world-canyon-electric-city-bikes-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1091px;
+  width: 100%;
+  position: fixed;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/*text over image*/
+.c-textover {
+  color: white;
+  background-color: rgba(45, 34, 1, 0.4);
+  font-size: 35px;
+  width: 100%;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=screen.css.map */
