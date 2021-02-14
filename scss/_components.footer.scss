@@ -117,12 +117,18 @@
         width: 3rem;
         margin-right: 1.2rem;
       }
+
     }
 
     &-instagram {
       margin-right: 1.04rem;
 
       @include media-breakpoint-down(sm) {
+        margin-right: 0;
+        width: 3rem;
+      }
+
+      @include media-breakpoint-down(xs) {
         margin-right: 0;
         width: 3rem;
       }
@@ -160,6 +166,7 @@ a.footer__informatie-link:hover {
     }
 
     .col-3 {
-        max-width: 70%;
+        max-width: 60%;
+        width: auto;
     }
   }
