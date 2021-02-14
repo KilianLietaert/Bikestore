@@ -12251,6 +12251,28 @@ ul .c-usp__tekst--extra {
 }
 
 .c-brochure {
+  background-color: #928f8f;
+}
+
+.c-brochure__inhoud {
+  text-align: center !important;
+  padding-bottom: 100px;
+}
+
+.c-brochure__h1 {
+  color: #705e16;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 800px;
+  padding-right: 800px;
+}
+
+.c-brochure__p {
+  color: #000000;
+  font: 24px "raleway", sans-serif;
   text-align: center;
+  max-width: 812px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=screen.css.map */

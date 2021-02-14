@@ -233,9 +233,27 @@ ul .c-usp__tekst {
 // ---------------------------------------------------------------------------------------------
 
 .c-brochure {
-  text-align: center;
+  background-color: #928f8f;
 
-  // &__h1{
-  //   text-align: center;
-  // }
+  &__inhoud {
+    text-align: center !important;
+    // margin: auto !important;
+    padding-bottom: 100px;
+  }
+  &__h1 {
+    color: $color-title-h1;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 800px;
+    padding-right: 800px;
+  }
+
+  &__p {
+    color: $color-text;
+    font: $font-text;
+    text-align: center;
+    max-width: 812px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
 }
