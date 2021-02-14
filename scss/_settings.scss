@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-
 $color-nav-active: #030303;
 $color-nav-item: #ffffff;
 $color-nav-item-hover: #2d2201;
@@ -11,16 +10,13 @@ $color-title-h2: #705e16;
 $color-title-h3: #000000;
 $color-title-h4: #705e16;
 
-
 $color-gold: #d2b02a;
 $color-button: #d2b02a;
 
-$color-title-h1: #705E16;
-$color-title-h2: #705E16;
+$color-title-h1: #705e16;
+$color-title-h2: #705e16;
 $color-title-h3: #000000;
-$color-title-h4: #705E16;
-
-
+$color-title-h4: #705e16;
 
 $color-text: #000000;
 $color-text2: #2d2201;
@@ -28,38 +24,25 @@ $color-text-important: #d2b02a;
 $color-text-form: #d2b02a;
 $color-nav-background: #705e16;
 
-
 $color-usp: #fff;
 
 $border-button: 2px solid #705e16;
-
 
 $font-titel: 40px "Oxygen", sans-serif;
 $font-button: 26px "oxygen", sans-serif;
 $font-usp: 24px "oxygen", sans-serif;
 
-$color-footer: #574E33;
+$color-footer: #574e33;
 
+$border-button: 2px solid #705e16;
 
-$border-button: 2px solid #705E16;
-
-
-
-
-$font-h1: 35px 'Oxygen',
-Raleway;
-$font-h2: 30p 'oxygen',
-Raleway;
-$font-h3: 24px 'Raleway',
-Oxygen;
-$font-h4: 26px 'Raleway',
-Oxygen;
-$font-text: 24px 'raleway',
-Oxygen;
+$font-h1: 35px "Oxygen", "Raleway";
+$font-h2: 30p "oxygen", "Raleway";
+$font-h3: 24px "Raleway", "Oxygen";
+$font-h4: 26px "Raleway", "Oxygen";
+$font-text: 24px "raleway", "Oxygen";
 
 body {
-    font-size: 1.6rem;
-    font-family: 'oxygen', Raleway;
+  font-size: 1.6rem;
+  font-family: "oxygen", "Raleway";
 }
-
-
