@@ -36,13 +36,13 @@ $color-footer: #574e33;
 
 $border-button: 2px solid #705e16;
 
-$font-h1: 35px "Oxygen", "Raleway";
-$font-h2: 30p "oxygen", "Raleway";
-$font-h3: 24px "Raleway", "Oxygen";
-$font-h4: 26px "Raleway", "Oxygen";
-$font-text: 24px "raleway", "Oxygen";
+$font-h1: 35px "Oxygen", sans-serif;
+$font-h2: 30p "oxygen", sans-serif;
+$font-h3: 24px "Raleway", sans-serif;
+$font-h4: 26px "Raleway", sans-serif;
+$font-text: 24px "raleway", sans-serif;
 
 body {
   font-size: 1.6rem;
-  font-family: "oxygen", "Raleway";
+  font-family: "oxygen", sans-serif;
 }
