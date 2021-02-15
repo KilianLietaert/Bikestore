@@ -1,6 +1,6 @@
-.c-about {    
-    justify-content: center;
-    margin: 0;
+.c-about {
+  justify-content: center;
+  margin: 0;
 
   &__info {
     justify-content: center;
@@ -13,6 +13,7 @@
       font-weight: bold;
       color: $color-title-h1;
       margin-bottom: 20px;
+
     }
 
     &-text {
@@ -24,13 +25,27 @@
       font-style: italic;
     }
 
-    &-foto{
-        width: 39.02vw;
+    &-foto {
+      width: 39.02vw;
+      height: 25.98vw;
 
-        @include media-breakpoint-down(lg) { 
-            width: 55vw;
-            margin-top: 5vw;
-         }
+      @include media-breakpoint-down(lg) {
+        width: 64vw;
+        height: 42.7vw;
+        margin-top: 5vw;
+      }
+
+      @media only screen and (max-width: 576px) {
+        justify-content: center;
+      }
+    }
+
+    &-inhoud {
+      @media only screen and (max-width: 576px) {
+        max-width: 70%;
+        justify-content: center;
+        font-size: 12px;
+      }
     }
   }
 
@@ -43,6 +58,11 @@
       font: $font-h2;
       color: $color-title-h2;
       margin-bottom: 4.55rem;
+
+      @include media-breakpoint-down(lg) {
+        width: 70%;
+        margin-bottom: 2vw;
+      }
     }
 
     &-internet {
@@ -57,8 +77,20 @@
         font: $font-text;
       }
 
-      &-foto-laptop{
-          width: 24.07vw;
+      &-foto-laptop {
+        width: 24.07vw;
+
+        @include media-breakpoint-down(lg) {
+          width: 55vw;
+          margin-bottom: 3vw;
+        }
+      }
+
+      &-info {
+        @media only screen and (max-width: 576px) {
+          max-width: 70%;
+          justify-content: center;
+        }
       }
     }
 
@@ -75,8 +107,21 @@
         font: $font-text;
       }
 
-      &-foto-verkoper{
-          width: 27.91vw;
+      &-foto-verkoper {
+        width: 27.91vw;
+
+        @include media-breakpoint-down(lg) {
+          width: 55vw;
+          margin-top: 5vw;
+          margin-bottom: 3vw;
+        }
+      }
+
+      &-info {
+        @media only screen and (max-width: 576px) {
+          max-width: 70%;
+          justify-content: center;
+        }
       }
     }
   }
@@ -113,44 +158,43 @@
     }
 
     &-text {
-      font: $font-text;    
+      font: $font-text;
       margin-bottom: 35px;
     }
 
-    &-text2{
-        font: $font-text;
-        margin-bottom: 35px;
+    &-text2 {
+      font: $font-text;
+      margin-bottom: 35px;
     }
   }
 
-  &__proefrit{
+  &__proefrit {
     margin-top: 73px;
     margin-bottom: 73px;
 
-    &-title{
-        font: $font-h1;
-        color: $color-title-h1;
-  
-        margin: 0;        
-        margin-bottom: 43px;
+    &-title {
+      font: $font-h1;
+      color: $color-title-h1;
+
+      margin: 0;
+      margin-bottom: 43px;
     }
 
-    &-link{
-        margin: 0;
+    &-link {
+      margin: 0;
     }
 
-    &-link:hover{
-        color: #2d2201;
-        text-decoration: none;
+    &-link:hover {
+      color: #2d2201;
+      text-decoration: none;
     }
-    
-    &-button:hover{
-    color: white;
+
+    &-button:hover {
+      color: white;
     }
   }
 
-  &__foto{
-      width: 56.7vw;
+  &__foto {
+    width: 56.7vw;
   }
 }
-
