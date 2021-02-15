@@ -1,14 +1,4 @@
-// img .c-image {
-//   width: 100vw !important;
-//   height: 805px !important;
-//   &:after {
-//     width: 100vw;
-//     height: 805px;
-//     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-//   }
-// }
-
-.c-banner {
+.c-bannerhome {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/../img/man-biker-sitting-electric-bike.jpg");
   background-position: center;
@@ -223,6 +213,9 @@ ul .c-usp__tekst {
   z-index: 1;
   max-height: 684px;
   min-height: 684px;
+  @media only screen and (max-width: 410px) {
+    min-height: 800px;
+  }
 
   &__tekst {
     margin-top: 80px;
@@ -231,6 +224,13 @@ ul .c-usp__tekst {
   &__h1 {
     font: $font-h1;
     color: $color-title-h1;
+    @media only screen and (max-width: 500px) {
+      font-family: 25px !important;
+      margin-top: -50px;
+    }
+    @media only screen and (max-width: 400px) {
+      font-family: 20px !important;
+    }
   }
 
   &__p {
@@ -239,6 +239,18 @@ ul .c-usp__tekst {
     margin-bottom: 20px;
     @media only screen and (max-width: 1672px) {
       font-size: 20px;
+    }
+    @media only screen and (max-width: 1200px) {
+      max-width: 800px !important;
+    }
+    @media only screen and (max-width: 1000px) {
+      max-width: 800px !important;
+    }
+    @media only screen and (max-width: 500px) {
+      font-family: 18px;
+    }
+    @media only screen and (max-width: 410px) {
+      font-family: 15px;
     }
   }
 
@@ -255,12 +267,70 @@ ul .c-usp__tekst {
     }
     @media only screen and (max-width: 1200px) {
       max-width: 400px !important;
-      transform: translate(450px, -380px);
+      transform: translate(-650px, 30px);
+    }
+    @media only screen and (max-width: 1150px) {
+      transform: translate(-600px, 30px);
+    }
+    @media only screen and (max-width: 1140px) {
+      transform: translate(-550px, 30px);
+    }
+    @media only screen and (max-width: 1080px) {
+      transform: translate(-500px, 30px);
+    }
+    @media only screen and (max-width: 1000px) {
+      max-width: 300px !important;
+      transform: translate(-450px, 30px);
+    }
+    @media only screen and (max-width: 800px) {
+      max-width: 300px !important;
+      transform: translate(-400px, 30px);
+    }
+    @media only screen and (max-width: 740px) {
+      max-width: 300px !important;
+      transform: translate(-350px, 30px);
+    }
+    @media only screen and (max-width: 690px) {
+      max-width: 300px !important;
+      transform: translate(-300px, 30px);
+    }
+    @media only screen and (max-width: 640px) {
+      max-width: 300px !important;
+      transform: translate(-250px, 30px);
+    }
+    @media only screen and (max-width: 590px) {
+      max-width: 250px !important;
+      transform: translate(-200px, 20px);
+    }
+    @media only screen and (max-width: 475px) {
+      max-width: 200px !important;
+      transform: translate(-200px, 20px);
+    }
+    @media only screen and (max-width: 460px) {
+      max-width: 200px !important;
+      transform: translate(-200px, -80px);
+    }
+    @media only screen and (max-width: 425px) {
+      max-width: 200px !important;
+      transform: translate(-140px, -397px);
     }
   }
 
-  // &__button {
-  // }
+  &__button {
+    @media only screen and (max-width: 490px) {
+      font-size: 18px !important;
+    }
+  }
+}
+
+h1.c-uitleg__h1 {
+  @media only screen and (max-width: 500px) {
+    font-family: 25px !important;
+    margin-top: -50px;
+  }
+  @media only screen and (max-width: 400px) {
+    font-family: 20px !important;
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -280,11 +350,17 @@ ul .c-usp__tekst {
   &__h1 {
     font: $font-h1;
     color: white;
+    @media only screen and (max-width: 500px) {
+      font-size: 28px !important;
+    }
   }
 
   &__p {
     font: $font-text;
     color: white;
+    @media only screen and (max-width: 500px) {
+      font-size: 18px !important;
+    }
   }
 
   &__strong {
@@ -306,6 +382,18 @@ ul .c-usp__tekst {
   color: $color-text;
 }
 
+button.o-button.c-uitleg__button {
+  @media only screen and (max-width: 490px) {
+    font-size: 18px !important;
+  }
+  @media only screen and (max-width: 460px) {
+    margin-bottom: 100px !important;
+  }
+  @media only screen and (max-width: 425px) {
+    margin-bottom: 400px !important;
+  }
+}
+
 // -----------------------------------------------------------------------------------------------------
 
 .c-repair {
@@ -315,6 +403,25 @@ ul .c-usp__tekst {
   &__img {
     max-width: 812px;
     margin-top: 50px;
+    @media only screen and (max-width: 1919px) {
+      max-width: 612px;
+    }
+    @media only screen and (max-width: 1520px) {
+      max-width: 412px;
+    }
+    @media only screen and (max-width: 990px) {
+      margin-left: 100px;
+    }
+    @media only screen and (max-width: 730px) {
+      margin-left: 50px;
+    }
+    @media only screen and (max-width: 500px) {
+      margin-left: -20px;
+    }
+    @media only screen and (max-width: 430px) {
+      margin-left: -40px;
+      max-width: 312px;
+    }
   }
 
   &__h1 {
@@ -323,6 +430,13 @@ ul .c-usp__tekst {
     margin-top: -250px;
     margin-left: -140px;
     margin-right: 350px;
+    @media only screen and (max-width: 1919px) {
+      margin-right: 50px;
+    }
+    @media only screen and (max-width: 1520px) {
+      font-size: 28px !important;
+      margin-right: 50px;
+    }
   }
 
   &__p {
@@ -330,11 +444,63 @@ ul .c-usp__tekst {
     margin-right: 100px;
     font: $font-text;
     color: $color-text2;
+    @media only screen and (max-width: 1520px) {
+      font-size: 20px !important;
+    }
   }
 
   &__2 {
     float: right;
     transform: translateY(-300px);
+    @media only screen and (max-width: 1919px) {
+      transform: translateY(-150px);
+    }
+    @media only screen and (max-width: 1520px) {
+      transform: translateY(-50px);
+    }
+    @media only screen and (max-width: 1130px) {
+      transform: translate(-60px, 300px);
+      margin-bottom: 100px;
+      max-width: 800px;
+    }
+    @media only screen and (max-width: 1050px) {
+      transform: translate(30px, 300px);
+    }
+    @media only screen and (max-width: 930px) {
+      transform: translate(30px, 300px);
+      max-width: 600px;
+    }
+    @media only screen and (max-width: 730px) {
+      transform: translate(30px, 300px);
+      max-width: 400px;
+    }
+    @media only screen and (max-width: 530px) {
+      transform: translate(30px, 300px);
+      max-width: 300px;
+    }
+    @media only screen and (max-width: 500px) {
+      transform: translate(20px, 300px);
+      max-width: 300px;
+    }
+    @media only screen and (max-width: 430px) {
+      transform: translate(50px, 300px);
+      max-width: 300px;
+    }
+    @media only screen and (max-width: 395px) {
+      transform: translate(70px, 300px);
+      max-width: 250px;
+    }
+  }
+  &__inhoud {
+    @media only screen and (max-width: 1050px) {
+      margin-left: 50px;
+    }
+  }
+  @media only screen and (max-width: 1130px) {
+    margin-bottom: 400px !important;
+  }
+  @media only screen and (max-width: 395px) {
+    margin-bottom: 600px !important;
   }
 }
 
@@ -354,6 +520,26 @@ ul .c-usp__tekst {
     margin-bottom: 20px;
     padding-left: 800px;
     padding-right: 800px;
+    @media only screen and (max-width: 1880px) {
+      padding-left: 400px;
+      padding-right: 400px;
+    }
+    @media only screen and (max-width: 1080px) {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
+    @media only screen and (max-width: 682px) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    @media only screen and (max-width: 480px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media only screen and (max-width: 380px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   &__p {
@@ -363,5 +549,8 @@ ul .c-usp__tekst {
     max-width: 812px;
     margin: auto;
     margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 530px) {
+    margin-top: 550px;
   }
 }
