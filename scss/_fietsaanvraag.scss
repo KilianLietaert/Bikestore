@@ -1,0 +1,78 @@
+/*achtergrond-afbeelding*/
+
+.c-container {
+    padding: 0;
+}
+
+.c-banner__fiets {
+    background-image:
+        url("../fotos/world-canyon-electric-city-bikes-02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1091px;
+    width: 100%;
+    position: fixed;
+    color: white;
+    //margin-bottom: 112px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+    //padding-left: 40px;
+    //padding-right: 40px;
+    top: 0;
+    left: 0;
+}
+
+/*intro van pagina*/
+.c-intro {
+    min-height: 784px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding-left: 7px;
+
+    &__foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--g {
+            min-height: 569px;
+        }
+    }
+
+    &__h {
+        color: $color-title-h2;
+    }
+
+    &__text {
+        font: $font-text2;
+        color: $color-nav-item-hover;
+
+        &--color {
+            color: $color-gold;
+        }
+    }
+}
+
+/*text over achtergrondafbeelding*/
+.c-textover {
+    color: white;
+    background-color: rgba(45, 34, 1, 0.4);
+    font-size: 35px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*form + more info*/
+.c-more {
+    background-color: $color-nav-item;
+    min-height: 1529px;
+}
