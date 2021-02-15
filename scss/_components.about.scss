@@ -23,6 +23,15 @@
       font: $font-text-footer;
       font-style: italic;
     }
+
+    &-foto{
+        width: 39.02vw;
+
+        @include media-breakpoint-down(lg) { 
+            width: 55vw;
+            margin-top: 5vw;
+         }
+    }
   }
 
   &__kopen {
@@ -47,6 +56,10 @@
       &-text {
         font: $font-text;
       }
+
+      &-foto-laptop{
+          width: 24.07vw;
+      }
     }
 
     &-winkel {
@@ -60,6 +73,10 @@
 
       &-text {
         font: $font-text;
+      }
+
+      &-foto-verkoper{
+          width: 27.91vw;
       }
     }
   }
@@ -111,6 +128,9 @@
     margin-bottom: 73px;
 
     &-title{
+        font: $font-h1;
+        color: $color-title-h1;
+  
         margin: 0;        
         margin-bottom: 43px;
     }
@@ -127,6 +147,10 @@
     &-button:hover{
     color: white;
     }
+  }
+
+  &__foto{
+      width: 56.7vw;
   }
 }
 

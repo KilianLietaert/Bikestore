@@ -12647,6 +12647,17 @@ ul .c-usp__tekst--extra {
   font-style: italic;
 }
 
+.c-about__info-foto {
+  width: 39.02vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__info-foto {
+    width: 55vw;
+    margin-top: 5vw;
+  }
+}
+
 .c-about__kopen {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -12676,6 +12687,10 @@ ul .c-usp__tekst--extra {
   font: 24px "raleway", "sans-serif";
 }
 
+.c-about__kopen-internet-foto-laptop {
+  width: 24.07vw;
+}
+
 .c-about__kopen-winkel {
   margin: 0;
 }
@@ -12688,6 +12703,10 @@ ul .c-usp__tekst--extra {
 
 .c-about__kopen-winkel-text {
   font: 24px "raleway", "sans-serif";
+}
+
+.c-about__kopen-winkel-foto-verkoper {
+  width: 27.91vw;
 }
 
 .c-about__subtitle {
@@ -12738,6 +12757,8 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__proefrit-title {
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
   margin: 0;
   margin-bottom: 43px;
 }
@@ -12753,5 +12774,9 @@ ul .c-usp__tekst--extra {
 
 .c-about__proefrit-button:hover {
   color: white;
+}
+
+.c-about__foto {
+  width: 56.7vw;
 }
 /*# sourceMappingURL=screen.css.map */
