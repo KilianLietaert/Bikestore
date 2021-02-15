@@ -6,17 +6,17 @@ body {
 
 h1 {
   font-size: 40px;
-  font-family: 'Oxygen', 'San serif';
+  font-family: 'Oxygen', sans-serif;
 }
 
 h2 {
   font-size: 35px;
-  font-family: 'Oxygen', 'San serif';
+  font-family: 'Oxygen', sans-serif;
 }
 
 h3 {
   font-size: 30px;
-  font-family: 'Oxygen', 'San serif';
+  font-family: 'Oxygen', sans-serif;
 }
 
 body {
@@ -182,7 +182,7 @@ body {
 
 .c-intro__text {
   font-size: 24px;
-  font-family: "Raleway", "San serif";
+  font-family: "Raleway", sans-serif;
   color: #2D2201;
 }
 
