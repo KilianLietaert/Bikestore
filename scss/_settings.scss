@@ -6,7 +6,6 @@ $color-nav-active: #030303;
 $color-nav-item: #FFFFFF;
 $color-nav-item-hover: #2D2201;
 
-
 $color-title-h1: #705E16;
 $color-title-h2: #705E16;
 $color-title-h3: #000000;
@@ -24,19 +23,34 @@ $color-footer: #574E33;
 
 $border-button: 2px solid #705E16;
 
-
-$font-h1: 35px 'Oxygen',
-Raleway;
-$font-h2: 30p 'oxygen',
-Raleway;
-$font-h3: 24px 'Raleway',
-Oxygen;
-$font-h4: 26px 'Raleway',
-Oxygen;
-$font-text: 24px 'raleway',
-Oxygen;
-
 body {
     font-size: 1.6rem;
-    font-family: 'oxygen', Raleway;
 }
+
+h1 {
+    font-size: 40px;
+    font-family: 'Oxygen', 'San serif';
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Oxygen', 'San serif';
+
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Oxygen', 'San serif';
+}
+
+$font-size-text1: 26px;
+$font-fam-text1: 'Raleway',
+'San serifs';
+
+$font-size-text2: 24px;
+$font-fam-text2: 'Raleway',
+'San serif';
+
+$font-size-text3: 20px;
+$font-fam-text3: 'raleway',
+'San Serif';

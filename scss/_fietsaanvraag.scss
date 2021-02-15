@@ -1,16 +1,3 @@
-.c-intro {
-    min-height: 784px;
-    width: 100%;
-    background-color: white;
-    margin: 0;
-
-    &_foto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 /*achtergrond-afbeelding*/
 
 .c-container {
@@ -38,13 +25,42 @@
     //padding-right: 40px;
     top: 0;
     left: 0;
-
-    //@include media-breakpoint-down(md) {
-    //    min-height: 320px;
-    //}
 }
 
-/*text over image*/
+/*intro van pagina*/
+.c-intro {
+    min-height: 784px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding-left: 7px;
+
+    &__foto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--g {
+            min-height: 569px;
+        }
+    }
+
+    &__h {
+        color: $color-title-h2;
+    }
+
+    &__text {
+        font-size: $font-size-text2;
+        font-family: $font-fam-text2;
+        color: $color-nav-item-hover;
+
+        &--color {
+            color: $color-gold;
+        }
+    }
+}
+
+/*text over achtergrondafbeelding*/
 .c-textover {
     color: white;
     background-color: rgba(45, 34, 1, 0.4);
@@ -54,6 +70,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
-
+/*form + more info*/
+.c-more {
+    background-color: $color-nav-item;
+    min-height: 1529px;
 }

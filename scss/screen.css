@@ -2,7 +2,21 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font-size: 1.6rem;
-  font-family: 'oxygen', Raleway;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Oxygen', 'San serif';
+}
+
+h2 {
+  font-size: 35px;
+  font-family: 'Oxygen', 'San serif';
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Oxygen', 'San serif';
 }
 
 body {
@@ -29,6 +43,7 @@ body {
 
 .topnav .search-container {
   float: right;
+  width: 100%;
 }
 
 .topnav input[type=text] {
@@ -103,25 +118,6 @@ body {
   height: 100px;
 }
 
-.c-intro {
-  min-height: 784px;
-  width: 100%;
-  background-color: white;
-  margin: 0;
-}
-
-.c-intro_foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /*achtergrond-afbeelding*/
 .c-container {
   padding: 0;
@@ -155,7 +151,46 @@ body {
   left: 0;
 }
 
-/*text over image*/
+/*intro van pagina*/
+.c-intro {
+  min-height: 784px;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding-left: 7px;
+}
+
+.c-intro__foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-intro__foto--g {
+  min-height: 569px;
+}
+
+.c-intro__h {
+  color: #705E16;
+}
+
+.c-intro__text {
+  font-size: 24px;
+  font-family: "Raleway", "San serif";
+  color: #2D2201;
+}
+
+.c-intro__text--color {
+  color: #D2B02A;
+}
+
+/*text over achtergrondafbeelding*/
 .c-textover {
   color: white;
   background-color: rgba(45, 34, 1, 0.4);
@@ -171,5 +206,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/*form + more info*/
+.c-more {
+  background-color: #FFFFFF;
+  min-height: 1529px;
 }
 /*# sourceMappingURL=screen.css.map */
