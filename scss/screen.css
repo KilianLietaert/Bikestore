@@ -12055,7 +12055,7 @@ a.text-dark:hover, a.text-dark:focus {
 .c-footer {
   background-color: #574e33;
   color: white;
-  font-family: 24px "raleway", "Oxygen";
+  font: 20px "raleway", "sans-serif";
   font-size: 1.11rem;
 }
 
@@ -12068,9 +12068,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 4.18rem;
   margin-bottom: 4.85rem;
   margin-right: 0;
@@ -12427,7 +12424,7 @@ body {
 }
 
 .c-banner__h1 {
-  font: 35px "Oxygen", "Raleway";
+  font: 35px "Oxygen", "sans-serif";
   color: white;
 }
 
@@ -12507,12 +12504,12 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitleg__h1 {
-  font: 35px "Oxygen", "Raleway";
+  font: 35px "Oxygen", "sans-serif";
   color: #705e16;
 }
 
 .c-uitleg__p {
-  font: 24px "raleway", "Oxygen";
+  font: 24px "raleway", "sans-serif";
   color: #000000;
 }
 
@@ -12536,18 +12533,18 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitproberen__h1 {
-  font: 35px "Oxygen", "Raleway";
+  font: 35px "Oxygen", "sans-serif";
   color: white;
 }
 
 .c-uitproberen__p {
-  font: 24px "raleway", "Oxygen";
+  font: 24px "raleway", "sans-serif";
   color: white;
 }
 
 .c-uitproberen__strong {
   color: #d2b02a;
-  font: 24px "raleway", "Oxygen";
+  font: 24px "raleway", "sans-serif";
 }
 
 .o-button {
@@ -12572,7 +12569,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-repair__h1 {
-  font: 35px "Oxygen", "Raleway";
+  font: 35px "Oxygen", "sans-serif";
   color: #705e16;
   margin-top: -250px;
   margin-left: -140px;
@@ -12582,7 +12579,7 @@ ul .c-usp__tekst--extra {
 .c-repair__p {
   margin-left: -140px;
   margin-right: 100px;
-  font: 24px "raleway", "Oxygen";
+  font: 24px "raleway", "sans-serif";
   color: #2d2201;
 }
 
@@ -12611,10 +12608,150 @@ ul .c-usp__tekst--extra {
 
 .c-brochure__p {
   color: #000000;
-  font: 24px "raleway", "Oxygen";
+  font: 24px "raleway", "sans-serif";
   text-align: center;
   max-width: 812px;
   margin: auto;
   margin-bottom: 40px;
+}
+
+.c-about {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.c-about__info {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  margin-top: 4.45rem;
+}
+
+.c-about__info-title {
+  font: 35px "Oxygen", "sans-serif";
+  font-weight: bold;
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__info-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-about__info-name {
+  font: 20px "raleway", "sans-serif";
+  font-style: italic;
+}
+
+.c-about__kopen {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-bottom: 89px;
+}
+
+.c-about__kopen-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  margin-bottom: 4.55rem;
+}
+
+.c-about__kopen-internet {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.c-about__kopen-internet-title {
+  font: 24px "Raleway", "sans-serif";
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.c-about__kopen-internet-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-about__kopen-winkel {
+  margin: 0;
+}
+
+.c-about__kopen-winkel-title {
+  font: 24px "Raleway", "sans-serif";
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.c-about__kopen-winkel-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-about__subtitle {
+  margin-top: 85px;
+  font: 26px "Raleway", "sans-serif";
+  color: #705e16;
+  font-style: italic;
+}
+
+.c-about__comfort {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.c-about__comfort-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__comfort-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-about__weesgerust {
+  text-align: center;
+}
+
+.c-about__weesgerust-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__weesgerust-text {
+  font: 24px "raleway", "sans-serif";
+  margin-bottom: 35px;
+}
+
+.c-about__weesgerust-text2 {
+  font: 24px "raleway", "sans-serif";
+  margin-bottom: 35px;
+}
+
+.c-about__proefrit {
+  margin-top: 73px;
+  margin-bottom: 73px;
+}
+
+.c-about__proefrit-title {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.c-about__proefrit-link {
+  margin: 0;
+}
+
+.c-about__proefrit-link:hover {
+  color: #2d2201;
+  text-decoration: none;
+}
+
+.c-about__proefrit-button:hover {
+  color: white;
 }
 /*# sourceMappingURL=screen.css.map */

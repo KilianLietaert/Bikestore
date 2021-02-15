@@ -1,0 +1,132 @@
+.c-about {    
+    justify-content: center;
+    margin: 0;
+
+  &__info {
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 3.5rem;
+    margin-top: 4.45rem;
+
+    &-title {
+      font: $font-h1;
+      font-weight: bold;
+      color: $color-title-h1;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font: $font-text;
+    }
+
+    &-name {
+      font: $font-text-footer;
+      font-style: italic;
+    }
+  }
+
+  &__kopen {
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 89px;
+
+    &-title {
+      font: $font-h2;
+      color: $color-title-h2;
+      margin-bottom: 4.55rem;
+    }
+
+    &-internet {
+      margin: 0;
+      margin-bottom: 40px;
+      &-title {
+        font: $font-h3;
+        font-weight: bold;
+        margin-bottom: 35px;
+      }
+      &-text {
+        font: $font-text;
+      }
+    }
+
+    &-winkel {
+      margin: 0;
+
+      &-title {
+        font: $font-h3;
+        font-weight: bold;
+        margin-bottom: 35px;
+      }
+
+      &-text {
+        font: $font-text;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 85px;
+    font: $font-h4;
+    color: $color-title-h4;
+    font-style: italic;
+  }
+
+  &__comfort {
+    text-align: center;
+    margin-bottom: 56px;
+
+    &-title {
+      font: $font-h2;
+      color: $color-title-h2;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font: $font-text;
+    }
+  }
+
+  &__weesgerust {
+    text-align: center;
+
+    &-title {
+      font: $font-h2;
+      color: $color-title-h2;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font: $font-text;    
+      margin-bottom: 35px;
+    }
+
+    &-text2{
+        font: $font-text;
+        margin-bottom: 35px;
+    }
+  }
+
+  &__proefrit{
+    margin-top: 73px;
+    margin-bottom: 73px;
+
+    &-title{
+        margin: 0;        
+        margin-bottom: 43px;
+    }
+
+    &-link{
+        margin: 0;
+    }
+
+    &-link:hover{
+        color: #2d2201;
+        text-decoration: none;
+    }
+    
+    &-button:hover{
+    color: white;
+    }
+  }
+}
+
