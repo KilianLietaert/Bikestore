@@ -50,8 +50,7 @@
     }
 
     &__text {
-        font-size: $font-size-text2;
-        font-family: $font-fam-text2;
+        font: $font-text2;
         color: $color-nav-item-hover;
 
         &--color {
