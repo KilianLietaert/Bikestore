@@ -13812,13 +13812,31 @@ body {
 
 .c-banner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/../img/man-biker-sitting-electric-bike.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/../img/man-biker-sitting-electric-bike.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/man-biker-sitting-electric-bike.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 805px;
   min-height: 780px;
   position: relative;
+
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  z-index: 1;
 }
 
 /*achtergrond-afbeelding*/
@@ -13826,7 +13844,7 @@ body {
   padding: 0;
 }
 
-.c-banner {
+.c-banner__fiets {
   background-image: url("../fotos/world-canyon-electric-city-bikes-02.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -13851,7 +13869,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
 
-  z-index: 1;
+  z-index: -1;
 }
 
 .c-banner-content {
@@ -13888,7 +13906,7 @@ body {
 
 .c-image__fixed {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
