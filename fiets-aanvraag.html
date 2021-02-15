@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="scss/screen.css">
   </head>
   <body>
+    <section>
+      <div class="c-banner__fiets">
+      </div>
+  </section>
       <div class="container-fluid">
         <div class="row top-nav">
             <div class="col-4">
@@ -73,11 +77,6 @@
 
       <main class="container-fluid c-container">
 
-        <section>
-          <div class="c-banner__fiets">
-          </div>
-      </section>
-
           <section class="row c-intro">
               <div class="col-xl-5 col-lg-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 c-intro__foto">
                 <img class="c-intro__foto--g" src="fotos/testrit met advies_0.jpg" alt="bikster">
@@ -120,9 +119,41 @@
             <hr>
 
             <div>
-              <form action="POST">
-
-              </form>
+              <div class="c-contact row">
+                <div class="col-12 text-center">
+                    <div class="o-label">Contact Me</div>
+                    <h2>Send Me a Message</h2>
+                </div>
+                <div class="col-12 col-lg-6 c-contact__form">
+                    <form class="c-form">
+                        <div class="form-group c-form__group">
+                            <input required type="text" class="form-control c-form__input" id="name" placeholder="Name" required/>
+                            <label class="c-form__label" for="name">
+                                Name
+                            </label>
+                        </div>
+                        <div class="form-group c-form__group">
+                            <input required type="email" class="form-control c-form__input" placeholder="Email" required/>
+                            <label class="c-form__label">
+                                Email
+                            </label>
+                        </div>
+                        <div class="form-group c-form__group">
+                            <input required type="tel" class="form-control c-form__input" placeholder="Phone" required/>
+                            <label class="c-form__label">
+                                Phone
+                            </label>
+                        </div>
+                        <div class="form-group c-form__group">
+                            <textarea class="form-control c-form__input" placeholder="Message" required></textarea>
+                            <label class="c-form__label c-form__label--message">
+                                Message
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
             </div>
 
           </div>
