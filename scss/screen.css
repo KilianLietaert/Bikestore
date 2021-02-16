@@ -13846,4 +13846,135 @@ ul .c-usp__tekst--extra {
 .fa-chevron-right {
   padding-left: 85px;
 }
+
+.c-titel__blogdetail {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
+}
+
+.c-titel__blogdetail--h1 {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .c-titel__blogdetail--h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .c-titel__blogdetail--h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .c-titel__blogdetail--h1 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .c-titel__blogdetail--h1 {
+    max-width: 350px;
+  }
+}
+
+.c-titel__blogdetail--p {
+  font: 20px "raleway", sans-serif;
+  color: #707070;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 1630px) {
+  .c-titel__blogdetail--p {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .c-titel__blogdetail--p {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .c-titel__blogdetail--p {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 936px) {
+  .c-titel__blogdetail--p {
+    margin-left: 50px;
+  }
+}
+
+.c-blogdetail {
+  background-color: rgba(112, 94, 22, 0.1) !important;
+  margin-bottom: 100px;
+}
+
+.c-blogdetail__div1 {
+  max-width: 1364px;
+  font: 20px "raleway", sans-serif;
+  padding: 20px;
+}
+
+.c-blogdetail__div2 {
+  max-width: 1364px;
+  font: 20px "raleway", sans-serif;
+  padding: 20px;
+}
+
+.c-blogdetail__div2--h2 {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+}
+
+.c-blogdetail__div3 {
+  max-width: 1364px;
+  font: 20px "raleway", sans-serif;
+  padding: 20px;
+}
+
+.circle-d {
+  position: relative;
+  border: 1px solid #d2b02a;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 25px;
+  background-color: #d2b02a;
+  z-index: 2;
+}
+
+.circle-d:first-child {
+  margin-top: 0;
+}
+
+.circle-d:before {
+  position: absolute;
+  border: 1px solid #d2b02a;
+  width: 0;
+  height: 315px;
+  display: block;
+  content: "";
+  left: 50%;
+  z-index: -1;
+  top: -170px;
+  margin-left: -1px;
+}
+
+.circle-d:first-child:before {
+  display: none;
+}
 /*# sourceMappingURL=screen.css.map */
