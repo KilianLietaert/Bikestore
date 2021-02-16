@@ -1,0 +1,84 @@
+.c-bannerwebshopfietsen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/img/monaco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    color: white;
+    //margin-bottom: 112px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    //padding-left: 40px;
+    //padding-right: 40px;
+    z-index: 1;
+    &-content {
+      text-align: center;
+      min-height: 805px !important;
+      align-content: center;
+    }
+    &__hoofd--h1 {
+      font: $font-titel;
+      color: white;
+      font-weight: bold;
+      @media only screen and (max-width: 990px) {
+        font-size: 30px;
+      }
+    }
+  
+    &__h1 {
+      font: $font-h1;
+      color: white;
+  
+      @media only screen and (max-width: 990px) {
+        font-size: 30px;
+      }
+  
+      &--onder {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        font: $font-h4; 
+      }
+    }
+    &__deel1 {
+      margin-top: -20px;
+      margin-bottom: 80px;
+    }
+    &__deel2 {
+      margin-top: 80px !important;
+      margin-bottom: -100px !important;
+    }
+  }
+
+  .c-webshopfietsen-card{
+      background-color: white;
+      height: 445px;
+      width: 377px;
+      -webkit-box-shadow: -2px 3px 6px 0px rgba(0,0,0,0.65); 
+      box-shadow: -2px 3px 6px 0px rgba(0,0,0,0.65);
+      &-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 64px;
+      }
+      &-modelname{
+        text-align: center;
+      }
+      &-price{
+        text-align: center;
+      }
+      &__button{
+        font: $font-button-small;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 32px;
+        padding-bottom: 10px;
+      }
+
+  }

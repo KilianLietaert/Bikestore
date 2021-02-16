@@ -51,7 +51,7 @@
     }
 
     &__text {
-        font: $font-text2;
+        font: $font-text;
         color: $color-nav-item-hover;
 
         &--color {
@@ -147,4 +147,10 @@
             }
         }
     }
+}
+
+.c-webshopfietsen-resultaten{
+    font: $font-text-footer;
+    font-weight: bold;
+    margin-top: 40px;
 }

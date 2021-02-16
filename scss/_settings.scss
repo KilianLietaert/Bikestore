@@ -34,6 +34,8 @@ $font-titel: 40px "Oxygen",
 sans-serif;
 $font-button: 26px "oxygen",
 sans-serif;
+$font-button-small: 16px "oxygen",
+sans-serif;
 $font-usp: 24px "oxygen",
 sans-serif;
 
@@ -62,19 +64,13 @@ h1 {
 h2 {
     font-size: 35px;
     font-family: 'Oxygen', sans-serif;
-
+    color: $color-title-h2;
 }
 
 h3 {
     font-size: 30px;
     font-family: 'Oxygen', sans-serif;
 }
-
-$font-text: 26px 'Raleway',
-sans-serif;
-
-$font-text2: 24px'Raleway',
-sans-serif;
 
 $font-text3: 20px 'raleway',
 sans-serif;
