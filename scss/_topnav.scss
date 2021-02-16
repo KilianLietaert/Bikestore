@@ -190,3 +190,11 @@ body {
     text-decoration: none;
     color: $color-title-h3;
 }
+
+.c-topnavigation>li>a:hover {
+    color: $color-gold;
+}
+
+.c-topnavigation>li>a:active {
+    color: $color-title-h1;
+}

@@ -12504,12 +12504,20 @@ body {
   color: #000000;
 }
 
+.c-topnavigation > li > a:hover {
+  color: #d2b02a;
+}
+
+.c-topnavigation > li > a:active {
+  color: #705e16;
+}
+
 .nav-item {
   margin-right: 31px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: white;
+  color: #ffffff;
   font-family: Oxygen;
   font-size: 20px !important;
   font-weight: bold;
@@ -12519,7 +12527,7 @@ body {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #030303;
+  color: #ffffff;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -13006,6 +13014,14 @@ ul .c-usp__tekst--extra {
   padding: 0;
 }
 
+.c-container__padding {
+  padding-top: 80px;
+}
+
+.c-textcenter {
+  text-align: center;
+}
+
 .c-banner__fiets {
   background-image: url("../fotos/world-canyon-electric-city-bikes-02.jpg");
   background-position: center;
@@ -13061,15 +13077,44 @@ ul .c-usp__tekst--extra {
 
 .c-intro__h {
   color: #705e16;
+  margin-bottom: 23px;
 }
 
 .c-intro__text {
   font: 24px "Raleway", sans-serif;
   color: #2d2201;
+  margin-bottom: 28px;
 }
 
 .c-intro__text--color {
   color: #d2b02a;
+}
+
+.c-intro__text--extra {
+  margin-bottom: 170px;
+  font: 24px "Raleway", sans-serif;
+}
+
+.c-intro__text--tijd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 24px "Raleway", sans-serif;
+}
+
+.c-intro__text--responsief {
+  margin-bottom: 49px;
+}
+
+.c-intro__text--responsief2 {
+  margin-bottom: 62px;
+}
+
+.c-intro__text--small {
+  font: 20px "raleway", "sans-serif";
 }
 
 /*text over achtergrondafbeelding*/
@@ -13090,7 +13135,35 @@ ul .c-usp__tekst--extra {
           justify-content: center;
 }
 
-/*form + icoontjes*/
+/*uur teller*/
+.c-uur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 145px;
+}
+
+.c-uur > div {
+  background-color: #2d2201;
+  height: 188px;
+  width: 138px;
+  margin-left: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.c-uur > div > p {
+  font-size: 140px;
+  font-family: 'Oxygen';
+}
+
+/*text, line, icoontjes*/
 .c-more {
   background-color: #ffffff;
   min-height: 1529px;
@@ -13098,11 +13171,49 @@ ul .c-usp__tekst--extra {
 
 .c-more__blok1 {
   margin-top: 100px;
+  max-width: 706px;
+}
+
+.c-more__blok2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-icon > li {
+  margin-right: 65px;
+}
+
+.c-icons {
+  margin-bottom: 40px;
+}
+
+.c-line {
+  height: 1px;
+  max-width: 894px;
+  background-color: #707070;
 }
 
 /*form*/
+.c-margin {
+  margin-bottom: 34px;
+}
+
 .c-contact {
-  margin: 18rem 0;
+  margin-top: 116px;
+  margin-bottom: 80px;
   position: relative;
 }
 
