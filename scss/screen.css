@@ -12082,12 +12082,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
-
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-
   padding-top: 4.18rem;
   margin-bottom: 4.85rem;
   margin-right: 0;
@@ -12405,10 +12399,9 @@ body {
   height: 100px;
 }
 
-
 .c-banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/../img/man-biker-sitting-electric-bike.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/man-biker-sitting-electric-bike.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/man-biker-sitting-electric-bike.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/man-biker-sitting-electric-bike.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12431,39 +12424,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
-}
-
-/*achtergrond-afbeelding*/
-.c-container {
-  padding: 0;
-}
-
-.c-banner__fiets {
-  background-image: url("../fotos/world-canyon-electric-city-bikes-02.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 1091px;
-  width: 100%;
-  position: fixed;
-
-  color: white;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-  z-index: -1;
 }
 
 .c-banner-content {
@@ -12564,7 +12524,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitleg__p {
-  font: 24px "raleway", "sans-serif";
+  font: 26px "Raleway", sans-serif;
   color: #000000;
 }
 
@@ -12593,13 +12553,13 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitproberen__p {
-  font: 24px "raleway", "sans-serif";
+  font: 26px "Raleway", sans-serif;
   color: white;
 }
 
 .c-uitproberen__strong {
   color: #d2b02a;
-  font: 24px "raleway", "sans-serif";
+  font: 26px "Raleway", sans-serif;
 }
 
 .o-button {
@@ -12634,7 +12594,7 @@ ul .c-usp__tekst--extra {
 .c-repair__p {
   margin-left: -140px;
   margin-right: 100px;
-  font: 24px "raleway", "sans-serif";
+  font: 26px "Raleway", sans-serif;
   color: #2d2201;
 }
 
@@ -12663,7 +12623,7 @@ ul .c-usp__tekst--extra {
 
 .c-brochure__p {
   color: #000000;
-  font: 24px "raleway", "sans-serif";
+  font: 26px "Raleway", sans-serif;
   text-align: center;
   max-width: 812px;
   margin: auto;
@@ -12906,7 +12866,7 @@ ul .c-usp__tekst--extra {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 1091px;
-  width: 100%;
+  overflow-x: hidden;
   position: fixed;
   color: white;
   text-align: center;
@@ -12949,232 +12909,6 @@ ul .c-usp__tekst--extra {
           align-items: center;
 }
 
-
-.c-about {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-}
-
-.c-about__info {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  margin-bottom: 3.5rem;
-  margin-top: 4.45rem;
-}
-
-.c-about__info-title {
-  font: 35px "Oxygen", "sans-serif";
-  font-weight: bold;
-  color: #705e16;
-  margin-bottom: 20px;
-}
-
-.c-about__info-text {
-  font: 24px "raleway", "sans-serif";
-}
-
-.c-about__info-name {
-  font: 20px "raleway", "sans-serif";
-  font-style: italic;
-}
-
-.c-about__info-foto {
-  width: 39.02vw;
-  height: 25.98vw;
-}
-
-@media (max-width: 1199.98px) {
-  .c-about__info-foto {
-    width: 64vw;
-    height: 42.7vw;
-    margin-top: 5vw;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .c-about__info-foto {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .c-about__info-inhoud {
-    max-width: 70%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 12px;
-  }
-}
-
-.c-about__kopen {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  margin-bottom: 89px;
-}
-
-.c-about__kopen-title {
-  font: 30px "oxygen", "sans-serif";
-  color: #705e16;
-  margin-bottom: 4.55rem;
-}
-
-@media (max-width: 1199.98px) {
-  .c-about__kopen-title {
-    width: 70%;
-    margin-bottom: 2vw;
-  }
-}
-
-.c-about__kopen-internet {
-  margin: 0;
-  margin-bottom: 40px;
-}
-
-.c-about__kopen-internet-title {
-  font: 24px "Raleway", "sans-serif";
-  font-weight: bold;
-  margin-bottom: 35px;
-}
-
-.c-about__kopen-internet-text {
-  font: 24px "raleway", "sans-serif";
-}
-
-.c-about__kopen-internet-foto-laptop {
-  width: 24.07vw;
-}
-
-@media (max-width: 1199.98px) {
-  .c-about__kopen-internet-foto-laptop {
-    width: 55vw;
-    margin-bottom: 3vw;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .c-about__kopen-internet-info {
-    max-width: 70%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.c-about__kopen-winkel {
-  margin: 0;
-}
-
-.c-about__kopen-winkel-title {
-  font: 24px "Raleway", "sans-serif";
-  font-weight: bold;
-  margin-bottom: 35px;
-}
-
-.c-about__kopen-winkel-text {
-  font: 24px "raleway", "sans-serif";
-}
-
-.c-about__kopen-winkel-foto-verkoper {
-  width: 27.91vw;
-}
-
-@media (max-width: 1199.98px) {
-  .c-about__kopen-winkel-foto-verkoper {
-    width: 55vw;
-    margin-top: 5vw;
-    margin-bottom: 3vw;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .c-about__kopen-winkel-info {
-    max-width: 70%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.c-about__subtitle {
-  margin-top: 85px;
-  font: 26px "Raleway", "sans-serif";
-  color: #705e16;
-  font-style: italic;
-}
-
-.c-about__comfort {
-  text-align: center;
-  margin-bottom: 56px;
-}
-
-.c-about__comfort-title {
-  font: 30px "oxygen", "sans-serif";
-  color: #705e16;
-  margin-bottom: 20px;
-}
-
-.c-about__comfort-text {
-  font: 24px "raleway", "sans-serif";
-}
-
-.c-about__weesgerust {
-  text-align: center;
-}
-
-.c-about__weesgerust-title {
-  font: 30px "oxygen", "sans-serif";
-  color: #705e16;
-  margin-bottom: 20px;
-}
-
-.c-about__weesgerust-text {
-  font: 24px "raleway", "sans-serif";
-  margin-bottom: 35px;
-}
-
-.c-about__weesgerust-text2 {
-  font: 24px "raleway", "sans-serif";
-  margin-bottom: 35px;
-}
-
-.c-about__proefrit {
-  margin-top: 73px;
-  margin-bottom: 73px;
-}
-
-.c-about__proefrit-title {
-  font: 35px "Oxygen", "sans-serif";
-  color: #705e16;
-  margin: 0;
-  margin-bottom: 43px;
-}
-
-.c-about__proefrit-link {
-  margin: 0;
-}
-
-.c-about__proefrit-link:hover {
-  color: #2d2201;
-  text-decoration: none;
-}
-
-.c-about__proefrit-button:hover {
-  color: white;
-}
-
-.c-about__foto {
-  width: 56.7vw;
-}
-
 .c-intro__foto--g {
   min-height: 569px;
 }
@@ -13210,11 +12944,84 @@ ul .c-usp__tekst--extra {
           justify-content: center;
 }
 
-/*form + more info*/
+/*form + icoontjes*/
 .c-more {
   background-color: #ffffff;
   min-height: 1529px;
 }
 
+.c-more__blok1 {
+  margin-top: 100px;
+}
 
+/*form*/
+.c-contact {
+  margin: 18rem 0;
+  position: relative;
+}
+
+.c-contact .o-label {
+  margin: 0 auto;
+}
+
+.c-contact__form {
+  margin: 2rem auto;
+}
+
+.c-contact__form::before {
+  content: "";
+  width: 29.2rem;
+  height: 34.6rem;
+  position: absolute;
+  bottom: 7rem;
+  left: -55rem;
+  z-index: -1;
+}
+
+.c-contact .c-form__group {
+  position: relative;
+}
+
+.c-contact .c-form__label {
+  position: absolute;
+  top: 3.5rem;
+  left: 2.5rem;
+  cursor: text;
+  pointer-events: none;
+}
+
+.c-contact .c-form__label--message {
+  top: 2.8rem;
+}
+
+.c-contact .c-form__input {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.c-contact .c-form__input ~ .c-form__label {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.c-contact .c-form__input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.c-contact .c-form__input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.c-contact .c-form__input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.c-contact .c-form__input::placeholder {
+  opacity: 0;
+}
+
+.c-contact .c-form__input:not(:placeholder-shown) ~ .c-form__label {
+  font-size: 1.2rem;
+  top: 1rem;
+}
 /*# sourceMappingURL=screen.css.map */
