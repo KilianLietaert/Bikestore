@@ -51,6 +51,15 @@
 
         &--g {
             min-height: 569px;
+
+            @include media-breakpoint-down(sm) {
+                min-height: 0;
+                width: 80%;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 100px;
         }
     }
 
@@ -71,12 +80,20 @@
         &--extra {
             margin-bottom: 170px;
             font: $font-text2;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 100px;
+            }
         }
 
         &--tijd {
             display: flex;
             align-items: center;
             font: $font-text2;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
         }
 
         &--responsief {
@@ -122,10 +139,37 @@
     color: $color-nav-item;
 }
 
-
 .c-uur>div>p {
     font-size: 140px;
     font-family: 'Oxygen';
+}
+
+@media only screen and (max-width: 1500px) {
+    .c-uur>div {
+        height: 150px;
+        width: 100px;
+    }
+
+    .c-uur>div>p {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .c-uur {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .c-uur>div {
+        height: 100px;
+        width: 80px;
+    }
+
+    .c-uur>div>p {
+        font-size: 60px;
+    }
 }
 
 /*text, line, icoontjes*/
@@ -136,10 +180,24 @@
     &__blok1 {
         margin-top: 100px;
         max-width: 706px;
+
+        @include media-breakpoint-down(lg) {
+            margin: auto;
+            margin-top: 100px;
+        }
     }
 
     &__blok2 {
         display: flex;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -168,72 +226,73 @@
 /*form*/
 
 .c-margin {
+    margin: auto;
     margin-bottom: 34px;
 }
 
-.c-contact {
-    margin-top: 116px;
-    margin-bottom: 80px;
-    position: relative;
+// .c-contact {
+//     margin-top: 116px;
+//     margin-bottom: 80px;
+//     position: relative;
 
-    .o-label {
-        margin: 0 auto;
+//     .o-label {
+//         margin: 0 auto;
 
-    }
+//     }
 
-    &__form {
-        margin: 2rem auto;
+// &__form {
+//     margin: 2rem auto;
 
-        &::before {
-            content: "";
-            //background-image: $blokjes;
-            width: 29.2rem;
-            height: 34.6rem;
-            position: absolute;
-            bottom: 7rem;
-            left: -55rem;
-            z-index: -1;
-        }
-    }
+//     &::before {
+//         content: "";
+//         //background-image: $blokjes;
+//         width: 29.2rem;
+//         height: 34.6rem;
+//         position: absolute;
+//         bottom: 7rem;
+//         left: -55rem;
+//         z-index: -1;
+//     }
+// }
 
-    .c-form {
+// .c-form {
 
-        &__group {
-            position: relative;
-        }
+//     &__group {
+//         position: relative;
+//     }
 
-        &__label {
-            position: absolute;
-            top: 3.5rem;
-            left: 2.5rem;
-            cursor: text;
-            pointer-events: none;
+//     &__label {
+//         position: absolute;
+//         top: 3.5rem;
+//         left: 2.5rem;
+//         cursor: text;
+//         pointer-events: none;
 
-            &--message {
-                top: 2.8rem;
-            }
-        }
+//         &--message {
+//             top: 2.8rem;
+//         }
+//     }
 
 
-        &__input {
-            transition: all .2s;
+//     &__input {
+//         transition: all .2s;
 
-            &~.c-form__label {
-                transition: all .2s;
-            }
+//         &~.c-form__label {
+//             transition: all .2s;
+//         }
 
-            &::placeholder {
-                opacity: 0;
-            }
+//         &::placeholder {
+//             opacity: 0;
+//         }
 
-            &:not(:placeholder-shown) {
+//         &:not(:placeholder-shown) {
 
-                // padding-top: 1.25rem;
-                &~.c-form__label {
-                    font-size: 1.2rem;
-                    top: 1rem;
-                }
-            }
-        }
-    }
-}
+//             // padding-top: 1.25rem;
+//             &~.c-form__label {
+//                 font-size: 1.2rem;
+//                 top: 1rem;
+//             }
+//         }
+//     }
+// }
+//}

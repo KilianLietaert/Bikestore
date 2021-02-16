@@ -13075,6 +13075,19 @@ ul .c-usp__tekst--extra {
   min-height: 569px;
 }
 
+@media (max-width: 767.98px) {
+  .c-intro__foto--g {
+    min-height: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .c-intro__foto {
+    margin-bottom: 100px;
+  }
+}
+
 .c-intro__h {
   color: #705e16;
   margin-bottom: 23px;
@@ -13095,6 +13108,12 @@ ul .c-usp__tekst--extra {
   font: 24px "Raleway", sans-serif;
 }
 
+@media (max-width: 767.98px) {
+  .c-intro__text--extra {
+    margin-bottom: 100px;
+  }
+}
+
 .c-intro__text--tijd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13103,6 +13122,12 @@ ul .c-usp__tekst--extra {
       -ms-flex-align: center;
           align-items: center;
   font: 24px "Raleway", sans-serif;
+}
+
+@media (max-width: 991.98px) {
+  .c-intro__text--tijd {
+    margin-bottom: 20px;
+  }
 }
 
 .c-intro__text--responsief {
@@ -13163,6 +13188,32 @@ ul .c-usp__tekst--extra {
   font-family: 'Oxygen';
 }
 
+@media only screen and (max-width: 1500px) {
+  .c-uur > div {
+    height: 150px;
+    width: 100px;
+  }
+  .c-uur > div > p {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .c-uur {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .c-uur > div {
+    height: 100px;
+    width: 80px;
+  }
+  .c-uur > div > p {
+    font-size: 60px;
+  }
+}
+
 /*text, line, icoontjes*/
 .c-more {
   background-color: #ffffff;
@@ -13174,10 +13225,33 @@ ul .c-usp__tekst--extra {
   max-width: 706px;
 }
 
+@media (max-width: 1199.98px) {
+  .c-more__blok1 {
+    margin: auto;
+    margin-top: 100px;
+  }
+}
+
 .c-more__blok2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1199.98px) {
+  .c-more__blok2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-more__blok2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .c-icon {
@@ -13208,77 +13282,7 @@ ul .c-usp__tekst--extra {
 
 /*form*/
 .c-margin {
+  margin: auto;
   margin-bottom: 34px;
-}
-
-.c-contact {
-  margin-top: 116px;
-  margin-bottom: 80px;
-  position: relative;
-}
-
-.c-contact .o-label {
-  margin: 0 auto;
-}
-
-.c-contact__form {
-  margin: 2rem auto;
-}
-
-.c-contact__form::before {
-  content: "";
-  width: 29.2rem;
-  height: 34.6rem;
-  position: absolute;
-  bottom: 7rem;
-  left: -55rem;
-  z-index: -1;
-}
-
-.c-contact .c-form__group {
-  position: relative;
-}
-
-.c-contact .c-form__label {
-  position: absolute;
-  top: 3.5rem;
-  left: 2.5rem;
-  cursor: text;
-  pointer-events: none;
-}
-
-.c-contact .c-form__label--message {
-  top: 2.8rem;
-}
-
-.c-contact .c-form__input {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.c-contact .c-form__input ~ .c-form__label {
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.c-contact .c-form__input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.c-contact .c-form__input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.c-contact .c-form__input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.c-contact .c-form__input::placeholder {
-  opacity: 0;
-}
-
-.c-contact .c-form__input:not(:placeholder-shown) ~ .c-form__label {
-  font-size: 1.2rem;
-  top: 1rem;
 }
 /*# sourceMappingURL=screen.css.map */
