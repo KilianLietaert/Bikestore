@@ -12310,54 +12310,200 @@ body {
   min-height: 110px;
 }
 
-.zoekbalk {
+.c-zoek__balk {
   margin-top: 40px;
-  margin-left: 10px;
+  margin-left: 125px;
   max-width: 375px;
   max-height: 25px;
 }
 
-.topnav {
+@media (max-width: 991.98px) {
+  .c-zoek {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .c-zoek {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .c-zoek__balk {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    max-height: 65px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-toplist {
+    margin-bottom: 20px;
+  }
+}
+
+.c-topnav {
   overflow: hidden;
   border-bottom: 1px solid black;
 }
 
-.topnav .search-container {
+.c-topnav__input {
+  max-width: 340px;
+}
+
+.c-topnav__button {
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .c-topnav__input {
+    height: 20px;
+  }
+  .c-topnav__button {
+    height: 20px;
+  }
+  .c-topnav__button > img {
+    height: 20px;
+  }
+}
+
+.c-topnav .search-container {
   float: right;
   width: 100%;
 }
 
-.topnav input[type=text] {
+.c-topnav input[type=text] {
   font-size: 1.5rem;
   font-family: raleway;
   border: none;
   background-color: #EFEFEF;
 }
 
-.topnav .search-container button {
+.c-topnav .search-container button {
   float: left;
   background: #EFEFEF;
   border: none;
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a,
-  .topnav input[type=text],
-  .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
+/*@media screen and (max-width: 600px) {
+    .c-topnav .search-container {
+        float: none;
+    }
+
+    .c-topnav a,
+    .c-topnav input[type=text],
+    .c-topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}*/
+/*logo*/
+.c-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .c-logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
-/*logo*/
+/*rechterkant linken + winkelmandje*/
+.c-topnavigation {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+  z-index: 1;
+  font-size: 24px;
+  font-family: 'Oxygen';
+}
+
+.c-topnavigation__line {
+  border-right: 1px solid #000000;
+}
+
+@media only screen and (max-width: 1600px) {
+  .c-topnavigation {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1264px) {
+  .c-topnavigation {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .c-topnavigation {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .c-topnavigation {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 452px) {
+  .c-topnavigation {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .c-topnavigation {
+    font-size: 11px;
+  }
+}
+
+.c-topnavigation > li {
+  margin-right: 8px;
+  padding-right: 8px;
+}
+
+.c-topnavigation > li > a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .nav-item {
   margin-right: 31px;
 }
@@ -12396,7 +12542,7 @@ body {
 .navbar-expand-lg,
 .navbar-light,
 .bg-light {
-  height: 100px;
+  min-height: 100px;
 }
 
 .c-banner {
@@ -12866,7 +13012,7 @@ ul .c-usp__tekst--extra {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 1091px;
-  overflow-x: hidden;
+  width: 100%;
   position: fixed;
   color: white;
   text-align: center;
