@@ -74,11 +74,11 @@
       }
       &__button{
         font: $font-button-small;
+        font-weight: bold;
         display: block;
         margin-left: auto;
         margin-right: auto;
         height: 32px;
-        padding-bottom: 10px;
       }
 
   }

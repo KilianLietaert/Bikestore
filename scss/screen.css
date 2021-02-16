@@ -13686,10 +13686,10 @@ ul .c-usp__tekst--extra {
 
 .c-webshopfietsen-card__button {
   font: 16px "oxygen", sans-serif;
+  font-weight: bold;
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 32px;
-  padding-bottom: 10px;
 }
 /*# sourceMappingURL=screen.css.map */
