@@ -6,8 +6,8 @@
     font: $font-h1;
     font-weight: bold;
     color: $color-title-h1;
-    margin-left: 8.2vw;
-    margin-bottom: 2.5vw;
+    margin-left: 7.3vw;
+    margin-bottom: 49px;
   }
 
   &__advies {
@@ -44,7 +44,7 @@
 
     &-levering {
       width: 420px;
-      margin-right: 170px;
+      margin-right: 8.9vw;
       padding-top: 37.5px;
 
       &-title {
@@ -67,7 +67,7 @@
     }
 
     &-onderhoud {
-      margin-right: 170px;
+      margin-right: 8.9vw;
       padding-top: 37.5px;
       padding-bottom: 37.5px;
 
@@ -125,7 +125,7 @@
       font: $font-h2;
       color: $color-title-h2;
       font-weight: bold;
-      margin-left: 8.2vw;
+      margin-left: 7.3vw;
       margin-top: 80px;
     }
 
@@ -139,7 +139,7 @@
       &-text {
         font: $font-text;
         margin-bottom: 30px;
-        width: 674px;
+        width: 36vw;
       }
       &-foto {
         width: 35.1vw;
@@ -169,6 +169,10 @@
     margin-top: 80px;
     margin-bottom: 110px;
     width: 100%;    
+
+    &-image{
+      width: 27.93vw;
+    }
 
     &-title {
       font: $font-h1;

@@ -12864,8 +12864,8 @@ ul .c-usp__tekst--extra {
   font: 35px "Oxygen", sans-serif;
   font-weight: bold;
   color: #705e16;
-  margin-left: 8.2vw;
-  margin-bottom: 2.60vw;
+  margin-left: 7.3vw;
+  margin-bottom: 49px;
 }
 
 .c-service__advies {
@@ -12904,7 +12904,7 @@ ul .c-usp__tekst--extra {
 
 .c-service__services-levering {
   width: 420px;
-  margin-right: 170px;
+  margin-right: 8.9vw;
   padding-top: 37.5px;
 }
 
@@ -12927,7 +12927,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-service__services-onderhoud {
-  margin-right: 170px;
+  margin-right: 8.9vw;
   padding-top: 37.5px;
   padding-bottom: 37.5px;
 }
@@ -12985,7 +12985,7 @@ ul .c-usp__tekst--extra {
   font: 30px "oxygen", sans-serif;
   color: #705e16;
   font-weight: bold;
-  margin-left: 8.2vw;
+  margin-left: 7.3vw;
   margin-top: 80px;
 }
 
@@ -12998,7 +12998,7 @@ ul .c-usp__tekst--extra {
 .c-service__verhelping-pech-text {
   font: 24px "raleway", sans-serif;
   margin-bottom: 30px;
-  width: 674px;
+  width: 36vw;
 }
 
 .c-service__verhelping-pech-foto {
@@ -13025,6 +13025,10 @@ ul .c-usp__tekst--extra {
   margin-top: 80px;
   margin-bottom: 110px;
   width: 100%;
+}
+
+.c-service__verzekering-image {
+  width: 27.93vw;
 }
 
 .c-service__verzekering-title {
