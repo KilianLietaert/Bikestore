@@ -13581,4 +13581,120 @@ ul .c-usp__tekst--extra {
   font-size: 1.2rem;
   top: 1rem;
 }
+
+.c-blog__container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.c-blog__image {
+  max-height: 400px;
+}
+
+.c-blog__titel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.c-titel__blog {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.circle {
+  position: relative;
+  border: 1px solid #d2b02a;
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 25px;
+  background-color: #d2b02a;
+  z-index: 2;
+}
+
+.circle:first-child {
+  margin-top: 0;
+}
+
+.circle:before {
+  position: absolute;
+  border: 1px solid #d2b02a;
+  width: 0;
+  height: 133px;
+  display: block;
+  content: "";
+  left: 50%;
+  z-index: 1;
+  top: -85px;
+  margin-left: -1px;
+}
+
+.circle:first-child:before {
+  display: none;
+}
+
+.c-blogoverzicht {
+  padding-top: 150px;
+}
+
+.c-blogoverzicht__bericht {
+  margin-bottom: 120px;
+  margin-right: 100px;
+}
+
+.c-blogoverzicht__berichtinfo {
+  max-width: 300px;
+  font-size: 20px;
+  font-family: "raleway", "sans-serif";
+  font-weight: bold;
+  color: #705e16;
+}
+
+@media only screen and (max-width: 440px) {
+  .c-blogoverzicht__berichtinfo {
+    margin-top: -145px;
+    margin-left: 10px;
+  }
+}
+
+.c-blogoverzicht__berichtinfo--p {
+  margin-top: -50px;
+  margin-bottom: 70px;
+  margin-left: 10px;
+}
+
+.c-blogoverzicht__berichtinfo--small {
+  margin-left: 10px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.c-blogoverzicht__button {
+  background-color: #705e16;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  margin-top: 30px;
+}
+
+.c-blogoverzicht__button2 {
+  width: 312px;
+  text-align: left;
+  color: #2d2201;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.fa-chevron-right {
+  padding-left: 85px;
+}
 /*# sourceMappingURL=screen.css.map */

@@ -1,0 +1,128 @@
+// hoofdfoto
+
+.c-blog {
+  &__container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  &__image {
+    //width: 1640px;
+    max-height: 400px;
+  }
+
+  &__titel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//-------------------------------------------------------------------------------------------------------
+
+//titel voor overzicht
+
+.c-titel__blog {
+  text-align: center;
+  margin-top: 50px;
+}
+
+//----------------------------------------
+// lijn met bollen
+
+.circle {
+  position: relative;
+  border: 1px solid $color-gold;
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 25px;
+  background-color: $color-gold;
+  z-index: 2;
+}
+.circle:first-child {
+  margin-top: 0;
+}
+.circle:before {
+  position: absolute;
+  border: 1px solid #d2b02a;
+  width: 0;
+  height: 133px;
+  display: block;
+  content: "";
+  left: 50%;
+  z-index: 1;
+  top: -85px;
+  margin-left: -1px;
+}
+.circle:first-child:before {
+  display: none;
+}
+
+// tekst van blog
+
+.c-blogoverzicht {
+  //   background-color: rgba(112, 94, 22, 10%) !important;
+  padding-top: 150px;
+  //   &__lijn {
+  //   }
+
+  &__bericht {
+    margin-bottom: 120px;
+    margin-right: 100px;
+    @media only screen and (max-width: 440px) {
+    }
+  }
+
+  &__berichtinfo {
+    max-width: 300px;
+    font-size: 20px;
+    font-family: "raleway", "sans-serif";
+    font-weight: bold;
+    color: #705e16;
+    @media only screen and (max-width: 440px) {
+      margin-top: -145px;
+      margin-left: 10px;
+    }
+
+    &--p {
+      margin-top: -50px;
+      margin-bottom: 70px;
+      margin-left: 10px;
+    }
+
+    &--small {
+      margin-left: 10px;
+      color: #707070;
+      font-weight: bold;
+    }
+  }
+
+  &__button {
+    background-color: #705e16;
+    width: fit-content;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    margin-top: 30px;
+  }
+
+  &__button2 {
+    width: 312px;
+    text-align: left;
+    color: #2d2201;
+    font-weight: bold;
+    font-size: 26px;
+    // @media only screen and (max-width: 1614px) {
+
+    // }
+  }
+}
+
+.fa-chevron-right {
+  padding-left: 85px;
+}

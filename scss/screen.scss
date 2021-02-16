@@ -5,19 +5,15 @@
 
 @import "elements";
 
+@import "components.footer";
 
-
-@import 'components.footer';
-
-@import 'topnav';
-@import 'nav';
-
-
+@import "topnav";
+@import "nav";
 
 @import "homepagina";
 
+@import "components.about";
 
-@import 'components.about';
+@import "fietsaanvraag";
 
-@import 'fietsaanvraag';
-
+@import "blogoverzicht";
