@@ -12192,6 +12192,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media only screen and (max-width: 767.98px) and (max-width: 576px) {
+  .c-footer__overons {
+    max-width: 70%;
+  }
+}
+
 .c-footer__row2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12216,6 +12222,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.c-footer__icon {
+  padding: 0;
+}
+
 @media (max-width: 767.98px) {
   .c-footer__icon {
     display: -webkit-box;
@@ -12226,7 +12236,13 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: auto;
-    padding-bottom: auto;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-footer__icon {
+    max-width: 30%;
   }
 }
 
@@ -12294,9 +12310,10 @@ a.c-footer__informatie-link:hover {
   .col-2 {
     max-width: 70%;
   }
-  .col-3 {
+  .col-lg-3 {
     max-width: 60%;
     width: auto;
+    padding: 0;
   }
 }
 
@@ -12868,12 +12885,39 @@ ul .c-usp__tekst--extra {
   margin-bottom: 49px;
 }
 
+@media only screen and (max-width: 670px) {
+  .c-service__title {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__title {
+    margin-left: 10.3vw;
+    width: 80%;
+  }
+}
+
 .c-service__advies {
   width: 100%;
 }
 
 .c-service__advies-foto {
   width: 35.1vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-service__advies-foto {
+    width: 78vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-service__advies-foto {
+    width: 78vw;
+    margin-bottom: 1vw;
+  }
 }
 
 .c-service__advies-title {
@@ -12893,19 +12937,45 @@ ul .c-usp__tekst--extra {
   font-weight: bold;
 }
 
-.c-service__services {
+@media only screen and (max-width: 576px) {
+  .c-service__advies-info {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-service__blok {
   background-color: #eddfa9;
+}
+
+.c-service__services {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
   width: 100%;
+  padding-top: 37.5px;
+  padding-bottom: 37.5px;
 }
 
 .c-service__services-levering {
-  width: 420px;
   margin-right: 8.9vw;
-  padding-top: 37.5px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-levering {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-levering {
+    margin-bottom: 15vw;
+  }
 }
 
 .c-service__services-levering-title {
@@ -12916,9 +12986,32 @@ ul .c-usp__tekst--extra {
   font-weight: bold;
 }
 
+@media (max-width: 991.98px) {
+  .c-service__services-levering-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .c-service__services-levering-image {
   width: 13.6vw;
   height: 7.96vw;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-levering-image {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-levering-image {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 
 .c-service__services-levering-text {
@@ -12928,8 +13021,20 @@ ul .c-usp__tekst--extra {
 
 .c-service__services-onderhoud {
   margin-right: 8.9vw;
-  padding-top: 37.5px;
-  padding-bottom: 37.5px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-onderhoud {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-onderhoud {
+    margin-bottom: 15vw;
+  }
 }
 
 .c-service__services-onderhoud-title {
@@ -12940,21 +13045,51 @@ ul .c-usp__tekst--extra {
   font-weight: bold;
 }
 
+@media (max-width: 991.98px) {
+  .c-service__services-onderhoud-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .c-service__services-onderhoud-image {
   width: 8.33vw;
   height: 7.96vw;
-  margin-top: 38px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-onderhoud-image {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-onderhoud-image {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 
 .c-service__services-onderhoud-text {
   font: 24px "raleway", sans-serif;
   text-align: center;
-  margin-top: 40px;
 }
 
-.c-service__services-herstelling {
-  width: 420px;
-  padding-top: 37.5px;
+@media (max-width: 991.98px) {
+  .c-service__services-herstelling {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-herstelling {
+    margin-bottom: 15vw;
+  }
 }
 
 .c-service__services-herstelling-title {
@@ -12966,9 +13101,34 @@ ul .c-usp__tekst--extra {
   font-weight: bold;
 }
 
+@media (max-width: 991.98px) {
+  .c-service__services-herstelling-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .c-service__services-herstelling-image {
   width: 7.98vw;
   height: 7.96vw;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-herstelling-image {
+    width: 15vw;
+    height: 15vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-herstelling-image {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 
 .c-service__services-herstelling-text {
@@ -12989,6 +13149,37 @@ ul .c-usp__tekst--extra {
   margin-top: 80px;
 }
 
+@media (min-width: 768px) {
+  .c-service__verhelping-title {
+    margin-left: 6.8vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verhelping-title {
+    margin-left: 6.5vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-title {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-pech {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .c-service__verhelping-pech-title {
   font: 24px "raleway", sans-serif;
   font-weight: bold;
@@ -12998,11 +13189,45 @@ ul .c-usp__tekst--extra {
 .c-service__verhelping-pech-text {
   font: 24px "raleway", sans-serif;
   margin-bottom: 30px;
-  width: 36vw;
+  width: 35vw;
+}
+
+@media (max-width: 1687.98px) {
+  .c-service__verhelping-pech-text {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verhelping-pech-text {
+    width: auto;
+  }
 }
 
 .c-service__verhelping-pech-foto {
   width: 35.1vw;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verhelping-pech-foto {
+    width: 82vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-pech-foto {
+    margin-bottom: 5vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-garantie {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .c-service__verhelping-garantie-title {
@@ -13027,8 +13252,33 @@ ul .c-usp__tekst--extra {
   width: 100%;
 }
 
+@media only screen and (max-width: 576px) {
+  .c-service__verzekering-logo {
+    width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verzekering-info {
+    width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .c-service__verzekering-image {
   width: 27.93vw;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verzekering-image {
+    width: 40vw;
+    margin-bottom: 5vw;
+  }
 }
 
 .c-service__verzekering-title {

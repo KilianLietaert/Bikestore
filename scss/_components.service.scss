@@ -8,13 +8,32 @@
     color: $color-title-h1;
     margin-left: 7.3vw;
     margin-bottom: 49px;
+
+    @media only screen and (max-width: 670px) {
+      width: 80%
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-left: 10.3vw;
+      width: 80%
+    }
   }
 
   &__advies {
-    width: 100%;    
+    width: 100%;
 
     &-foto {
       width: 35.1vw;
+
+      @include media-breakpoint-down(lg) {
+        width: 78vw;
+        margin-bottom: 1vw;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 78vw;
+        margin-bottom: 1vw;
+      }
     }
 
     &-title {
@@ -33,31 +52,68 @@
       font: $font-text;
       font-weight: bold;
     }
+
+    &-info {
+      @media only screen and (max-width: 576px) {
+        max-width: 78%;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__blok {
+    background-color: #eddfa9;
   }
 
   &__services {
-    background-color: #eddfa9;
     justify-content: center;
     margin: 0;
-    width: 100%;    
-
+    width: 100%;
+    padding-top: 37.5px;
+    padding-bottom: 37.5px;
 
     &-levering {
-      width: 420px;
       margin-right: 8.9vw;
-      padding-top: 37.5px;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5vw;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15vw;
+      }
 
       &-title {
         font: $font-h2;
         color: $color-title-h2;
         text-align: center;
-        height: 76px; 
+        height: 76px;
         font-weight: bold;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          height: auto;
+        }
       }
 
       &-image {
         width: 13.6vw;
         height: 7.96vw;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        @include media-breakpoint-down(md) {
+          width: 20vw;
+          height: 20vw;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: 25vw;
+          height: 25vw;
+        }
+
       }
 
       &-text {
@@ -68,8 +124,16 @@
 
     &-onderhoud {
       margin-right: 8.9vw;
-      padding-top: 37.5px;
-      padding-bottom: 37.5px;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5vw;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15vw;
+      }
 
       &-title {
         font: $font-h2;
@@ -77,24 +141,48 @@
         text-align: center;
         width: 420px;
         font-weight: bold;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          height: auto;
+        }
       }
 
       &-image {
         width: 8.33vw;
         height: 7.96vw;
-        margin-top: 38px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-down(md) {
+          width: 15vw;
+          height: 15vw;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: 25vw;
+          height: 25vw;
+        }
+
       }
 
       &-text {
         font: $font-text;
         text-align: center;
-        margin-top: 40px;
       }
     }
 
     &-herstelling {
-      width: 420px;
-      padding-top: 37.5px;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5vw;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15vw;
+      }
 
       &-title {
         width: 420px;
@@ -103,11 +191,30 @@
         color: $color-title-h2;
         text-align: center;
         font-weight: bold;
+
+        @include media-breakpoint-down(md) {
+          width: 100%;
+          height: auto;
+        }
       }
 
       &-image {
         width: 7.98vw;
         height: 7.96vw;
+        margin-top: -20px;
+        margin-bottom: -20px;
+
+        @include media-breakpoint-down(md) {
+          width: 15vw;
+          height: 15vw;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          width: 25vw;
+          height: 25vw;
+        }
       }
 
       &-text {
@@ -119,17 +226,37 @@
 
   &__verhelping {
     margin-top: 40px;
-    width: 100%;    
+    width: 100%;
 
-    &-title{
+    &-title {
       font: $font-h2;
       color: $color-title-h2;
       font-weight: bold;
       margin-left: 7.3vw;
       margin-top: 80px;
+
+      @include media-breakpoint-up(md) {
+        margin-left: 6.8vw;
+      }
+
+      @include media-breakpoint-down(md) {
+        margin-left: 6.5vw;
+      }
+
+      @media only screen and (max-width: 576px) {
+        max-width: 78%;
+        justify-content: center;
+        margin-left: 8vw;
+    }
     }
 
     &-pech {
+      
+      @media only screen and (max-width: 576px) {
+          max-width: 78%;
+          justify-content: center;
+      }
+
       &-title {
         font: $font-text;
         font-weight: bold;
@@ -139,14 +266,38 @@
       &-text {
         font: $font-text;
         margin-bottom: 30px;
-        width: 36vw;
+        width: 35vw;
+
+        @include media-breakpoint-down(xl) {
+          width: 35vw;
+        }
+        
+        @include media-breakpoint-down(md) {
+          width: auto;
+        }
+
       }
       &-foto {
         width: 35.1vw;
+
+        @include media-breakpoint-down(md) {
+          width: 82vw;
+          margin-bottom: 1vw;
+        }
+
+        @media only screen and (max-width: 576px) {
+          margin-bottom: 5vw;
+      }
       }
     }
 
     &-garantie {
+
+      @media only screen and (max-width: 576px) {
+        max-width: 78%;
+        justify-content: center;
+      }
+
       &-title {
         font: $font-text;
         font-weight: bold;
@@ -168,10 +319,29 @@
   &__verzekering {
     margin-top: 80px;
     margin-bottom: 110px;
-    width: 100%;    
+    width: 100%;
 
-    &-image{
+    &-logo{
+      @media only screen and (max-width: 576px) {
+        width: 78%;
+        justify-content: center;
+      }
+    }
+
+    &-info{
+      @media only screen and (max-width: 576px) {
+      width: 78%;
+      justify-content: center;
+    }
+    }
+    
+    &-image {
       width: 27.93vw;
+
+      @include media-breakpoint-down(md) {
+        width: 40vw;
+        margin-bottom: 5vw;
+      }
     }
 
     &-title {
@@ -187,7 +357,7 @@
     &-pakket {
       margin-top: 45px;
 
-      &-title{
+      &-title {
         font: $font-h4;
         color: $color-title-h4;
         font-weight: bold;
@@ -202,13 +372,13 @@
         text-decoration: none;
       }
 
-      &-button{
+      &-button {
         margin-top: 20px;
+
       }
 
       &-button:hover {
-        color: white;        
-
+        color: white;
       }
     }
   }
