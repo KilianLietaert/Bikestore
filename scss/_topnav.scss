@@ -65,9 +65,9 @@ body {
 }
 
 @media only screen and (max-width: 1600px) {
-    .c-topnav__input {
-        height: 20px;
-    }
+    // .c-topnav__input {
+    //     height: 20px;
+    // }
 
     .c-topnav__button {
         height: 20px;
@@ -87,7 +87,7 @@ body {
     //padding: 6px;
     //margin-top: 8px;
     font-size: 1.5rem;
-    font-family: raleway;
+    font-family: 'Raleway';
     border: none;
     background-color: #EFEFEF;
 }
@@ -191,6 +191,7 @@ body {
 .c-topnavigation>li {
     margin-right: 8px;
     padding-right: 8px;
+    margin-top: 16px;
 }
 
 .c-topnavigation>li>a {

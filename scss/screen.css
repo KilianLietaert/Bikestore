@@ -13769,44 +13769,45 @@ body {
 }
 
 @media only screen and (max-width: 1600px) {
-  .c-topnav__input {
+  /* .c-topnav__input {
     height: 20px;
-  }
+  } */
 
   @media only screen and (max-width: 1600px) {
     .c-topnav__input {
       width: auto;
     }
-
-    .c-topnav__button {
-      height: 20px;
-    }
-
-    .c-topnav__button>img {
-      height: 20px;
-    }
   }
 
-  .c-topnav .search-container {
-    float: right;
-    width: 100%;
+  .c-topnav__button {
+    height: 20px;
   }
 
-  .c-topnav input[type=text] {
-    font-size: 1.5rem;
-    font-family: raleway;
-    border: none;
-    background-color: #EFEFEF;
+  .c-topnav__button>img {
+    height: 20px;
   }
+}
 
-  .c-topnav .search-container button {
-    float: left;
-    background: #EFEFEF;
-    border: none;
-    cursor: pointer;
-  }
+.c-topnav .search-container {
+  float: right;
+  width: 100%;
+}
 
-  /*@media screen and (max-width: 600px) {
+.c-topnav input[type=text] {
+  font-size: 1.5rem;
+  font-family: raleway;
+  border: none;
+  background-color: #EFEFEF;
+}
+
+.c-topnav .search-container button {
+  float: left;
+  background: #EFEFEF;
+  border: none;
+  cursor: pointer;
+}
+
+/*@media screen and (max-width: 600px) {
     .c-topnav .search-container {
         float: none;
     }
@@ -13822,956 +13823,982 @@ body {
         padding: 14px;
     }
 }*/
-  /*logo*/
+/*logo*/
+.c-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
   .c-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
+}
 
-  @media (max-width: 991.98px) {
-    .c-logo {
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-  }
+/*rechterkant linken + winkelmandje*/
+.c-topnavigation {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0;
+  z-index: 1;
+  font-size: 24px;
+  font-family: 'Oxygen';
+}
 
-  /*rechterkant linken + winkelmandje*/
+.c-topnavigation__line {
+  border-right: 1px solid #000000;
+}
+
+@media only screen and (max-width: 1600px) {
   .c-topnavigation {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 0;
-    z-index: 1;
-    font-size: 24px;
-    font-family: 'Oxygen';
+    font-size: 18px;
   }
+}
 
-  .c-topnavigation__line {
-    border-right: 1px solid #000000;
+@media only screen and (max-width: 1264px) {
+  .c-topnavigation {
+    font-size: 16px;
   }
+}
 
-  @media only screen and (max-width: 1600px) {
-    .c-topnavigation {
-      font-size: 18px;
-    }
+@media only screen and (max-width: 780px) {
+  .c-topnavigation {
+    font-size: 14px;
   }
+}
 
-  @media only screen and (max-width: 1264px) {
-    .c-topnavigation {
-      font-size: 16px;
-    }
-  }
-
-  @media only screen and (max-width: 780px) {
-    .c-topnavigation {
-      font-size: 14px;
-    }
-  }
-
-  @media only screen and (max-width: 767px) {
-    .c-topnavigation {
-      font-size: 20px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-    }
-  }
-
-  @media only screen and (max-width: 452px) {
-    .c-topnavigation {
-      font-size: 14px;
-    }
-  }
-
-  @media only screen and (max-width: 400px) {
-    .c-topnavigation {
-      font-size: 11px;
-    }
-  }
-
-  .c-topnavigation>li {
-    margin-right: 8px;
-    padding-right: 8px;
-  }
-
-  .c-topnavigation>li>a {
-    text-decoration: none;
-    color: #000000;
-  }
-
-  .c-topnavigation>li>a:hover {
-    color: #d2b02a;
-  }
-
-  .c-topnavigation>li>a:active {
-    color: #705e16;
-  }
-
-  .nav-item {
-    margin-right: 31px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
-    font-family: Oxygen;
-    font-size: 20px !important;
-    font-weight: bold;
-  }
-
-  .navbar-light .navbar-nav .active>.nav-link,
-  .navbar-light .navbar-nav .nav-link.active,
-  .navbar-light .navbar-nav .nav-link.show,
-  .navbar-light .navbar-nav .show>.nav-link {
-    color: #ffffff;
-  }
-
-  .navbar-light .navbar-nav .nav-link:focus,
-  .navbar-light .navbar-nav .nav-link:hover {
-    color: #2d2201;
-  }
-
-  .collapse,
-  .navbar-collapse {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .bg-light {
-    background-color: #705e16 !important;
-  }
-
-  .navbar,
-  .navbar-expand-lg,
-  .navbar-light,
-  .bg-light {
-    min-height: 100px;
-  }
-
-  .c-banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/man-biker-sitting-electric-bike.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/man-biker-sitting-electric-bike.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-height: 805px;
-    min-height: 780px;
-    position: relative;
-    color: white;
-    text-align: center;
+@media only screen and (max-width: 767px) {
+  .c-topnavigation {
+    font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 1;
   }
+}
 
-  .c-banner-content {
-    text-align: center;
-    min-height: 805px !important;
-    -ms-flex-line-pack: center;
-    align-content: center;
+@media only screen and (max-width: 452px) {
+  .c-topnavigation {
+    font-size: 14px;
   }
+}
 
-  .c-banner__hoofd--h1 {
-    font: 40px "Oxygen", sans-serif;
-    color: white;
+@media only screen and (max-width: 400px) {
+  .c-topnavigation {
+    font-size: 11px;
   }
+}
 
-  .c-banner__h1 {
-    font: 35px "Oxygen", "sans-serif";
-    color: white;
-  }
+.c-topnavigation>li {
+  margin-right: 8px;
+  padding-right: 8px;
+  margin-top: 16px;
+}
 
-  .c-banner__h1--onder {
-    margin-top: 100px;
-    margin-bottom: 40px;
-  }
+.c-topnavigation>li>a {
+  text-decoration: none;
+  color: #000000;
+}
 
-  .c-banner__deel1 {
-    margin-top: -20px;
-    margin-bottom: 80px;
-  }
+.c-topnavigation>li>a:hover {
+  color: #d2b02a;
+}
 
-  .c-banner__deel2 {
-    margin-top: 80px !important;
-    margin-bottom: -100px !important;
-  }
+.c-topnavigation>li>a:active {
+  color: #705e16;
+}
 
-  .c-image__fixed {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-  }
+.nav-item {
+  margin-right: 31px;
+}
 
-  ul .c-usp__tekst {
-    color: #fff;
-    font: 24px "oxygen", sans-serif;
-    list-style-type: none;
-    vertical-align: center;
-    margin-left: 80px !important;
-    margin-right: 160px;
-  }
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  font-family: Oxygen;
+  font-size: 20px !important;
+  font-weight: bold;
+}
 
-  ul .c-usp__tekst--extra {
-    margin-right: 80px !important;
-  }
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #ffffff;
+}
 
-  .c-usp__vink {
-    margin-top: -5px;
-  }
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #2d2201;
+}
 
+.collapse,
+.navbar-collapse {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.bg-light {
+  background-color: #705e16 !important;
+}
+
+.navbar,
+.navbar-expand-lg,
+.navbar-light,
+.bg-light {
+  min-height: 100px;
+}
+
+.c-banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/man-biker-sitting-electric-bike.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/man-biker-sitting-electric-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 805px;
+  min-height: 780px;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.c-banner-content {
+  text-align: center;
+  min-height: 805px !important;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c-banner__hoofd--h1 {
+  font: 40px "Oxygen", sans-serif;
+  color: white;
+}
+
+.c-banner__h1 {
+  font: 35px "Oxygen", "sans-serif";
+  color: white;
+}
+
+.c-banner__h1--onder {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.c-banner__deel1 {
+  margin-top: -20px;
+  margin-bottom: 80px;
+}
+
+.c-banner__deel2 {
+  margin-top: 80px !important;
+  margin-bottom: -100px !important;
+}
+
+.c-image__fixed {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/../img/close-up-sideways-cyclist-holding-e-bike-with-green-wall-background.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+ul .c-usp__tekst {
+  color: #fff;
+  font: 24px "oxygen", sans-serif;
+  list-style-type: none;
+  vertical-align: center;
+  margin-left: 80px !important;
+  margin-right: 160px;
+}
+
+ul .c-usp__tekst--extra {
+  margin-right: 80px !important;
+}
+
+.c-usp__vink {
+  margin-top: -5px;
+}
+
+.nb-usp-container {
+  border: #f7f7f7, solid 1px;
+  background: #705e16;
+  height: 65px;
+}
+
+.nb-usp-content {
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
   .nb-usp-container {
-    border: #f7f7f7, solid 1px;
-    background: #705e16;
-    height: 65px;
+    margin: -10px -10px 0 !important;
   }
 
   .nb-usp-content {
-    padding: 10px;
-    text-align: center;
-  }
-
-  @media only screen and (max-width: 767px) {
-    .nb-usp-container {
-      margin: -10px -10px 0 !important;
-    }
-
-    .nb-usp-content {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-  }
-
-  .c-uitleg {
-    background-color: #fff;
-    z-index: 1;
-    max-height: 684px;
-    min-height: 684px;
-  }
-
-  .c-uitleg__tekst {
-    margin-top: 80px;
-  }
-
-  .c-uitleg__h1 {
-    font: 35px "Oxygen", "sans-serif";
-    color: #705e16;
-  }
-
-  .c-uitleg__p {
-    font: 26px "Raleway", sans-serif;
-    color: #000000;
-  }
-
-  .c-uitleg__img {
-    max-width: 600px !important;
-    float: right;
-    -webkit-transform: translate(700px, -430px);
-    transform: translate(700px, -430px);
-  }
-
-  .c-uitproberen {
-    background-color: transparent !important;
-    z-index: 1;
-    max-height: 470px;
-    -webkit-transform: translateY(-400px);
-    transform: translateY(-400px);
-  }
-
-  .c-uitproberen__tekst {
-    text-align: center;
-  }
-
-  .c-uitproberen__h1 {
-    font: 35px "Oxygen", "sans-serif";
-    color: white;
-  }
-
-  .c-uitproberen__p {
-    font: 26px "Raleway", sans-serif;
-    color: white;
-  }
-
-  .c-uitproberen__strong {
-    color: #d2b02a;
-    font: 26px "Raleway", sans-serif;
-  }
-
-  .o-button {
-    border-radius: 32px;
-    background-color: #d2b02a;
-    border: 2px solid #705e16;
-    padding: 10px !important;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-    font: 26px "oxygen", sans-serif;
-    color: #000000;
-  }
-
-  .c-repair {
-    background-color: #928f8f;
-    margin-top: -300px;
-  }
-
-  .c-repair__img {
-    max-width: 812px;
-    margin-top: 50px;
-  }
-
-  .c-repair__h1 {
-    font: 35px "Oxygen", "sans-serif";
-    color: #705e16;
-    margin-top: -250px;
-    margin-left: -140px;
-    margin-right: 350px;
-  }
-
-  .c-repair__p {
-    margin-left: -140px;
-    margin-right: 100px;
-    font: 26px "Raleway", sans-serif;
-    color: #2d2201;
-  }
-
-  .c-repair__2 {
-    float: right;
-    -webkit-transform: translateY(-300px);
-    transform: translateY(-300px);
-  }
-
-  .c-brochure {
-    background-color: #928f8f;
-  }
-
-  .c-brochure__inhoud {
-    text-align: center !important;
-    padding-bottom: 100px;
-  }
-
-  .c-brochure__h1 {
-    color: #705e16;
-    padding-top: 50px;
-    margin-bottom: 20px;
-    padding-left: 800px;
-    padding-right: 800px;
-  }
-
-  .c-brochure__p {
-    color: #000000;
-    font: 26px "Raleway", sans-serif;
-    text-align: center;
-    max-width: 812px;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-
-  .c-about {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0;
-  }
-
-  .c-about__info {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0;
-    margin-bottom: 3.5rem;
-    margin-top: 4.45rem;
-  }
-
-  .c-about__info-title {
-    font: 35px "Oxygen", "sans-serif";
-    font-weight: bold;
-    color: #705e16;
-    margin-bottom: 20px;
-  }
-
-  .c-about__info-text {
-    font: 26px "Raleway", sans-serif;
-  }
-
-  .c-about__info-name {
-    font: 20px "raleway", "sans-serif";
-    font-style: italic;
-  }
-
-  .c-about__info-foto {
-    width: 39.02vw;
-    height: 25.98vw;
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-about__info-foto {
-      width: 64vw;
-      height: 42.7vw;
-      margin-top: 5vw;
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .c-about__info-foto {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .c-about__info-inhoud {
-      max-width: 70%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      font-size: 12px;
-    }
-  }
-
-  .c-about__kopen {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0;
-    margin-bottom: 89px;
-  }
-
-  .c-about__kopen-title {
-    font: 30px "oxygen", "sans-serif";
-    color: #705e16;
-    margin-bottom: 4.55rem;
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-about__kopen-title {
-      width: 70%;
-      margin-bottom: 2vw;
-    }
-  }
-
-  .c-about__kopen-internet {
-    margin: 0;
-    margin-bottom: 40px;
-  }
-
-  .c-about__kopen-internet-title {
-    font: 24px "Raleway", "sans-serif";
-    font-weight: bold;
-    margin-bottom: 35px;
-  }
-
-  .c-about__kopen-internet-text {
-    font: 26px "Raleway", sans-serif;
-  }
-
-  .c-about__kopen-internet-foto-laptop {
-    width: 24.07vw;
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-about__kopen-internet-foto-laptop {
-      width: 55vw;
-      margin-bottom: 3vw;
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .c-about__kopen-internet-info {
-      max-width: 70%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-    }
-  }
-
-  .c-about__kopen-winkel {
-    margin: 0;
-  }
-
-  .c-about__kopen-winkel-title {
-    font: 24px "Raleway", "sans-serif";
-    font-weight: bold;
-    margin-bottom: 35px;
-  }
-
-  .c-about__kopen-winkel-text {
-    font: 26px "Raleway", sans-serif;
-  }
-
-  .c-about__kopen-winkel-foto-verkoper {
-    width: 27.91vw;
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-about__kopen-winkel-foto-verkoper {
-      width: 55vw;
-      margin-top: 5vw;
-      margin-bottom: 3vw;
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
-    .c-about__kopen-winkel-info {
-      max-width: 70%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-    }
-  }
-
-  .c-about__subtitle {
-    margin-top: 85px;
-    font: 26px "Raleway", "sans-serif";
-    color: #705e16;
-    font-style: italic;
-  }
-
-  .c-about__comfort {
-    text-align: center;
-    margin-bottom: 56px;
-  }
-
-  .c-about__comfort-title {
-    font: 30px "oxygen", "sans-serif";
-    color: #705e16;
-    margin-bottom: 20px;
-  }
-
-  .c-about__comfort-text {
-    font: 26px "Raleway", sans-serif;
-  }
-
-  .c-about__weesgerust {
-    text-align: center;
-  }
-
-  .c-about__weesgerust-title {
-    font: 30px "oxygen", "sans-serif";
-    color: #705e16;
-    margin-bottom: 20px;
-  }
-
-  .c-about__weesgerust-text {
-    font: 26px "Raleway", sans-serif;
-    margin-bottom: 35px;
-  }
-
-  .c-about__weesgerust-text2 {
-    font: 26px "Raleway", sans-serif;
-    margin-bottom: 35px;
-  }
-
-  .c-about__proefrit {
-    margin-top: 73px;
-    margin-bottom: 73px;
-  }
-
-  .c-about__proefrit-title {
-    font: 35px "Oxygen", "sans-serif";
-    color: #705e16;
-    margin: 0;
-    margin-bottom: 43px;
-  }
-
-  .c-about__proefrit-link {
-    margin: 0;
-  }
-
-  .c-about__proefrit-link:hover {
-    color: #2d2201;
-    text-decoration: none;
-  }
-
-  .c-about__proefrit-button:hover {
-    color: white;
-  }
-
-  .c-about__foto {
-    width: 56.7vw;
-  }
-
-  /*achtergrond-afbeelding*/
-  .c-container {
-    padding: 0;
-  }
-
-  .c-container__padding {
-    padding-top: 80px;
-  }
-
-  .c-textcenter {
-    text-align: center;
-  }
-
-  .c-banner__fiets {
-    background-image: url("../fotos/world-canyon-electric-city-bikes-02.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 1091px;
-    width: 100%;
-    position: fixed;
-    color: white;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
-
-  /*intro van pagina*/
-  .c-intro {
-    min-height: 784px;
-    width: 100%;
-    background-color: white;
-    margin: 0;
-    padding-left: 7px;
-  }
-
-  .c-intro__foto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  @media only screen and (max-width: 1380px) {
-    .c-intro__foto .c-intro__foto {
-      padding-left: 40px;
-    }
-  }
-
-  @media only screen and (max-width: 1380px) {
-    .c-intro__foto .c-intro__foto {
-      padding-left: 15px;
-    }
-  }
-
-  .c-intro__foto--g {
-    min-height: 569px;
-  }
-
-  @media (max-width: 767.98px) {
-    .c-intro__foto--g {
-      min-height: 0;
-      width: 80%;
-    }
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-intro__foto {
-      margin-bottom: 100px;
-    }
-  }
-
-  .c-intro__h {
-    color: #705e16;
-    margin-bottom: 23px;
-  }
-
-  .c-intro__text {
-    font: 24px "Raleway", sans-serif;
-    color: #2d2201;
-    margin-bottom: 28px;
-  }
-
-  .c-intro__text--color {
-    color: #d2b02a;
-  }
-
-  .c-intro__text--extra {
-    margin-bottom: 170px;
-    font: 24px "Raleway", sans-serif;
-  }
-
-  @media (max-width: 767.98px) {
-    .c-intro__text--extra {
-      margin-bottom: 100px;
-    }
-  }
-
-  .c-intro__text--tijd {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font: 24px "Raleway", sans-serif;
-  }
-
-  @media (max-width: 991.98px) {
-    .c-intro__text--tijd {
-      margin-bottom: 20px;
-    }
-  }
-
-  .c-intro__text--responsief {
-    margin-bottom: 49px;
-  }
-
-  .c-intro__text--responsief2 {
-    margin-bottom: 62px;
-  }
-
-  .c-intro__text--small {
-    font: 20px "raleway", "sans-serif";
-  }
-
-  @media only screen and (max-width: 1380px) {
-    .c-blokpadding {
-      padding-left: 40px !important;
-    }
-  }
-
-  @media only screen and (max-width: 1200px) {
-    .c-blokpadding {
-      padding-left: 15px !important;
-    }
-  }
-
-  /*text over achtergrondafbeelding*/
-  .c-textover {
-    color: white;
-    background-color: rgba(45, 34, 1, 0.4);
-    font-size: 35px;
-    width: 100%;
-    height: 550px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  /*uur teller*/
-  .c-uur {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: 145px;
-  }
-
-  .c-uur>div {
-    background-color: #2d2201;
-    height: 188px;
-    width: 138px;
-    margin-left: 24px;
-    text-align: center;
-    color: #ffffff;
-  }
-
-  .c-uur>div>p {
-    font-size: 140px;
-    font-family: 'Oxygen';
-  }
-
-  @media only screen and (max-width: 1500px) {
-    .c-uur>div {
-      height: 150px;
-      width: 100px;
-    }
-
-    .c-uur>div>p {
-      font-size: 100px;
-    }
-  }
-
-  @media only screen and (max-width: 1300px) {
-    .c-uur {
-      margin-left: 0;
-    }
-  }
-
-  @media only screen and (max-width: 730px) {
-    .c-uur>div {
-      height: 100px;
-      width: 80px;
-    }
-
-    .c-uur>div>p {
-      font-size: 60px;
-    }
-  }
-
-  /*text, line, icoontjes*/
-  .c-more {
-    background-color: #ffffff;
-    min-height: 1529px;
-  }
-
-  .c-more__blok1 {
-    margin-top: 100px;
-    max-width: 706px;
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-more__blok1 {
-      margin: auto;
-      margin-top: 100px;
-    }
-  }
-
-  .c-more__blok2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  @media (max-width: 1199.98px) {
-    .c-more__blok2 {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin-bottom: 100px;
-    }
-  }
-
-  @media (max-width: 991.98px) {
-    .c-more__blok2 {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-  }
-
-  .c-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    list-style: none;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+}
 
+.c-uitleg {
+  background-color: #fff;
+  z-index: 1;
+  max-height: 684px;
+  min-height: 684px;
+}
+
+.c-uitleg__tekst {
+  margin-top: 80px;
+}
+
+.c-uitleg__h1 {
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
+}
+
+.c-uitleg__p {
+  font: 26px "Raleway", sans-serif;
+  color: #000000;
+}
+
+.c-uitleg__img {
+  max-width: 600px !important;
+  float: right;
+  -webkit-transform: translate(700px, -430px);
+  transform: translate(700px, -430px);
+}
+
+.c-uitproberen {
+  background-color: transparent !important;
+  z-index: 1;
+  max-height: 470px;
+  -webkit-transform: translateY(-400px);
+  transform: translateY(-400px);
+}
+
+.c-uitproberen__tekst {
+  text-align: center;
+}
+
+.c-uitproberen__h1 {
+  font: 35px "Oxygen", "sans-serif";
+  color: white;
+}
+
+.c-uitproberen__p {
+  font: 26px "Raleway", sans-serif;
+  color: white;
+}
+
+.c-uitproberen__strong {
+  color: #d2b02a;
+  font: 26px "Raleway", sans-serif;
+}
+
+.o-button {
+  border-radius: 32px;
+  background-color: #d2b02a;
+  border: 2px solid #705e16;
+  padding: 10px !important;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  font: 26px "oxygen", sans-serif;
+  color: #000000;
+}
+
+.c-repair {
+  background-color: #928f8f;
+  margin-top: -300px;
+}
+
+.c-repair__img {
+  max-width: 812px;
+  margin-top: 50px;
+}
+
+.c-repair__h1 {
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
+  margin-top: -250px;
+  margin-left: -140px;
+  margin-right: 350px;
+}
+
+.c-repair__p {
+  margin-left: -140px;
+  margin-right: 100px;
+  font: 26px "Raleway", sans-serif;
+  color: #2d2201;
+}
+
+.c-repair__2 {
+  float: right;
+  -webkit-transform: translateY(-300px);
+  transform: translateY(-300px);
+}
+
+.c-brochure {
+  background-color: #928f8f;
+}
+
+.c-brochure__inhoud {
+  text-align: center !important;
+  padding-bottom: 100px;
+}
+
+.c-brochure__h1 {
+  color: #705e16;
+  padding-top: 50px;
+  margin-bottom: 20px;
+  padding-left: 800px;
+  padding-right: 800px;
+}
+
+.c-brochure__p {
+  color: #000000;
+  font: 26px "Raleway", sans-serif;
+  text-align: center;
+  max-width: 812px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.c-about {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.c-about__info {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  margin-top: 4.45rem;
+}
+
+.c-about__info-title {
+  font: 35px "Oxygen", "sans-serif";
+  font-weight: bold;
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__info-text {
+  font: 26px "Raleway", sans-serif;
+}
+
+.c-about__info-name {
+  font: 20px "raleway", "sans-serif";
+  font-style: italic;
+}
+
+.c-about__info-foto {
+  width: 39.02vw;
+  height: 25.98vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__info-foto {
+    width: 64vw;
+    height: 42.7vw;
+    margin-top: 5vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__info-foto {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__info-inhoud {
+    max-width: 70%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+
+.c-about__kopen {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 89px;
+}
+
+.c-about__kopen-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  margin-bottom: 4.55rem;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__kopen-title {
+    width: 70%;
+    margin-bottom: 2vw;
+  }
+}
+
+.c-about__kopen-internet {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.c-about__kopen-internet-title {
+  font: 24px "Raleway", "sans-serif";
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.c-about__kopen-internet-text {
+  font: 26px "Raleway", sans-serif;
+}
+
+.c-about__kopen-internet-foto-laptop {
+  width: 24.07vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__kopen-internet-foto-laptop {
+    width: 55vw;
+    margin-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__kopen-internet-info {
+    max-width: 70%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.c-about__kopen-winkel {
+  margin: 0;
+}
+
+.c-about__kopen-winkel-title {
+  font: 24px "Raleway", "sans-serif";
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.c-about__kopen-winkel-text {
+  font: 26px "Raleway", sans-serif;
+}
+
+.c-about__kopen-winkel-foto-verkoper {
+  width: 27.91vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__kopen-winkel-foto-verkoper {
+    width: 55vw;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__kopen-winkel-info {
+    max-width: 70%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.c-about__subtitle {
+  margin-top: 85px;
+  font: 26px "Raleway", "sans-serif";
+  color: #705e16;
+  font-style: italic;
+}
+
+.c-about__comfort {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.c-about__comfort-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__comfort-text {
+  font: 26px "Raleway", sans-serif;
+}
+
+.c-about__weesgerust {
+  text-align: center;
+}
+
+.c-about__weesgerust-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__weesgerust-text {
+  font: 26px "Raleway", sans-serif;
+  margin-bottom: 35px;
+}
+
+.c-about__weesgerust-text2 {
+  font: 26px "Raleway", sans-serif;
+  margin-bottom: 35px;
+}
+
+.c-about__proefrit {
+  margin-top: 73px;
+  margin-bottom: 73px;
+}
+
+.c-about__proefrit-title {
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.c-about__proefrit-link {
+  margin: 0;
+}
+
+.c-about__proefrit-link:hover {
+  color: #2d2201;
+  text-decoration: none;
+}
+
+.c-about__proefrit-button:hover {
+  color: white;
+}
+
+.c-about__foto {
+  width: 56.7vw;
+}
+
+/*achtergrond-afbeelding*/
+.c-container {
+  padding: 0;
+}
+
+.c-container__padding {
+  padding-top: 80px;
+}
+
+.c-textcenter {
+  text-align: center;
+}
+
+.c-banner__fiets {
+  background-image: url("../fotos/world-canyon-electric-city-bikes-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1091px;
+  width: 100%;
+  position: fixed;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/*intro van pagina*/
+.c-intro {
+  min-height: 784px;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding-left: 7px;
+}
+
+.c-intro__foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1380px) {
+  .c-intro__foto .c-intro__foto {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .c-intro__foto .c-intro__foto {
+    padding-left: 15px;
+  }
+}
+
+.c-intro__foto--g {
+  min-height: 569px;
+}
+
+@media (max-width: 767.98px) {
+  .c-intro__foto--g {
+    min-height: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .c-intro__foto {
+    margin-bottom: 100px;
+  }
+}
+
+.c-intro__h {
+  color: #705e16;
+  margin-bottom: 23px;
+}
+
+.c-intro__text {
+  font: 24px "Raleway", sans-serif;
+  color: #2d2201;
+  margin-bottom: 28px;
+}
+
+.c-intro__text--color {
+  color: #d2b02a;
+}
+
+.c-intro__text--extra {
+  margin-bottom: 170px;
+  font: 24px "Raleway", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .c-intro__text--extra {
+    margin-bottom: 100px;
+  }
+}
+
+.c-intro__text--tijd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font: 24px "Raleway", sans-serif;
+}
+
+@media (max-width: 991.98px) {
+  .c-intro__text--tijd {
+    margin-bottom: 20px;
+  }
+}
+
+.c-intro__text--responsief {
+  margin-bottom: 49px;
+}
+
+.c-intro__text--responsief2 {
+  margin-bottom: 62px;
+}
+
+.c-intro__text--small {
+  font: 20px "raleway", "sans-serif";
+}
+
+@media only screen and (max-width: 1380px) {
+  .c-blokpadding {
+    padding-left: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .c-blokpadding {
+    padding-left: 15px !important;
+  }
+}
+
+/*text over achtergrondafbeelding*/
+.c-textover {
+  color: white;
+  background-color: rgba(45, 34, 1, 0.4);
+  font-size: 35px;
+  width: 100%;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .c-tussentitel {
+    font-size: 1.8rem;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/*uur teller*/
+.c-uur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 145px;
+}
+
+.c-uur>div {
+  background-color: #2d2201;
+  height: 188px;
+  width: 138px;
+  margin-left: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.c-uur>div>p {
+  font-size: 140px;
+  font-family: 'Oxygen';
+}
+
+@media only screen and (max-width: 1500px) {
+  .c-uur>div {
+    height: 150px;
+    width: 100px;
+  }
+
+  .c-uur>div>p {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .c-uur {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .c-uur>div {
+    height: 100px;
+    width: 80px;
+  }
+
+  .c-uur>div>p {
+    font-size: 60px;
+  }
+}
+
+/*text, line, icoontjes*/
+.c-more {
+  background-color: #ffffff;
+  min-height: 1529px;
+}
+
+.c-more__blok1 {
+  margin-top: 100px;
+  max-width: 706px;
+}
+
+@media (max-width: 1199.98px) {
+  .c-more__blok1 {
+    margin: auto;
+    margin-top: 100px;
+  }
+}
+
+.c-more__blok2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1199.98px) {
+  .c-more__blok2 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-more__blok2 {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+.c-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c-icon>li {
+  margin-right: 65px;
+}
+
+@media (max-width: 991.98px) {
   .c-icon>li {
-    margin-right: 65px;
+    margin-right: 25px;
   }
+}
 
-  .c-icons {
-    margin-bottom: 40px;
+@media only screen and (max-width: 767px) {
+  .c-icon>li {
+    margin-right: 105px;
+    margin-bottom: 20px;
   }
+}
 
-  .c-line {
-    height: 1px;
-    max-width: 894px;
-    background-color: #707070;
-    margin: auto;
-    margin-bottom: 113px;
-  }
+.c-icons {
+  margin-bottom: 40px;
+}
 
-  .c-margin {
-    margin: auto;
-    margin-bottom: 34px;
-  }
+.c-line {
+  height: 1px;
+  max-width: 894px;
+  background-color: #707070;
+  margin: auto;
+  margin-bottom: 113px;
+}
 
-  .c-form {
-    max-width: 812px;
-    margin: auto;
-  }
+.c-margin {
+  margin: auto;
+  margin-bottom: 72px;
+}
 
-  label {
-    color: #d2b02a;
-    font-size: 24px;
-    font-family: "Raleway", sans-serif;
-  }
+.c-form {
+  max-width: 812px;
+  margin: auto;
+}
 
-  .c-button__form {
-    text-align: center;
-    margin-top: 20px;
-  }
+label {
+  color: #d2b02a;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+}
 
-  .c-form__h1 {
-    text-align: center;
-    color: #705e16;
-    font-size: 35px;
-    font-family: "Oxygen", sans-serif;
-  }
+.c-button__form {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .labelcheck {
-    color: black;
-  }
+.c-form__h1 {
+  text-align: center;
+  color: #705e16;
+  font-size: 35px;
+  font-family: "Oxygen", sans-serif;
+}
 
-  .form-floating>label {
-    padding-top: 10px;
-    padding-left: 10px;
-  }
+.labelcheck {
+  color: black;
+}
 
-  .form-floating>.form-select {
-    color: #d2b02a;
-    font-size: 24px;
-    padding: 5px;
-    font-family: "Oxygen", sans-serif;
-  }
+.form-floating>label {
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
-  .form-floating>.form-control:focus,
-  .form-floating>.form-control:not(:placeholder-shown) {
-    padding-left: 10px;
-    padding-top: 10px;
-    font-family: "Oxygen", sans-serif;
-    color: #d2b02a;
-    font-size: 24px;
-  }
+.form-floating>.form-select {
+  color: #d2b02a;
+  font-size: 24px;
+  padding: 5px;
+  font-family: "Oxygen", sans-serif;
+}
 
-  /*# sourceMappingURL=screen.css.map */
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: "Oxygen", sans-serif;
+  color: #d2b02a;
+  font-size: 24px;
+}
+
+.c-form-check {
+  margin-top: 35px;
+}
+
+/*# sourceMappingURL=screen.css.map */

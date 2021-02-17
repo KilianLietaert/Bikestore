@@ -44,6 +44,10 @@
     margin: 0;
     padding-left: 7px;
 
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 100px;
+    }
+
     &__foto {
         display: flex;
         justify-content: center;
@@ -58,10 +62,6 @@
             min-height: 0;
             width: 80%;
         }
-    }
-
-    @include media-breakpoint-down(lg) {
-        margin-bottom: 100px;
     }
 }
 
@@ -133,6 +133,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.c-tussentitel {
+    @include media-breakpoint-down(lg) {
+        font-size: 1.8rem;
+        margin: auto;
+        text-align: center;
+    }
 }
 
 /*uur teller*/
@@ -214,7 +222,7 @@
     }
 }
 
-
+/*forminformatie*/
 .c-icon {
     display: flex;
     justify-content: center;
@@ -224,6 +232,15 @@
 
 .c-icon>li {
     margin-right: 65px;
+
+    @include media-breakpoint-down(lg) {
+        margin-right: 25px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        margin-right: 105px;
+        margin-bottom: 20px;
+    }
 }
 
 .c-icons {
@@ -241,7 +258,7 @@
 
 .c-margin {
     margin: auto;
-    margin-bottom: 34px;
+    margin-bottom: 72px;
 }
 
 .c-form {
@@ -290,4 +307,8 @@ label {
     font-family: "Oxygen", sans-serif;
     color: #d2b02a;
     font-size: 24px;
+}
+
+.c-form-check {
+    margin-top: 35px;
 }
