@@ -12069,7 +12069,7 @@ a.text-dark:hover, a.text-dark:focus {
 .c-footer {
   background-color: #574e33;
   color: white;
-  font: 20px "raleway", "sans-serif";
+  font: 20px "raleway", sans-serif;
   font-size: 1.11rem;
 }
 
@@ -12192,6 +12192,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media only screen and (max-width: 767.98px) and (max-width: 576px) {
+  .c-footer__overons {
+    max-width: 70%;
+  }
+}
+
 .c-footer__row2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12216,6 +12222,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.c-footer__icon {
+  padding: 0;
+}
+
 @media (max-width: 767.98px) {
   .c-footer__icon {
     display: -webkit-box;
@@ -12226,7 +12236,13 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-direction: row;
             flex-direction: row;
     margin: auto;
-    padding-bottom: auto;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-footer__icon {
+    max-width: 30%;
   }
 }
 
@@ -12294,9 +12310,10 @@ a.c-footer__informatie-link:hover {
   .col-2 {
     max-width: 70%;
   }
-  .col-3 {
+  .col-lg-3 {
     max-width: 60%;
     width: auto;
+    padding: 0;
   }
 }
 
@@ -12445,7 +12462,7 @@ body {
 }
 
 .c-bannerhome__h1 {
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: white;
 }
 
@@ -12679,7 +12696,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitleg__h1 {
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: #705e16;
 }
 
@@ -12697,7 +12714,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitleg__p {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
   color: #000000;
   margin-bottom: 20px;
 }
@@ -12887,7 +12904,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitproberen__h1 {
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: white;
 }
 
@@ -12898,7 +12915,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-uitproberen__p {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
   color: white;
   margin-bottom: 20px;
 }
@@ -12911,7 +12928,7 @@ ul .c-usp__tekst--extra {
 
 .c-uitproberen__strong {
   color: #d2b02a;
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
 }
 
 .o-button {
@@ -12991,7 +13008,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-repair__h1 {
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: #705e16;
   margin-top: -250px;
   margin-left: -140px;
@@ -13014,7 +13031,7 @@ ul .c-usp__tekst--extra {
 .c-repair__p {
   margin-left: -140px;
   margin-right: 100px;
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
   color: #2d2201;
 }
 
@@ -13180,7 +13197,7 @@ ul .c-usp__tekst--extra {
 
 .c-brochure__p {
   color: #000000;
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
   text-align: center;
   max-width: 812px;
   margin: auto;
@@ -13204,18 +13221,18 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__info-title {
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   font-weight: bold;
   color: #705e16;
   margin-bottom: 20px;
 }
 
 .c-about__info-text {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
 }
 
 .c-about__info-name {
-  font: 20px "raleway", "sans-serif";
+  font: 20px "raleway", sans-serif;
   font-style: italic;
 }
 
@@ -13259,7 +13276,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__kopen-title {
-  font: 30px "oxygen", "sans-serif";
+  font: 30px "oxygen", sans-serif;
   color: #705e16;
   margin-bottom: 4.55rem;
 }
@@ -13277,13 +13294,13 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__kopen-internet-title {
-  font: 24px "Raleway", "sans-serif";
+  font: 24px "Raleway", sans-serif;
   font-weight: bold;
   margin-bottom: 35px;
 }
 
 .c-about__kopen-internet-text {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
 }
 
 .c-about__kopen-internet-foto-laptop {
@@ -13311,13 +13328,13 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__kopen-winkel-title {
-  font: 24px "Raleway", "sans-serif";
+  font: 24px "Raleway", sans-serif;
   font-weight: bold;
   margin-bottom: 35px;
 }
 
 .c-about__kopen-winkel-text {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
 }
 
 .c-about__kopen-winkel-foto-verkoper {
@@ -13343,7 +13360,7 @@ ul .c-usp__tekst--extra {
 
 .c-about__subtitle {
   margin-top: 85px;
-  font: 26px "Raleway", "sans-serif";
+  font: 26px "Raleway", sans-serif;
   color: #705e16;
   font-style: italic;
 }
@@ -13354,13 +13371,13 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__comfort-title {
-  font: 30px "oxygen", "sans-serif";
+  font: 30px "oxygen", sans-serif;
   color: #705e16;
   margin-bottom: 20px;
 }
 
 .c-about__comfort-text {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
 }
 
 .c-about__weesgerust {
@@ -13368,18 +13385,18 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__weesgerust-title {
-  font: 30px "oxygen", "sans-serif";
+  font: 30px "oxygen", sans-serif;
   color: #705e16;
   margin-bottom: 20px;
 }
 
 .c-about__weesgerust-text {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
   margin-bottom: 35px;
 }
 
 .c-about__weesgerust-text2 {
-  font: 26px "Raleway", sans-serif;
+  font: 24px "raleway", sans-serif;
   margin-bottom: 35px;
 }
 
@@ -13389,7 +13406,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-about__proefrit-title {
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: #705e16;
   margin: 0;
   margin-bottom: 43px;
@@ -13410,6 +13427,681 @@ ul .c-usp__tekst--extra {
 
 .c-about__foto {
   width: 56.7vw;
+}
+
+.c-about {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.c-about__info {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  margin-top: 4.45rem;
+}
+
+.c-about__info-title {
+  font: 35px "Oxygen", sans-serif;
+  font-weight: bold;
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__info-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-about__info-name {
+  font: 20px "raleway", sans-serif;
+  font-style: italic;
+}
+
+.c-about__info-foto {
+  width: 39.02vw;
+  height: 25.98vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__info-foto {
+    width: 64vw;
+    height: 42.7vw;
+    margin-top: 5vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__info-foto {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__info-inhoud {
+    max-width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 12px;
+  }
+}
+
+.c-about__kopen {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-bottom: 89px;
+}
+
+.c-about__kopen-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  margin-bottom: 4.55rem;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__kopen-title {
+    width: 70%;
+    margin-bottom: 2vw;
+  }
+}
+
+.c-about__kopen-internet {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.c-about__kopen-internet-title {
+  font: 24px "Raleway", sans-serif;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.c-about__kopen-internet-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-about__kopen-internet-foto-laptop {
+  width: 24.07vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__kopen-internet-foto-laptop {
+    width: 55vw;
+    margin-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__kopen-internet-info {
+    max-width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-about__kopen-winkel {
+  margin: 0;
+}
+
+.c-about__kopen-winkel-title {
+  font: 24px "Raleway", sans-serif;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.c-about__kopen-winkel-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-about__kopen-winkel-foto-verkoper {
+  width: 27.91vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-about__kopen-winkel-foto-verkoper {
+    width: 55vw;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__kopen-winkel-info {
+    max-width: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-about__subtitle {
+  margin-top: 85px;
+  font: 26px "Raleway", sans-serif;
+  color: #705e16;
+  font-style: italic;
+}
+
+.c-about__comfort {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.c-about__comfort-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__comfort-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-about__weesgerust {
+  text-align: center;
+}
+
+.c-about__weesgerust-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  margin-bottom: 20px;
+}
+
+.c-about__weesgerust-text {
+  font: 24px "raleway", sans-serif;
+  margin-bottom: 35px;
+}
+
+.c-about__weesgerust-text2 {
+  font: 24px "raleway", sans-serif;
+  margin-bottom: 35px;
+}
+
+.c-about__proefrit {
+  margin-top: 73px;
+  margin-bottom: 73px;
+}
+
+.c-about__proefrit-title {
+  font: 35px "Oxygen", sans-serif;
+  color: #705e16;
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+.c-about__proefrit-link {
+  margin: 0;
+}
+
+.c-about__proefrit-link:hover {
+  color: #2d2201;
+  text-decoration: none;
+}
+
+.c-about__proefrit-button:hover {
+  color: white;
+}
+
+.c-about__foto {
+  width: 56.7vw;
+}
+
+.c-service {
+  margin-top: 4.45rem;
+  margin-bottom: 80px;
+}
+
+.c-service__title {
+  font: 35px "Oxygen", sans-serif;
+  font-weight: bold;
+  color: #705e16;
+  margin-left: 7.3vw;
+  margin-bottom: 49px;
+}
+
+@media only screen and (max-width: 670px) {
+  .c-service__title {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__title {
+    margin-left: 10.3vw;
+    width: 80%;
+  }
+}
+
+.c-service__advies {
+  width: 100%;
+}
+
+.c-service__advies-foto {
+  width: 35.1vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-service__advies-foto {
+    width: 78vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-service__advies-foto {
+    width: 78vw;
+    margin-bottom: 1vw;
+  }
+}
+
+.c-service__advies-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.c-service__advies-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-service__advies-strong {
+  color: #d2b02a;
+  font: 24px "raleway", sans-serif;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__advies-info {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-service__blok {
+  background-color: #eddfa9;
+}
+
+.c-service__services {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  width: 100%;
+  padding-top: 37.5px;
+  padding-bottom: 37.5px;
+}
+
+.c-service__services-levering {
+  margin-right: 8.9vw;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-levering {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-levering {
+    margin-bottom: 15vw;
+  }
+}
+
+.c-service__services-levering-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  text-align: center;
+  height: 76px;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-levering-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.c-service__services-levering-image {
+  width: 13.6vw;
+  height: 7.96vw;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-levering-image {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-levering-image {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.c-service__services-levering-text {
+  font: 24px "raleway", sans-serif;
+  text-align: center;
+}
+
+.c-service__services-onderhoud {
+  margin-right: 8.9vw;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-onderhoud {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-onderhoud {
+    margin-bottom: 15vw;
+  }
+}
+
+.c-service__services-onderhoud-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  text-align: center;
+  width: 420px;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-onderhoud-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.c-service__services-onderhoud-image {
+  width: 8.33vw;
+  height: 7.96vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-onderhoud-image {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-onderhoud-image {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.c-service__services-onderhoud-text {
+  font: 24px "raleway", sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-herstelling {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-herstelling {
+    margin-bottom: 15vw;
+  }
+}
+
+.c-service__services-herstelling-title {
+  width: 420px;
+  height: 76px;
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-herstelling-title {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.c-service__services-herstelling-image {
+  width: 7.98vw;
+  height: 7.96vw;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__services-herstelling-image {
+    width: 15vw;
+    height: 15vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-service__services-herstelling-image {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+.c-service__services-herstelling-text {
+  font: 24px "raleway", sans-serif;
+  text-align: center;
+}
+
+.c-service__verhelping {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.c-service__verhelping-title {
+  font: 30px "oxygen", sans-serif;
+  color: #705e16;
+  font-weight: bold;
+  margin-left: 7.3vw;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .c-service__verhelping-title {
+    margin-left: 6.8vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verhelping-title {
+    margin-left: 6.5vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-title {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 8vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-pech {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-service__verhelping-pech-title {
+  font: 24px "raleway", sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.c-service__verhelping-pech-text {
+  font: 24px "raleway", sans-serif;
+  margin-bottom: 30px;
+  width: 35vw;
+}
+
+@media (max-width: 1687.98px) {
+  .c-service__verhelping-pech-text {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verhelping-pech-text {
+    width: auto;
+  }
+}
+
+.c-service__verhelping-pech-foto {
+  width: 35.1vw;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verhelping-pech-foto {
+    width: 82vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-pech-foto {
+    margin-bottom: 5vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verhelping-garantie {
+    max-width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-service__verhelping-garantie-title {
+  font: 24px "raleway", sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.c-service__verhelping-garantie-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-service__verhelping-garantie-strong {
+  color: #d2b02a;
+  font: 24px "raleway", sans-serif;
+  font-weight: bold;
+}
+
+.c-service__verzekering {
+  margin-top: 80px;
+  margin-bottom: 110px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verzekering-logo {
+    width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verzekering-info {
+    width: 78%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.c-service__verzekering-image {
+  width: 27.93vw;
+}
+
+@media (max-width: 991.98px) {
+  .c-service__verzekering-image {
+    width: 40vw;
+    margin-bottom: 5vw;
+  }
+}
+
+.c-service__verzekering-title {
+  font: 35px "Oxygen", sans-serif;
+  color: #705e16;
+  font-weight: bold;
+}
+
+.c-service__verzekering-text {
+  font: 24px "raleway", sans-serif;
+}
+
+.c-service__verzekering-pakket {
+  margin-top: 45px;
+}
+
+.c-service__verzekering-pakket-title {
+  font: 26px "Raleway", sans-serif;
+  color: #705e16;
+  font-weight: bold;
+}
+
+.c-service__verzekering-pakket-link {
+  margin: 0;
+}
+
+.c-service__verzekering-pakket-link:hover {
+  color: #2d2201;
+  text-decoration: none;
+}
+
+.c-service__verzekering-pakket-button {
+  margin-top: 20px;
+}
+
+.c-service__verzekering-pakket-button:hover {
+  color: white;
+}
+
+.col-lg-5 {
+  padding-left: 0;
 }
 
 /*achtergrond-afbeelding*/
@@ -13670,7 +14362,7 @@ ul .c-usp__tekst--extra {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
 }
 
 @media only screen and (max-width: 700px) {
@@ -13695,7 +14387,7 @@ ul .c-usp__tekst--extra {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: #705e16;
 }
 
@@ -13853,7 +14545,7 @@ ul .c-usp__tekst--extra {
           align-items: left;
   margin-top: 50px;
   margin-bottom: 50px;
-  font: 35px "Oxygen", "sans-serif";
+  font: 35px "Oxygen", sans-serif;
   color: #705e16;
 }
 
@@ -13934,7 +14626,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-blogdetail__div2--h2 {
-  font: 30px "oxygen", "sans-serif";
+  font: 30px "oxygen", sans-serif;
   color: #705e16;
 }
 

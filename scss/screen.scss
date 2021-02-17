@@ -14,7 +14,11 @@
 
 @import "components.about";
 
-@import "fietsaanvraag";
+@import 'components.about';
+
+@import 'components.service';
+
+@import 'fietsaanvraag';
 
 @import "blogoverzicht";
 @import "blogdetail";
