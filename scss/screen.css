@@ -14759,4 +14759,67 @@ ul .c-usp__tekst--extra {
 .col-lg-5 {
   padding-left: 0;
 }
+
+.c-brochure {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.c-brochure__info {
+  margin-bottom: 70px;
+}
+
+.c-brochure__info-title {
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
+  font-weight: bold;
+}
+
+.c-brochure__info-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-brochure__info-text-strong {
+  font: 24px "raleway", "sans-serif";
+  color: #d2b02a;
+  font-weight: bold;
+}
+
+.c-brochure__aanvraag-formulier-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  font-weight: bold;
+}
+
+.c-brochure__aanvraag-formulier-subtitle {
+  font: 26px "Raleway", "sans-serif";
+  color: #705e16;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.c-brochure__aanvraag-formulier-naam {
+  margin-bottom: 20px;
+}
+
+.c-brochure__aanvraag-formulier-email {
+  margin-bottom: 22px;
+}
+
+.c-brochure__aanvraag-formulier-checkbox {
+  width: 27px;
+}
+
+.c-brochure__aanvraag-formulier-checkbox-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-brochure__aanvraag-form-button {
+  margin-top: 50px;
+  margin-bottom: 62px;
+}
+
+.c-brochure__aanvraag-info {
+  font: 24px "raleway", "sans-serif";
+}
 /*# sourceMappingURL=screen.css.map */
