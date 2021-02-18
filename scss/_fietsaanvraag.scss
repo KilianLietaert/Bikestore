@@ -45,69 +45,71 @@
     padding-left: 7px;
 
     @include media-breakpoint-down(lg) {
-        margin-bottom: 100px;
+        //margin-bottom: 100px;
+        padding-bottom: 100px;
+
     }
 
     &__foto {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
+        &--g {
+            min-height: 569px;
 
-    &--g {
-        min-height: 569px;
-
-        @include media-breakpoint-down(sm) {
-            min-height: 0;
-            width: 80%;
+            @include media-breakpoint-down(sm) {
+                min-height: 0;
+                width: 80%;
+            }
         }
     }
-}
 
-&__h {
-    color: $color-title-h2;
-    margin-bottom: 23px;
-}
-
-&__text {
-    font: $font-text2;
-    color: $color-nav-item-hover;
-    margin-bottom: 28px;
-
-    &--color {
-        color: $color-gold;
+    &__h {
+        color: $color-title-h2;
+        margin-bottom: 23px;
     }
 
-    &--extra {
-        margin-bottom: 170px;
+
+    &__text {
         font: $font-text2;
+        color: $color-nav-item-hover;
+        margin-bottom: 28px;
 
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 100px;
+        &--color {
+            color: $color-gold;
         }
-    }
 
-    &--tijd {
-        display: flex;
-        align-items: center;
-        font: $font-text2;
+        &--extra {
+            margin-bottom: 170px;
+            font: $font-text2;
 
-        @include media-breakpoint-down(md) {
-            margin-bottom: 20px;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 100px;
+            }
         }
-    }
 
-    &--responsief {
-        margin-bottom: 49px;
-    }
+        &--tijd {
+            display: flex;
+            align-items: center;
+            font: $font-text2;
 
-    &--responsief2 {
-        margin-bottom: 62px;
-    }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+        }
 
-    &--small {
-        font: $font-text-footer;
+        &--responsief {
+            margin-bottom: 49px;
+        }
+
+        &--responsief2 {
+            margin-bottom: 62px;
+        }
+
+        &--small {
+            font: $font-text-footer;
+        }
     }
 }
 
@@ -210,10 +212,12 @@
 
     &__blok2 {
         display: flex;
+        padding-top: 14px;
 
         @include media-breakpoint-down(lg) {
             justify-content: center;
             margin-bottom: 100px;
+            padding-top: 0px;
         }
 
         @include media-breakpoint-down(md) {
