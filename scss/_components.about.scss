@@ -13,7 +13,6 @@
       font-weight: bold;
       color: $color-title-h1;
       margin-bottom: 20px;
-
     }
 
     &-text {
@@ -27,11 +26,11 @@
 
     &-foto {
       width: 39.02vw;
-      height: 25.98vw;
+      height: auto;
 
       @include media-breakpoint-down(lg) {
         width: 64vw;
-        height: 42.7vw;
+        height: auto;
         margin-top: 5vw;
       }
 
@@ -42,7 +41,7 @@
 
     &-inhoud {
       @media only screen and (max-width: 576px) {
-        max-width: 70%;
+        max-width: 80%;
         justify-content: center;
         font-size: 12px;
       }
@@ -54,14 +53,23 @@
     margin: 0;
     margin-bottom: 89px;
 
+    @media only screen and (max-width: 1000px) {
+      margin-bottom: 50px;
+    }
+
     &-title {
       font: $font-h2;
       color: $color-title-h2;
       margin-bottom: 4.55rem;
+      text-align: center;
 
       @include media-breakpoint-down(lg) {
-        width: 70%;
+        width: 80%;
         margin-bottom: 2vw;
+      }
+
+      @media only screen and (max-width: 576px) {
+        margin-bottom: 30px;
       }
     }
 
@@ -88,7 +96,7 @@
 
       &-info {
         @media only screen and (max-width: 576px) {
-          max-width: 70%;
+          max-width: 80%;
           justify-content: center;
         }
       }
@@ -109,17 +117,31 @@
 
       &-foto-verkoper {
         width: 27.91vw;
+        height: 20vw;
 
         @include media-breakpoint-down(lg) {
           width: 55vw;
-          margin-top: 5vw;
+          height: auto;
+          margin-top: 2vw;
           margin-bottom: 3vw;
+        }
+
+        @media only screen and (max-width: 576px) {
+          margin-left: 2vw;
+          margin-top: 0vw;
+          width: 63vw;
+        }
+
+        @media only screen and (max-width: 575px) {
+          margin-left: 10vw;
+          margin-top: 0vw;
+          width: 63vw;
         }
       }
 
       &-info {
         @media only screen and (max-width: 576px) {
-          max-width: 70%;
+          max-width: 80%;
           justify-content: center;
         }
       }
@@ -131,11 +153,19 @@
     font: $font-h4;
     color: $color-title-h4;
     font-style: italic;
-  }
+
+    @media only screen and (max-width: 1700px) {
+      margin-top: 50px;    
+    }
+    }
 
   &__comfort {
-    text-align: center;
     margin-bottom: 56px;
+
+    @media only screen and (max-width: 576px) {
+      max-width: 80%;
+      justify-content: center;
+    }
 
     &-title {
       font: $font-h2;
@@ -149,7 +179,11 @@
   }
 
   &__weesgerust {
-    text-align: center;
+
+    @media only screen and (max-width: 576px) {
+      max-width: 80%;
+      justify-content: center;
+    }
 
     &-title {
       font: $font-h2;
@@ -171,6 +205,16 @@
   &__proefrit {
     margin-top: 73px;
     margin-bottom: 73px;
+
+    @media only screen and (max-width: 1000px) {
+      margin-top: 53px;
+      margin-bottom: 53px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-top: 33px;
+      margin-bottom: 33px;
+    }
 
     &-title {
       font: $font-h1;
@@ -196,5 +240,71 @@
 
   &__foto {
     width: 56.7vw;
+
+    @media only screen and (max-width: 576px) {
+      width: 79.7vw;
+
+    }
+  }
+
+}
+
+@include media-breakpoint-down(lg) {
+  h1 {font-size: 32px  !important;}
+  h2 {font-size: 30px !important;}
+  h3{font-size: 24px !important;}
+  p {font-size: 24px !important;}
+  strong {font-size: 24px !important;}
+  .o-button {
+    border-radius: 32px;
+    background-color: #d2b02a;
+    border: 2px solid #705e16;
+    padding: 8px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    font: 22px "oxygen", sans-serif;
+    color: #000000;
   }
 }
+
+@include media-breakpoint-down(md) {
+  h1 {font-size: 30px !important;}
+  h2 {font-size: 28px !important;}
+  h3{font-size: 22px !important;}
+  p {font-size: 22px !important;}
+  strong {font-size: 22px !important;}
+
+  .o-button {
+    border-radius: 32px;
+    background-color: #d2b02a;
+    border: 2px solid #705e16;
+    padding: 8px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font: 20px "oxygen", sans-serif;
+    color: #000000;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {font-size: 26px !important;}
+  h2 {font-size: 24px !important;}
+  h3{font-size: 18px !important;}
+  p {font-size: 16px !important;
+  font-weight: 500 !important;}
+  strong {font-size: 16px !important;}
+  
+  .o-button {
+  border-radius: 32px;
+  background-color: #d2b02a;
+  border: 2px solid #705e16;
+  padding: 8px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font: 16px "oxygen", sans-serif;
+  color: #000000;
+}
+}
+
+
+  
