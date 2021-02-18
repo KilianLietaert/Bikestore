@@ -14361,9 +14361,10 @@ label {
 }
 
 .c-blogdetail__div3--p {
-  max-width: 1364px;
+  max-width: 1360px;
   margin-top: -475px;
   padding-bottom: 150px;
+  padding-left: 15px;
 }
 
 @media only screen and (max-width: 1434px) {
