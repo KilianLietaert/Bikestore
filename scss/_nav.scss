@@ -3,7 +3,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white;
+    color: $color-nav-item;
     font-family: Oxygen;
     font-size: 20px !important;
     font-weight: bold;
@@ -13,7 +13,7 @@
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: $color-nav-active;
+    color: $color-nav-item;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -34,5 +34,5 @@
 .navbar-expand-lg,
 .navbar-light,
 .bg-light {
-    height: 100px;
+    min-height: 100px;
 }
