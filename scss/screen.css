@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -12858,6 +12859,7 @@ ul .c-usp__tekst--extra {
 .c-uitleg__h1 {
   font: 35px "Oxygen", "sans-serif";
   color: #705e16;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 500px) {
@@ -13237,22 +13239,6 @@ ul .c-usp__tekst--extra {
   }
 }
 
-
-.c-about {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0;
-}
-
-.c-about__info {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0;
-  margin-bottom: 3.5rem;
-  margin-top: 4.45rem;
-}
 @media only screen and (max-width: 930px) {
   .c-repair__2 {
     -webkit-transform: translate(30px, 300px);
@@ -14279,30 +14265,20 @@ label {
   color: #707070;
   font-weight: bold;
   padding-top: 20px;
-}
-
-@media only screen and (max-width: 1630px) {
-  .c-titel__blogdetail--p {
-    margin-left: 30px;
-  }
-}
-
-@media only screen and (max-width: 1390px) {
-  .c-titel__blogdetail--p {
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .c-titel__blogdetail--p {
-    margin-left: 40px;
-  }
-}
-
-@media only screen and (max-width: 936px) {
-  .c-titel__blogdetail--p {
-    margin-left: 50px;
-  }
+  text-align: right;
+  padding-right: 45px;
+  /*@media only screen and (max-width: 1630px) {
+      margin-left: 30px;
+    }
+    @media only screen and (max-width: 1390px) {
+      margin-left: 20px;
+    }
+    @media only screen and (max-width: 990px) {
+      margin-left: 40px;
+    }
+    @media only screen and (max-width: 936px) {
+      margin-left: 50px;
+    }*/
 }
 
 .c-blogdetail {
