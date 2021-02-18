@@ -2,6 +2,14 @@
 
 .c-container {
     padding: 0;
+
+    &__padding {
+        padding-top: 80px;
+    }
+}
+
+.c-textcenter {
+    text-align: center;
 }
 
 .c-banner__fiets {
@@ -11,8 +19,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 1091px;
-    //width: 100%;
-    overflow-x: hidden;
+    width: 100%;
+    //overflow-x: hidden;
     position: fixed;
     color: white;
     //margin-bottom: 112px;
@@ -36,6 +44,12 @@
     margin: 0;
     padding-left: 7px;
 
+    @include media-breakpoint-down(lg) {
+        //margin-bottom: 100px;
+        padding-bottom: 100px;
+
+    }
+
     &__foto {
         display: flex;
         justify-content: center;
@@ -43,20 +57,71 @@
 
         &--g {
             min-height: 569px;
+
+            @include media-breakpoint-down(sm) {
+                min-height: 0;
+                width: 80%;
+            }
         }
     }
 
     &__h {
         color: $color-title-h2;
+        margin-bottom: 23px;
     }
+
 
     &__text {
         font: $font-text2;
         color: $color-nav-item-hover;
+        margin-bottom: 28px;
 
         &--color {
             color: $color-gold;
         }
+
+        &--extra {
+            margin-bottom: 170px;
+            font: $font-text2;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 100px;
+            }
+        }
+
+        &--tijd {
+            display: flex;
+            align-items: center;
+            font: $font-text2;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &--responsief {
+            margin-bottom: 49px;
+        }
+
+        &--responsief2 {
+            margin-bottom: 62px;
+        }
+
+        &--small {
+            font: $font-text-footer;
+        }
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .c-blokpadding {
+        padding-left: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .c-blokpadding {
+        padding-left: 15px !important;
     }
 }
 
@@ -72,79 +137,182 @@
     justify-content: center;
 }
 
-/*form + icoontjes*/
+.c-tussentitel {
+    @include media-breakpoint-down(lg) {
+        font-size: 1.8rem;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/*uur teller*/
+.c-uur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 145px;
+}
+
+.c-uur>div {
+    background-color: $color-text2;
+    height: 188px;
+    width: 138px;
+    margin-left: 24px;
+    text-align: center;
+    color: $color-nav-item;
+}
+
+.c-uur>div>p {
+    font-size: 140px;
+    font-family: 'Oxygen';
+}
+
+@media only screen and (max-width: 1500px) {
+    .c-uur>div {
+        height: 150px;
+        width: 100px;
+    }
+
+    .c-uur>div>p {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .c-uur {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .c-uur>div {
+        height: 100px;
+        width: 80px;
+    }
+
+    .c-uur>div>p {
+        font-size: 60px;
+    }
+}
+
+/*text, line, icoontjes*/
 .c-more {
     background-color: $color-nav-item;
     min-height: 1529px;
 
     &__blok1 {
         margin-top: 100px;
+        max-width: 706px;
+
+        @include media-breakpoint-down(lg) {
+            margin: auto;
+            margin-top: 100px;
+        }
+    }
+
+    &__blok2 {
+        display: flex;
+        padding-top: 14px;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+            margin-bottom: 100px;
+            padding-top: 0px;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+        }
     }
 }
 
-/*form*/
-.c-contact {
-    margin: 18rem 0;
-    position: relative;
+/*forminformatie*/
+.c-icon {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
 
-    .o-label {
-        margin: 0 auto;
+.c-icon>li {
+    margin-right: 65px;
 
+    @include media-breakpoint-down(lg) {
+        margin-right: 25px;
     }
 
-    &__form {
-        margin: 2rem auto;
-
-        &::before {
-            content: "";
-            //background-image: $blokjes;
-            width: 29.2rem;
-            height: 34.6rem;
-            position: absolute;
-            bottom: 7rem;
-            left: -55rem;
-            z-index: -1;
-        }
+    @media only screen and (max-width: 767px) {
+        margin-right: 105px;
+        margin-bottom: 20px;
     }
+}
 
-    .c-form {
+.c-icons {
+    margin-bottom: 40px;
+}
 
-        &__group {
-            position: relative;
-        }
-
-        &__label {
-            position: absolute;
-            top: 3.5rem;
-            left: 2.5rem;
-            cursor: text;
-            pointer-events: none;
-
-            &--message {
-                top: 2.8rem;
-            }
-        }
+.c-line {
+    height: 1px;
+    max-width: 894px;
+    background-color: $color-line;
+    margin: auto;
+    margin-bottom: 113px;
+}
 
 
-        &__input {
-            transition: all .2s;
+.c-margin {
+    margin: auto;
+    margin-bottom: 72px;
+}
 
-            &~.c-form__label {
-                transition: all .2s;
-            }
+.c-form {
+    max-width: 812px;
+    margin: auto;
+}
 
-            &::placeholder {
-                opacity: 0;
-            }
+label {
+    color: #d2b02a;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+}
 
-            &:not(:placeholder-shown) {
+.c-button__form {
+    text-align: center;
+    margin-top: 20px;
+}
 
-                // padding-top: 1.25rem;
-                &~.c-form__label {
-                    font-size: 1.2rem;
-                    top: 1rem;
-                }
-            }
-        }
-    }
+.c-form__h1 {
+    text-align: center;
+    color: #705e16;
+    font-size: 35px;
+    font-family: "Oxygen", sans-serif;
+}
+
+.labelcheck {
+    color: black;
+}
+
+.form-floating>label {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.form-floating>.form-select {
+    color: #d2b02a;
+    font-size: 24px;
+    padding: 5px;
+    font-family: "Oxygen", sans-serif;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: "Oxygen", sans-serif;
+    color: #d2b02a;
+    font-size: 24px;
+}
+
+.c-form-check {
+    margin-top: 35px;
 }

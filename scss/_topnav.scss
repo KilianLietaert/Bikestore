@@ -8,47 +8,103 @@ body {
     min-height: 110px;
 }
 
-.zoekbalk {
-    margin-top: 40px;
-    margin-left: 10px;
-    max-width: 375px;
-    max-height: 25px;
+.c-zoek {
+    &__balk {
+        margin-top: 40px;
+        margin-left: 125px;
+        max-width: 375px;
+        max-height: 25px;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+    }
 }
 
-.topnav {
+@media only screen and (max-width: 1600px) {
+    .c-zoek {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .c-zoek__balk {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
+        max-height: 65px;
+    }
+}
+
+.c-toplist {
+    @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+    }
+}
+
+.c-topnav {
     overflow: hidden;
     border-bottom: 1px solid black;
+
+    &__input {
+        max-width: 340px;
+        width: 100%;
+
+        @media only screen and (max-width: 1604px) {
+            width: auto;
+        }
+    }
+
+    &__button {
+        padding-left: 0;
+    }
 }
 
-.topnav .search-container {
+@media only screen and (max-width: 1600px) {
+    // .c-topnav__input {
+    //     height: 20px;
+    // }
+
+    .c-topnav__button {
+        height: 20px;
+    }
+
+    .c-topnav__button>img {
+        height: 20px;
+    }
+}
+
+.c-topnav .search-container {
     float: right;
     width: 100%;
 }
 
-.topnav input[type=text] {
+.c-topnav input[type=text] {
     //padding: 6px;
     //margin-top: 8px;
     font-size: 1.5rem;
-    font-family: raleway;
+    font-family: 'Raleway';
     border: none;
     background-color: #EFEFEF;
 }
 
-.topnav .search-container button {
+.c-topnav .search-container button {
     float: left;
     background: #EFEFEF;
     border: none;
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-    .topnav .search-container {
+/*@media screen and (max-width: 600px) {
+    .c-topnav .search-container {
         float: none;
     }
 
-    .topnav a,
-    .topnav input[type=text],
-    .topnav .search-container button {
+    .c-topnav a,
+    .c-topnav input[type=text],
+    .c-topnav .search-container button {
         float: none;
         display: block;
         text-align: left;
@@ -56,6 +112,96 @@ body {
         margin: 0;
         padding: 14px;
     }
-}
+}*/
 
 /*logo*/
+
+.c-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+/*rechterkant linken + winkelmandje*/
+.c-topnavigation {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    z-index: 1;
+    //right: -45px;
+
+
+    font-size: 24px;
+    font-family: 'Oxygen';
+
+    &__line {
+        border-right: 1px solid $color-title-h3;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .c-topnavigation {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1264px) {
+    .c-topnavigation {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .c-topnavigation {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .c-topnavigation {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .c-topnavigation {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .c-topnavigation {
+        font-size: 11px;
+    }
+}
+
+
+.c-topnavigation>li {
+    margin-right: 8px;
+    padding-right: 8px;
+    margin-top: 16px;
+}
+
+.c-topnavigation>li>a {
+    text-decoration: none;
+    color: $color-title-h3;
+}
+
+.c-topnavigation>li>a:hover {
+    color: $color-gold;
+}
+
+.c-topnavigation>li>a:active {
+    color: $color-title-h1;
+}
