@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -12858,6 +12859,7 @@ ul .c-usp__tekst--extra {
 .c-uitleg__h1 {
   font: 35px "Oxygen", "sans-serif";
   color: #705e16;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 500px) {
@@ -13237,6 +13239,7 @@ ul .c-usp__tekst--extra {
   }
 }
 
+
 .c-about {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -13252,6 +13255,7 @@ ul .c-usp__tekst--extra {
   margin-bottom: 3.5rem;
   margin-top: 4.45rem;
 }
+
 
 @media only screen and (max-width: 930px) {
   .c-repair__2 {
@@ -14327,6 +14331,7 @@ label {
   color: #707070;
   font-weight: bold;
   padding-top: 20px;
+  text-align: right;
 }
 
 @media only screen and (max-width: 1630px) {
