@@ -12096,7 +12096,6 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-    text-align: center;
     padding-bottom: 2rem;
   }
 }
@@ -12125,7 +12124,6 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-    text-align: center;
     padding-bottom: 2rem;
   }
 }
@@ -12144,6 +12142,12 @@ a.text-dark:hover, a.text-dark:focus {
   color: white;
 }
 
+@media (max-width: 1199.98px) {
+  .c-footer__contact {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .c-footer__contact {
     display: -webkit-box;
@@ -12154,13 +12158,18 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-    text-align: center;
     padding-bottom: 2rem;
   }
 }
 
 .c-footer-gegevens {
   margin-top: 1.25rem;
+}
+
+@media (max-width: 1199.98px) {
+  .c-footer__overons {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -12173,7 +12182,6 @@ a.text-dark:hover, a.text-dark:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-    text-align: center;
     padding-bottom: 2rem;
   }
 }
@@ -12228,7 +12236,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (max-width: 576px) {
   .c-footer__icon {
-    max-width: 30%;
+    max-width: 70%;
   }
 }
 
@@ -12254,13 +12262,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-@media (max-width: 575.98px) {
-  .c-footer__icon-instagram {
-    margin-right: 0;
-    width: 3rem;
-  }
-}
-
 @media (max-width: 767.98px) {
   .c-footer__copyright {
     display: -webkit-box;
@@ -12276,6 +12277,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media only screen and (max-width: 767.98px) and (max-width: 576px) {
+  .c-footer__copyright {
+    max-width: 70%;
+  }
+}
+
 .c-footer__copyright-text {
   text-align: end;
   padding-top: 15px;
@@ -12283,7 +12290,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (max-width: 767.98px) {
   .c-footer__copyright-text {
-    text-align: center;
+    text-align: start;
+    margin-left: -15px;
   }
 }
 
@@ -14850,7 +14858,7 @@ label {
 }
 
 .c-service__services-levering {
-  margin-right: 8.9vw;
+  margin-right: 4.65vw;
 }
 
 @media (max-width: 991.98px) {
@@ -14909,7 +14917,7 @@ label {
 }
 
 .c-service__services-onderhoud {
-  margin-right: 8.9vw;
+  margin-right: 4.65vw;
 }
 
 @media (max-width: 991.98px) {
