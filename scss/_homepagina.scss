@@ -504,7 +504,27 @@ button.o-button.c-uitleg__button {
     padding-left: 800px;
     padding-right: 800px;
     @media only screen and (max-width: 1880px) {
-      padding-left: 400px;
+      padding-left: 750px;
+      padding-right: 400px;
+    }
+    @media only screen and (max-width: 1755px) {
+      padding-left: 700px;
+      padding-right: 400px;
+    }
+    @media only screen and (max-width: 1668px) {
+      padding-left: 650px;
+      padding-right: 400px;
+    }
+    @media only screen and (max-width: 1583px) {
+      padding-left: 600px;
+      padding-right: 400px;
+    }
+    @media only screen and (max-width: 1330px) {
+      padding-left: 500px;
+      padding-right: 400px;
+    }
+    @media only screen and (max-width: 1320px) {
+      padding-left: 300px;
       padding-right: 400px;
     }
     @media only screen and (max-width: 1080px) {
@@ -515,9 +535,15 @@ button.o-button.c-uitleg__button {
       padding-left: 100px;
       padding-right: 100px;
     }
+    @media only screen and (max-width: 530px) {
+      padding-top: 150px;
+    }
     @media only screen and (max-width: 480px) {
       padding-left: 50px;
       padding-right: 50px;
+    }
+    @media only screen and (max-width: 400px) {
+      padding-top: 50px;
     }
     @media only screen and (max-width: 380px) {
       padding-left: 30px;
