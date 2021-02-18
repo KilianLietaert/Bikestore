@@ -37,80 +37,80 @@
 
 /*intro van pagina*/
 .c-intro {
-    min-height: 784px;
-    width: 100%;
-    background-color: white;
-    margin: 0;
-    padding-left: 7px;
+  min-height: 784px;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding-left: 7px;
 
-    @include media-breakpoint-down(lg) {
-        //margin-bottom: 100px;
-        padding-bottom: 100px;
+  @include media-breakpoint-down(lg) {
+    //margin-bottom: 100px;
+    padding-bottom: 100px;
 
-    }
+  }
 
-    &__foto {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  &__foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        &--g {
-            min-height: 569px;
+    &--g {
+      min-height: 569px;
 
-            @include media-breakpoint-down(sm) {
-                min-height: 0;
-                width: 80%;
-            }
-        }
-    }
-
-    &__h {
-        color: $color-title-h2;
-        margin-bottom: 23px;
-    }
-
-
-    &__text {
-        font: $font-text2;
-        color: $color-nav-item-hover;
-        margin-bottom: 28px;
-
-        &--color {
-            color: $color-gold;
-        }
-
-        &--extra {
-            margin-bottom: 170px;
-            font: $font-text2;
-
-            @include media-breakpoint-down(sm) {
-                margin-bottom: 100px;
-            }
-        }
-
-        &--tijd {
-            display: flex;
-            align-items: center;
-            font: $font-text2;
-
-            @include media-breakpoint-down(md) {
-                margin-bottom: 20px;
-            }
-        }
-
-        &--responsief {
-            margin-bottom: 49px;
-        }
-
-        &--responsief2 {
-            margin-bottom: 62px;
-        }
-
-        &--small {
-            font: $font-text-footer;
-        }
+      @include media-breakpoint-down(sm) {
+        min-height: 0;
+        width: 80%;
+      }
     }
   }
+
+  &__h {
+    color: $color-title-h2;
+    margin-bottom: 23px;
+  }
+
+
+  &__text {
+    font: $font-text2;
+    color: $color-nav-item-hover;
+    margin-bottom: 28px;
+
+    &--color {
+      color: $color-gold;
+    }
+
+    &--extra {
+      margin-bottom: 170px;
+      font: $font-text2;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 100px;
+      }
+    }
+
+    &--tijd {
+      display: flex;
+      align-items: center;
+      font: $font-text2;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &--responsief {
+      margin-bottom: 49px;
+    }
+
+    &--responsief2 {
+      margin-bottom: 62px;
+    }
+
+    &--small {
+      font: $font-text-footer;
+    }
+  }
+
 
 
 @media only screen and (max-width: 1380px) {
@@ -153,7 +153,7 @@
   margin-left: 145px;
 }
 
-.c-uur > div {
+.c-uur>div {
   background-color: $color-text2;
   height: 188px;
   width: 138px;
@@ -162,18 +162,18 @@
   color: $color-nav-item;
 }
 
-.c-uur > div > p {
+.c-uur>div>p {
   font-size: 140px;
   font-family: "Oxygen";
 }
 
 @media only screen and (max-width: 1500px) {
-  .c-uur > div {
+  .c-uur>div {
     height: 150px;
     width: 100px;
   }
 
-  .c-uur > div > p {
+  .c-uur>div>p {
     font-size: 100px;
   }
 }
@@ -185,12 +185,12 @@
 }
 
 @media only screen and (max-width: 730px) {
-  .c-uur > div {
+  .c-uur>div {
     height: 100px;
     width: 80px;
   }
 
-  .c-uur > div > p {
+  .c-uur>div>p {
     font-size: 60px;
   }
 }
@@ -210,15 +210,15 @@
     }
   }
 
-    &__blok2 {
-        display: flex;
-        padding-top: 14px;
+  &__blok2 {
+    display: flex;
+    padding-top: 14px;
 
-        @include media-breakpoint-down(lg) {
-            justify-content: center;
-            margin-bottom: 100px;
-            padding-top: 0px;
-        }
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+      margin-bottom: 100px;
+      padding-top: 0px;
+    }
 
     @include media-breakpoint-down(md) {
       flex-wrap: wrap;
@@ -234,7 +234,7 @@
   flex-wrap: wrap;
 }
 
-.c-icon > li {
+.c-icon>li {
   margin-right: 65px;
 
   @include media-breakpoint-down(lg) {
@@ -273,6 +273,10 @@ label {
   color: #d2b02a;
   font-size: 24px;
   font-family: "Raleway", sans-serif;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
 }
 
 .c-button__form {
@@ -291,22 +295,22 @@ label {
   color: black;
 }
 
-.form-floating > label {
-  padding-top: 10px;
-  padding-left: 10px;
-}
+// .form-floating>label {
+//   padding-top: 10px;
+//   padding-left: 10px;
+// }
 
-.form-floating > .form-select {
+.form-floating>.form-select {
   color: #d2b02a;
   font-size: 24px;
   padding: 5px;
   font-family: "Oxygen", sans-serif;
 }
 
-.form-floating > .form-control:focus,
-.form-floating > .form-control:not(:placeholder-shown) {
-  padding-left: 10px;
-  padding-top: 10px;
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+  // padding-left: 10px;
+  // padding-top: 10px;
   font-family: "Oxygen", sans-serif;
   color: #d2b02a;
   font-size: 24px;
