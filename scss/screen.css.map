@@ -104,7 +104,8 @@
         "_blogdetail.scss",
         "_components.service.scss",
         "_components.brochureAanvragen.scss",
-        "_contact.scss"
+        "_contact.scss",
+        "_brochureBedankt.scss"
     ],
     "names": [],
     "file": "screen.css"
