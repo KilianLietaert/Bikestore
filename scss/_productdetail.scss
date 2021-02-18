@@ -1,0 +1,220 @@
+.breadcrumb {
+  background-color: white;
+  margin-left: 200px;
+}
+
+.c-images {
+  height: auto !important;
+  width: 135px !important;
+  margin-left: 200px;
+  z-index: 1;
+  position: relative;
+}
+
+.c-images__klein {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ruimte {
+  margin-bottom: 8px;
+}
+
+.ruimte2 {
+  margin-top: 8px;
+}
+
+.c-images__grote {
+  border: rgb(184, 183, 183) solid 1px;
+  width: 800px;
+  height: 540px;
+  margin-top: -545px;
+  margin-left: 300px;
+}
+
+.img-fluid {
+  position: absolute;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  margin-left: 50px !important;
+}
+
+/* ---------------------------------------- */
+
+.c-info {
+  width: 350px;
+  float: right;
+  margin-right: 400px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.c-h1 {
+  font-size: 40px;
+  margin-top: -550px;
+}
+
+.c-prijs {
+  color: #d2b02a;
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.c-fietsen {
+  margin-right: -150px !important;
+}
+
+.c-fiets {
+  width: 80px !important;
+  margin: 20px;
+}
+
+.c-fiets:hover {
+  border: #d2b02a solid 2px;
+}
+
+.c-fiets__kleurnaam {
+  font-size: 15px;
+  text-align: center;
+}
+
+select {
+  width: 386px;
+  margin-bottom: 20px;
+}
+
+.c-fietsverzekering__link a {
+  text-decoration: underline;
+  color: grey;
+}
+
+.c-fietsen__aantal {
+  width: 60px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.c-fietsen__verzenden {
+  margin-top: 10px;
+  background-color: #d2b02a;
+  border: #705e16 solid 1px;
+  border-radius: 32px;
+}
+
+/* ------------------------------- */
+
+.c-fietsproductbeschrijving {
+  font-family: "Oxygen", sans-serif;
+}
+
+.c-productbeschrijving {
+  width: 882px;
+  margin-left: 200px;
+  margin-top: 150px;
+
+  &__pararaaf {
+    font-family: "Raleway", sans-serif !important;
+    font-size: 20px !important;
+  }
+
+  &__paragraafblokken {
+    margin-bottom: 700px;
+  }
+
+  &__p--punten {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+  }
+}
+
+.c-productbeschrijving__h2 {
+  font: $font-h2;
+  color: $color-title-h2;
+}
+
+.c-productbeschrijving__paragraaf {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 20px !important;
+}
+
+.c-productbeschrijving2 {
+  width: 882px;
+  margin-left: 200px;
+  margin-top: 80px;
+}
+
+.fa-plus-circle {
+  color: #127702;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.fa-minus-circle {
+  color: #ce0a0a;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+.c-table {
+  float: right;
+  margin-right: 250px;
+  margin-top: -1600px;
+  width: 490px;
+  font-family: "Oxygen", sans-serif;
+}
+
+.c-table2 {
+  float: right;
+  margin-right: 250px;
+  margin-top: -1200px;
+  width: 490px;
+  font-family: "Oxygen", sans-serif;
+  margin-bottom: 200px;
+}
+
+.c-table__rechts {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.c-table__links {
+  padding-left: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(210, 176, 42, 0.39);
+}
+
+th {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+.c-personaliseer {
+  float: right;
+  margin-right: 235px;
+  margin-top: -800px;
+  //margin-bottom: 300px;
+
+  &__form {
+    border: 1px solid #707070;
+    padding: 30px;
+  }
+
+  &__prijsbutton {
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+}
+
+/* -------------------------------------------------------------------------------------- */
