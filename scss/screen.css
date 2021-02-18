@@ -12378,7 +12378,7 @@ body {
 }
 
 @media only screen and (max-width: 1604px) {
-  .c-topnav__input .c-topnav__input {
+  .c-topnav__input {
     width: auto;
   }
 }
@@ -12446,6 +12446,7 @@ body {
 
 @media (max-width: 991.98px) {
   .c-logo {
+    margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
   }
@@ -13236,6 +13237,22 @@ ul .c-usp__tekst--extra {
   }
 }
 
+.c-about {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.c-about__info {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 3.5rem;
+  margin-top: 4.45rem;
+}
+
 @media only screen and (max-width: 930px) {
   .c-repair__2 {
     -webkit-transform: translate(30px, 300px);
@@ -13687,7 +13704,7 @@ ul .c-usp__tekst--extra {
 
 @media (max-width: 1199.98px) {
   .c-intro {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -13703,7 +13720,8 @@ ul .c-usp__tekst--extra {
           align-items: center;
 }
 
-.c-intro--g {
+
+.c-intro__foto--g {
   min-height: 569px;
 }
 
@@ -13882,6 +13900,7 @@ ul .c-usp__tekst--extra {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 14px;
 }
 
 @media (max-width: 1199.98px) {
@@ -13890,6 +13909,7 @@ ul .c-usp__tekst--extra {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 100px;
+    padding-top: 0px;
   }
 }
 
@@ -15159,5 +15179,128 @@ label {
 
 .col-lg-5 {
   padding-left: 0;
+}
+
+.c-folder {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.c-folder__info {
+  margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-folder__info {
+    width: 80%;
+  }
+}
+
+.c-folder__info-title {
+  font: 35px "Oxygen", "sans-serif";
+  color: #705e16;
+  font-weight: bold;
+}
+
+.c-folder__info-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-folder__info-text-strong {
+  font: 24px "raleway", "sans-serif";
+  color: #d2b02a;
+  font-weight: bold;
+}
+
+.c-folder__aanvraag {
+  width: 100%;
+}
+
+.c-folder__aanvraag-foto {
+  margin-right: 10.8vw;
+  margin-left: 70px;
+}
+
+@media (max-width: 1199.98px) {
+  .c-folder__aanvraag-foto {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-folder__aanvraag-foto {
+    width: 80%;
+  }
+}
+
+.c-folder__aanvraag-foto-brochure {
+  width: 24.1vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-folder__aanvraag-foto-brochure {
+    width: 30vw;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 3vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-folder__aanvraag-foto-brochure {
+    width: 35vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-folder__aanvraag-formulier {
+    width: 80%;
+  }
+}
+
+.c-folder__aanvraag-formulier-title {
+  font: 30px "oxygen", "sans-serif";
+  color: #705e16;
+  font-weight: bold;
+}
+
+.c-folder__aanvraag-formulier-subtitle {
+  font: 26px "Raleway", "sans-serif";
+  color: #705e16;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.c-folder__aanvraag-formulier-naam {
+  margin-bottom: 20px;
+}
+
+.c-folder__aanvraag-formulier-email {
+  margin-bottom: 22px;
+}
+
+.c-folder__aanvraag-formulier-checkbox {
+  width: 27px;
+}
+
+.c-folder__aanvraag-formulier-checkbox-text {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-folder__aanvraag-form-button {
+  margin-top: 50px;
+  margin-bottom: 62px;
+}
+
+.c-folder__aanvraag-info {
+  font: 24px "raleway", "sans-serif";
+}
+
+.c-folder__aanvraag-formulier-checkbox[type=checkbox] {
+  width: 27px;
+  height: 27px;
 }
 /*# sourceMappingURL=screen.css.map */
