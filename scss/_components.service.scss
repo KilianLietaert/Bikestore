@@ -34,6 +34,19 @@
         width: 78vw;
         margin-bottom: 1vw;
       }
+
+      @media only screen and (max-width: 576px) {
+        width: 78vw;
+        margin-left: 2vw;
+        margin-bottom: 1vw;
+      }
+
+      @media only screen and (max-width: 575px) {
+        width: 78vw;
+        margin-left: 0vw;
+        margin-bottom: 1vw;
+      }
+
     }
 
     &-title {
@@ -82,7 +95,7 @@
       }
 
       @include media-breakpoint-down(sm) {
-        margin-bottom: 15vw;
+        margin-bottom: 10vw;
       }
 
       &-title {
@@ -110,8 +123,13 @@
         }
 
         @include media-breakpoint-down(sm) {
-          width: 25vw;
-          height: 25vw;
+          width: 20vw;
+          height: 20vw;
+        }
+
+        @media only screen and (max-width: 400px) {
+          width: 40vw;
+          height: 40vw;
         }
 
       }
@@ -132,7 +150,7 @@
       }
 
       @include media-breakpoint-down(sm) {
-        margin-bottom: 15vw;
+        margin-bottom: 10vw;
       }
 
       &-title {
@@ -160,8 +178,13 @@
         }
 
         @include media-breakpoint-down(sm) {
-          width: 25vw;
-          height: 25vw;
+          width: 15vw;
+          height: 15vw;
+        }
+
+        @media only screen and (max-width: 400px) {
+          width: 30vw;
+          height: 30vw;
         }
 
       }
@@ -181,7 +204,7 @@
       }
 
       @include media-breakpoint-down(sm) {
-        margin-bottom: 15vw;
+        margin-bottom: 0vw;
       }
 
       &-title {
@@ -212,8 +235,13 @@
         }
 
         @include media-breakpoint-down(sm) {
-          width: 25vw;
-          height: 25vw;
+          width: 15vw;
+          height: 15vw;
+        }
+
+        @media only screen and (max-width: 400px) {
+          width: 30vw;
+          height: 30vw;
         }
       }
 
@@ -244,9 +272,10 @@
       }
 
       @media only screen and (max-width: 576px) {
-        max-width: 78%;
+        max-width: 80%;
         justify-content: center;
         margin-left: 8vw;
+        margin-top: 40px;
     }
     }
 
@@ -261,6 +290,11 @@
         font: $font-text;
         font-weight: bold;
         margin-bottom: 40px;
+
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 20px;
+
+        }
       }
 
       &-text {
@@ -282,7 +316,7 @@
 
         @include media-breakpoint-down(md) {
           width: 82vw;
-          margin-bottom: 1vw;
+          margin-bottom: 3vw;
         }
 
         @media only screen and (max-width: 576px) {
@@ -302,6 +336,11 @@
         font: $font-text;
         font-weight: bold;
         margin-bottom: 40px;
+
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 20px;
+
+        }
       }
 
       &-text {
@@ -320,6 +359,11 @@
     margin-top: 80px;
     margin-bottom: 110px;
     width: 100%;
+
+    @media only screen and (max-width: 576px) {
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
 
     &-logo{
       @media only screen and (max-width: 576px) {

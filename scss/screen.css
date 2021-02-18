@@ -13440,13 +13440,13 @@ ul .c-usp__tekst--extra {
 
 .c-about__info-foto {
   width: 39.02vw;
-  height: 25.98vw;
+  height: auto;
 }
 
 @media (max-width: 1199.98px) {
   .c-about__info-foto {
     width: 64vw;
-    height: 42.7vw;
+    height: auto;
     margin-top: 5vw;
   }
 }
@@ -13461,7 +13461,7 @@ ul .c-usp__tekst--extra {
 
 @media only screen and (max-width: 576px) {
   .c-about__info-inhoud {
-    max-width: 70%;
+    max-width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -13477,16 +13477,29 @@ ul .c-usp__tekst--extra {
   margin-bottom: 89px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .c-about__kopen {
+    margin-bottom: 50px;
+  }
+}
+
 .c-about__kopen-title {
   font: 30px "oxygen", "sans-serif";
   color: #705e16;
   margin-bottom: 4.55rem;
+  text-align: center;
 }
 
 @media (max-width: 1199.98px) {
   .c-about__kopen-title {
-    width: 70%;
+    width: 80%;
     margin-bottom: 2vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__kopen-title {
+    margin-bottom: 30px;
   }
 }
 
@@ -13518,7 +13531,7 @@ ul .c-usp__tekst--extra {
 
 @media only screen and (max-width: 576px) {
   .c-about__kopen-internet-info {
-    max-width: 70%;
+    max-width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -13541,19 +13554,37 @@ ul .c-usp__tekst--extra {
 
 .c-about__kopen-winkel-foto-verkoper {
   width: 27.91vw;
+  height: 20vw;
 }
 
 @media (max-width: 1199.98px) {
   .c-about__kopen-winkel-foto-verkoper {
     width: 55vw;
-    margin-top: 5vw;
+    height: auto;
+    margin-top: 2vw;
     margin-bottom: 3vw;
   }
 }
 
 @media only screen and (max-width: 576px) {
+  .c-about__kopen-winkel-foto-verkoper {
+    margin-left: 2vw;
+    margin-top: 0vw;
+    width: 63vw;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .c-about__kopen-winkel-foto-verkoper {
+    margin-left: 10vw;
+    margin-top: 0vw;
+    width: 63vw;
+  }
+}
+
+@media only screen and (max-width: 576px) {
   .c-about__kopen-winkel-info {
-    max-width: 70%;
+    max-width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -13567,8 +13598,23 @@ ul .c-usp__tekst--extra {
   font-style: italic;
 }
 
+@media only screen and (max-width: 1700px) {
+  .c-about__subtitle {
+    margin-top: 50px;
+  }
+}
+
 .c-about__comfort {
   margin-bottom: 56px;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__comfort {
+    max-width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .c-about__comfort-title {
@@ -13579,6 +13625,15 @@ ul .c-usp__tekst--extra {
 
 .c-about__comfort-text {
   font: 24px "raleway", "sans-serif";
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__weesgerust {
+    max-width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .c-about__weesgerust-title {
@@ -13600,6 +13655,20 @@ ul .c-usp__tekst--extra {
 .c-about__proefrit {
   margin-top: 73px;
   margin-bottom: 73px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .c-about__proefrit {
+    margin-top: 53px;
+    margin-bottom: 53px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .c-about__proefrit {
+    margin-top: 33px;
+    margin-bottom: 33px;
+  }
 }
 
 .c-about__proefrit-title {
@@ -13626,6 +13695,12 @@ ul .c-usp__tekst--extra {
   width: 56.7vw;
 }
 
+@media only screen and (max-width: 576px) {
+  .c-about__foto {
+    width: 79.7vw;
+  }
+}
+
 @media (max-width: 1199.98px) {
   h1 {
     font-size: 32px  !important;
@@ -13641,6 +13716,16 @@ ul .c-usp__tekst--extra {
   }
   strong {
     font-size: 24px !important;
+  }
+  .o-button {
+    border-radius: 32px;
+    background-color: #d2b02a;
+    border: 2px solid #705e16;
+    padding: 8px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    font: 22px "oxygen", sans-serif;
+    color: #000000;
   }
 }
 
@@ -13660,24 +13745,6 @@ ul .c-usp__tekst--extra {
   strong {
     font-size: 22px !important;
   }
-}
-
-@media (max-width: 767.98px) {
-  h1 {
-    font-size: 28px !important;
-  }
-  h2 {
-    font-size: 26px !important;
-  }
-  h3 {
-    font-size: 20px !important;
-  }
-  p {
-    font-size: 20px !important;
-  }
-  strong {
-    font-size: 20px !important;
-  }
   .o-button {
     border-radius: 32px;
     background-color: #d2b02a;
@@ -13686,6 +13753,35 @@ ul .c-usp__tekst--extra {
     padding-left: 20px !important;
     padding-right: 20px !important;
     font: 20px "oxygen", sans-serif;
+    color: #000000;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 26px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+  strong {
+    font-size: 16px !important;
+  }
+  .o-button {
+    border-radius: 32px;
+    background-color: #d2b02a;
+    border: 2px solid #705e16;
+    padding: 8px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font: 16px "oxygen", sans-serif;
     color: #000000;
   }
 }
@@ -14817,6 +14913,22 @@ label {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .c-service__advies-foto {
+    width: 78vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .c-service__advies-foto {
+    width: 78vw;
+    margin-left: 0vw;
+    margin-bottom: 1vw;
+  }
+}
+
 .c-service__advies-title {
   font: 30px "oxygen", "sans-serif";
   color: #705e16;
@@ -14871,7 +14983,7 @@ label {
 
 @media (max-width: 767.98px) {
   .c-service__services-levering {
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
   }
 }
 
@@ -14906,8 +15018,15 @@ label {
 
 @media (max-width: 767.98px) {
   .c-service__services-levering-image {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .c-service__services-levering-image {
+    width: 40vw;
+    height: 40vw;
   }
 }
 
@@ -14930,7 +15049,7 @@ label {
 
 @media (max-width: 767.98px) {
   .c-service__services-onderhoud {
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
   }
 }
 
@@ -14965,8 +15084,15 @@ label {
 
 @media (max-width: 767.98px) {
   .c-service__services-onderhoud-image {
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .c-service__services-onderhoud-image {
+    width: 30vw;
+    height: 30vw;
   }
 }
 
@@ -14985,7 +15111,7 @@ label {
 
 @media (max-width: 767.98px) {
   .c-service__services-herstelling {
-    margin-bottom: 15vw;
+    margin-bottom: 0vw;
   }
 }
 
@@ -15023,8 +15149,15 @@ label {
 
 @media (max-width: 767.98px) {
   .c-service__services-herstelling-image {
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .c-service__services-herstelling-image {
+    width: 30vw;
+    height: 30vw;
   }
 }
 
@@ -15060,11 +15193,12 @@ label {
 
 @media only screen and (max-width: 576px) {
   .c-service__verhelping-title {
-    max-width: 78%;
+    max-width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: 8vw;
+    margin-top: 40px;
   }
 }
 
@@ -15081,6 +15215,12 @@ label {
   font: 24px "raleway", "sans-serif";
   font-weight: bold;
   margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .c-service__verhelping-pech-title {
+    margin-bottom: 20px;
+  }
 }
 
 .c-service__verhelping-pech-text {
@@ -15108,7 +15248,7 @@ label {
 @media (max-width: 991.98px) {
   .c-service__verhelping-pech-foto {
     width: 82vw;
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
   }
 }
 
@@ -15133,6 +15273,12 @@ label {
   margin-bottom: 40px;
 }
 
+@media (max-width: 767.98px) {
+  .c-service__verhelping-garantie-title {
+    margin-bottom: 20px;
+  }
+}
+
 .c-service__verhelping-garantie-text {
   font: 24px "raleway", "sans-serif";
 }
@@ -15147,6 +15293,13 @@ label {
   margin-top: 80px;
   margin-bottom: 110px;
   width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-service__verzekering {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
