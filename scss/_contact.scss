@@ -71,6 +71,7 @@
     &__map {
         width: 100%;
         max-width: 830px;
+        height: auto;
     }
 }
 
@@ -82,7 +83,7 @@
         position: absolute;
         bottom: 10px;
 
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
             margin-left: -10px;
         }
     }
