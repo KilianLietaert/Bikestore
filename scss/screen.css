@@ -12414,6 +12414,7 @@ body {
   background: #EFEFEF;
   border: none;
   cursor: pointer;
+  height: 100%;
 }
 
 /*logo*/
@@ -12431,6 +12432,7 @@ body {
 
 @media (max-width: 991.98px) {
   .c-logo {
+    display: none;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -12518,6 +12520,31 @@ body {
 
 .c-topnavigation > li > a:active {
   color: #705e16;
+}
+
+/* responsive nav structuur*/
+.c-navover {
+  padding: 0;
+}
+
+@media (max-width: 991.98px) {
+  .c-navover__nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .c-navover__nav .bg-light {
+    background-color: #EFEFEF !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-navover__topnav {
+    margin-top: 100px;
+  }
+  .c-navover__topnav .top-nav {
+    background-color: #705e16;
+  }
 }
 
 .nav-item {

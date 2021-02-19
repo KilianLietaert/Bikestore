@@ -95,6 +95,7 @@ body {
     background: #EFEFEF;
     border: none;
     cursor: pointer;
+    height: 100%;
 }
 
 /*logo*/
@@ -105,6 +106,7 @@ body {
     align-items: center;
 
     @include media-breakpoint-down(md) {
+        display: none;
         margin: auto;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -187,4 +189,33 @@ body {
 
 .c-topnavigation>li>a:active {
     color: $color-title-h1;
+}
+
+/* responsive nav structuur*/
+
+.c-navover {
+    padding: 0;
+
+    &__nav {
+
+        @include media-breakpoint-down(md) {
+            position: fixed;
+            width: 100%;
+            top: 0;
+
+            .bg-light {
+                background-color: #EFEFEF !important;
+            }
+        }
+    }
+
+    &__topnav {
+        @include media-breakpoint-down(md) {
+            margin-top: 100px;
+
+            .top-nav {
+                background-color: $color-nav-background;
+            }
+        }
+    }
 }
