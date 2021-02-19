@@ -23,4 +23,8 @@
     color: $color-text;
     border-bottom: $color-text 1px solid;
     font: $font-text;
+
+    &:hover {
+        color: $color-gold;
+    }
 }
