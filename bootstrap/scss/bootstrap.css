@@ -549,33 +549,33 @@ pre code {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px;
+    max-width: 548px;
   }
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px;
+    max-width: 736px;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
+    max-width: 956px;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1640px;
   }
 }
 
@@ -585,8 +585,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
 }
 
 .no-gutters {
@@ -609,8 +609,8 @@ pre code {
 .col-xxl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
 }
 
 .col {
@@ -5483,7 +5483,7 @@ input[type="button"].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
 }
 
 @media (min-width: 576px) {
@@ -5495,21 +5495,21 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
   }
   .card-deck .card {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
             flex: 1 0 0%;
-    margin-right: 15px;
+    margin-right: 7.5px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 7.5px;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
 }
 
 @media (min-width: 576px) {

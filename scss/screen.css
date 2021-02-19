@@ -894,33 +894,33 @@ pre code {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 576px) {
   .container, .container-sm {
-    max-width: 540px;
+    max-width: 548px;
   }
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px;
+    max-width: 736px;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
+    max-width: 956px;
   }
 }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1640px;
   }
 }
 
@@ -930,8 +930,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
 }
 
 .no-gutters {
@@ -954,8 +954,8 @@ pre code {
 .col-xxl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
 }
 
 .col {
@@ -5828,7 +5828,7 @@ input[type="button"].btn-block {
 }
 
 .card-deck .card {
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
 }
 
 @media (min-width: 576px) {
@@ -5840,21 +5840,21 @@ input[type="button"].btn-block {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -7.5px;
+    margin-left: -7.5px;
   }
   .card-deck .card {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
             flex: 1 0 0%;
-    margin-right: 15px;
+    margin-right: 7.5px;
     margin-bottom: 0;
-    margin-left: 15px;
+    margin-left: 7.5px;
   }
 }
 
 .card-group > .card {
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
 }
 
 @media (min-width: 576px) {
@@ -15565,7 +15565,6 @@ label {
 .c-googlemap__map {
   width: 100%;
   max-width: 830px;
-  height: auto;
 }
 
 .c-contactinfo {
@@ -15582,10 +15581,15 @@ label {
   .c-contactinfo__plaats {
     margin-left: -10px;
   }
+  .c-contactinfo__plaats__map {
+    width: 100%;
+    max-width: 830px;
+    height: auto;
+  }
 }
 
 @media (max-width: 991.98px) {
-  .c-contactinfo {
+  .c-contactinfo__plaats {
     min-height: 500px;
     padding: 100px !important;
     padding-bottom: 0;
@@ -15593,27 +15597,33 @@ label {
 }
 
 @media (max-width: 767.98px) {
-  .c-contactinfo {
+  .c-contactinfo__plaats {
     min-height: 500px;
     padding: 40px !important;
     padding-bottom: 0;
   }
 }
 
-.form-floating > label {
+.c-contactinfo .form-floating > label {
   padding-top: 15px;
   padding-left: 10px;
 }
 
-.form-floating > label:focus {
+.c-contactinfo .form-floating > label:focus {
   padding-top: -100px;
   padding-left: 0;
   font-size: 18px;
 }
 
-.form-floating > .form-control > input:focus {
+.c-contactinfo .form-floating > .form-control > input:focus {
   height: 100px;
   outline: none;
+}
+
+@media (max-width: 767.98px) {
+  .c-contactinfo {
+    margin-left: -10px;
+  }
 }
 
 .form-floating > .form-control:focus ~ label,
