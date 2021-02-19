@@ -1,0 +1,26 @@
+.c-bedankt>h2 {
+    margin-bottom: 24px;
+    margin-top: 58px;
+    color: $color-title-h1;
+    font: $font-h1;
+}
+
+.c-bedankt__p {
+    margin-bottom: 19px;
+    font: $font-text;
+    font-weight: bold;
+    color: $color-text;
+
+    &--margin {
+        margin-bottom: 30px;
+        font: $font-text;
+        color: $color-text;
+    }
+}
+
+.c-bedankt__p--margin>a {
+    text-decoration: none;
+    color: $color-text;
+    border-bottom: $color-text 1px solid;
+    font: $font-text;
+}
