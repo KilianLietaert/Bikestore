@@ -81,8 +81,15 @@
     position: absolute;
     bottom: 10px;
 
+
     @include media-breakpoint-down(sm) {
       margin-left: -10px;
+
+    &__map {
+        width: 100%;
+        max-width: 830px;
+        height: auto;
+
     }
   }
 
@@ -110,10 +117,17 @@
   font-size: 18px;
 }
 
+
 .form-floating > .form-control > input:focus {
   height: 100px;
   outline: none;
 }
+
+        @include media-breakpoint-down(sm) {
+            margin-left: -10px;
+        }
+    }
+
 
 .form-floating > .form-control:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
