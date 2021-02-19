@@ -13718,9 +13718,112 @@ ul .c-usp__tekst--extra {
   margin-top: 15px;
 }
 
-input[type=checkbox] {
-  width: 27px;
-  height: 27px;
-  border-radius: 0;
+.c-filter-section {
+  margin-bottom: 50px;
+}
+
+.c-filter-section__titel {
+  font-weight: bold;
+}
+
+.c-filter-section__pricerange {
+  margin-left: -10px;
+}
+
+.c-filter-section__pricerange input {
+  display: inline-block;
+  width: 100px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.c-filter-section__pricerange input::-webkit-input-placeholder {
+  color: #C4C3BF;
+  font-family: "raleway", "sans-serif";
+}
+
+.c-filter-section__pricerange input:-ms-input-placeholder {
+  color: #C4C3BF;
+  font-family: "raleway", "sans-serif";
+}
+
+.c-filter-section__pricerange input::-ms-input-placeholder {
+  color: #C4C3BF;
+  font-family: "raleway", "sans-serif";
+}
+
+.c-filter-section__pricerange input::placeholder {
+  color: #C4C3BF;
+  font-family: "raleway", "sans-serif";
+}
+
+.c-filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c-filter-container input {
+  position: absolute;
+  top: 3px;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.c-filter-container__checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.c-filter-container__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c-filter-container:hover input ~ .c-filter-container__checkmark {
+  background-color: #ccc;
+}
+
+.c-filter-container input:checked ~ .c-filter-container__checkmark {
+  background-color: #d2b02a;
+}
+
+.c-filter-container input:checked ~ .c-filter-container__checkmark:after {
+  display: block;
+}
+
+.c-filter-container__checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 /*# sourceMappingURL=screen.css.map */
