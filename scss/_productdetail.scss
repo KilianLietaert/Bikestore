@@ -1,0 +1,278 @@
+.c-product__fotogroep {
+  margin-top: 100px;
+  @media only screen and (max-width: 1600px) {
+    margin-left: 50px !important;
+  }
+  @media only screen and (max-width: 1200px) {
+    margin-left: 90px !important;
+  }
+  @media only screen and (max-width: 990px) {
+    margin-left: 40px !important;
+  }
+}
+
+.c-product__fotosklein {
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+  margin-left: -10px;
+  @media only screen and (max-width: 360px) {
+    margin-left: 0px !important;
+    margin-top: -20px;
+  }
+}
+
+.c-product__fotogroot {
+  position: relative;
+  border: 1px solid grey;
+  padding: 20px;
+  z-index: -1;
+  max-width: 900px;
+  margin-left: 70px;
+
+  &--img {
+    max-width: 100%;
+    width: 828px;
+  }
+}
+
+.c-product__fotosklein--onderdeel {
+  width: 160px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 1100px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 1000px) {
+    max-width: 75%;
+  }
+  @media only screen and (max-width: 800px) {
+    max-width: 50%;
+  }
+  @media only screen and (max-width: 620px) {
+    max-width: 40%;
+  }
+  @media only screen and (max-width: 520px) {
+    max-width: 30%;
+  }
+  @media only screen and (max-width: 520px) {
+    margin-left: 10px;
+    margin-top: -10px;
+  }
+}
+
+.fa-chevron-up,
+.fa-chevron-down {
+  margin-left: 20px;
+}
+
+.c-product__info--kleurfietsafbeelding {
+  max-width: 80px;
+  height: auto;
+}
+
+.c-product__info {
+  margin-top: 100px;
+
+  &--h1 {
+    color: #2d2201;
+  }
+  &--h2 {
+    color: #d2b02a;
+  }
+  &--h3 {
+    color: #707070;
+    margin-top: 30px;
+  }
+
+  &--kleurfietsduo {
+    text-align: center;
+    max-width: 120px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  @media only screen and (max-width: 1200px) {
+    margin-left: 100px !important;
+  }
+  @media only screen and (max-width: 990px) {
+    margin-left: 40px !important;
+  }
+}
+
+.c-productdetail__select {
+  font-size: 20px !important;
+  max-width: 386px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.c-productdetail__linkverzekering {
+  text-decoration: underline solid 1px #707070;
+  color: #707070;
+}
+
+.c-productdetail__linkverzekering:hover {
+  text-decoration: underline solid 1px #d2b02a;
+  color: #d2b02a;
+}
+
+.c-input__select--product {
+  width: 60px !important;
+  text-align: center;
+  margin: 10px;
+}
+
+// ---------------------------------------------------------------------
+
+.fa-plus-circle {
+  color: #127702;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.fa-minus-circle {
+  color: #ce0a0a;
+  margin-right: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.c-productdetail__uitlegblok {
+  margin-top: 100px;
+}
+
+.c-productdetail__uitlegtekst {
+  margin-bottom: 100px;
+
+  &--h3 {
+    color: #705e16;
+  }
+
+  &--p {
+    max-width: 882px;
+    font-size: 20px;
+  }
+}
+
+.c-productdetail__punten {
+  max-width: 776px;
+  font-size: 20px;
+  @media only screen and (max-width: 1650px) {
+    max-width: 676px;
+  }
+}
+
+.c-productdetail__tables {
+  margin-top: 100px;
+}
+
+.c-table {
+  max-width: 440px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+.c-table2 {
+  max-width: 440px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.c-table__rechts {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.c-table__links {
+  padding-left: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(210, 176, 42, 0.39);
+}
+
+th {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.c-personaliseer {
+  border: 1px solid;
+  padding: 20px;
+  max-width: 440px;
+  margin-bottom: 200px;
+
+  // &__lijn {
+  //   max-width: 420px;
+  //   border: 1px solid grey;
+  //   margin-top: 20px;
+  //   margin-bottom: 20px;
+  // }
+
+  &__h3 {
+    color: #d2b02a;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+}
+
+.c-personaliseer__label {
+  color: black;
+}
+
+.c-personaliseer__select {
+  max-width: 411px;
+  width: 100%;
+}
+
+.c-gerelateerdefietsen {
+  margin-top: 0px;
+}
+
+.c-productdetail__gerelateerd {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 611px;
+
+  &--fiets {
+    max-height: 100%;
+    height: 312px;
+    @media only screen and (max-width: 1500px) {
+      max-height: 40%;
+    }
+    @media only screen and (max-width: 1170px) {
+      max-height: 20%;
+    }
+    @media only screen and (max-width: 992px) {
+      max-height: 40%;
+    }
+    @media only screen and (max-width: 415px) {
+      max-height: 20%;
+    }
+  }
+
+  &--h2 {
+    @media only screen and (max-width: 490px) {
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 390px) {
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 577px) {
+    margin-left: 80px;
+  }
+}
