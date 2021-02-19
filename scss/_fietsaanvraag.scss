@@ -110,7 +110,7 @@
       font: $font-text-footer;
     }
   }
-
+}
 
 
 @media only screen and (max-width: 1380px) {
@@ -162,7 +162,7 @@
   color: $color-nav-item;
 }
 
-.c-uur>div>p {
+.c-uur>div>h5 {
   font-size: 140px;
   font-family: "Oxygen";
 }
@@ -173,7 +173,7 @@
     width: 100px;
   }
 
-  .c-uur>div>p {
+  .c-uur>div>h5 {
     font-size: 100px;
   }
 }
@@ -190,7 +190,7 @@
     width: 80px;
   }
 
-  .c-uur>div>p {
+  .c-uur>div>h5 {
     font-size: 60px;
   }
 }
