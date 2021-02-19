@@ -1,7 +1,7 @@
-@import "settings";
-
 @import "generic.normalize";
 @import "../bootstrap/scss/bootstrap";
+
+@import "settings";
 
 @import "elements";
 
@@ -23,4 +23,9 @@
 
 @import "components.brochureAanvragen";
 
+
 @import "productdetail";
+
+@import "contact";
+
+@import "brochureBedankt";

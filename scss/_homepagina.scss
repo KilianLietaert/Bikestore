@@ -211,6 +211,7 @@ ul .c-usp__tekst {
   &__h1 {
     font: $font-h1;
     color: $color-title-h1;
+    font-weight: bold;
     @media only screen and (max-width: 500px) {
       font-family: 25px !important;
       margin-top: -50px;

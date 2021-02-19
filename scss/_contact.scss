@@ -1,0 +1,168 @@
+.c-contactform {
+  max-width: 813px;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.c-contactform__textarea {
+  height: 201px !important;
+}
+
+.c-formcontact {
+  margin: auto;
+}
+
+.c-contactform__text {
+  font-size: 24px;
+  font-family: "Raleway";
+  margin-bottom: 18px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
+}
+
+.c-form__h1--contactpagina {
+  color: #705e16;
+  font-size: 35px;
+  font-family: "Oxygen", sans-serif;
+  margin-bottom: 28px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 30px;
+  }
+}
+
+.c-titel__2 {
+  color: #705e16;
+  font-size: 30px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 25px;
+  }
+}
+
+.c-listcontact {
+  font-size: 24px;
+  list-style: none;
+  padding: 0;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 20px;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-family: "Raleway";
+    margin-bottom: 17px;
+
+    @include media-breakpoint-down(xl) {
+      font-size: 20px;
+    }
+  }
+}
+
+.c-googlemap {
+  display: flex;
+  justify-content: center;
+
+  &__map {
+    width: 100%;
+    max-width: 830px;
+  }
+}
+
+.c-contactinfo {
+  position: relative;
+  min-height: 519px;
+
+  &__plaats {
+    position: absolute;
+    bottom: 10px;
+
+
+    @include media-breakpoint-down(sm) {
+      margin-left: -10px;
+
+    &__map {
+        width: 100%;
+        max-width: 830px;
+        height: auto;
+
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    min-height: 500px;
+    padding: 100px !important;
+    padding-bottom: 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    min-height: 500px;
+    padding: 40px !important;
+    padding-bottom: 0;
+  }
+}
+
+.form-floating > label {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.form-floating > label:focus {
+  padding-top: -100px;
+  padding-left: 0;
+  font-size: 18px;
+}
+
+
+.form-floating > .form-control > input:focus {
+  height: 100px;
+  outline: none;
+}
+
+        @include media-breakpoint-down(sm) {
+            margin-left: -10px;
+        }
+    }
+
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  opacity: 0.65;
+  transform: scale(0.7) translateY(-0.8rem) translateX(0.6rem);
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  font-family: "Oxygen", sans-serif;
+  color: #d2b02a;
+  font-size: 24px;
+
+@include media-breakpoint-down(lg) {
+    font-size: 22px;
+}
+
+@include media-breakpoint-down(md) {
+    font-size: 20px;
+}
+
+@include media-breakpoint-down(sm) {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 576px) {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 400px) {
+    font-size: 16px;
+}
+}

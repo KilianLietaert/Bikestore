@@ -47,6 +47,7 @@ $font-text: 24px "raleway", "sans-serif";
 $font-text-footer: 20px "raleway", "sans-serif";
 
 body {
+
   font-size: 1.6rem;
 }
 
@@ -68,3 +69,80 @@ h3 {
 $font-text2: 24px "Raleway", sans-serif;
 
 $font-text3: 20px "raleway", sans-serif;
+
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+$font-text2: 24px'Raleway',
+sans-serif;
+
+$font-text3: 20px 'raleway',
+sans-serif;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@include media-breakpoint-down(lg) {
+  h1 {font-size: 32px  !important;}
+  h2 {font-size: 30px !important;}
+  h3{font-size: 24px !important;}
+  p {font-size: 24px !important;}
+  strong {font-size: 24px !important;}
+  .o-button {
+    border-radius: 32px;
+    background-color: #d2b02a;
+    border: 2px solid #705e16;
+    padding: 8px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    font: 22px "oxygen", sans-serif;
+    color: #000000;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  h1 {font-size: 30px !important;}
+  h2 {font-size: 28px !important;}
+  h3{font-size: 22px !important;}
+  p {font-size: 22px !important;}
+  strong {font-size: 22px !important;}
+
+  .o-button {
+    border-radius: 32px;
+    background-color: #d2b02a;
+    border: 2px solid #705e16;
+    padding: 8px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font: 20px "oxygen", sans-serif;
+    color: #000000;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  h1 {font-size: 26px !important;}
+  h2 {font-size: 24px !important;}
+  h3{font-size: 18px !important;}
+  p {font-size: 16px !important;
+  font-weight: 500 !important;}
+  strong {font-size: 16px !important;}
+  
+  .o-button {
+  border-radius: 32px;
+  background-color: #d2b02a;
+  border: 2px solid #705e16;
+  padding: 8px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font: 16px "oxygen", sans-serif;
+  color: #000000;
+}
+}
+

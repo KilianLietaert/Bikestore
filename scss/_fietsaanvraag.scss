@@ -43,9 +43,11 @@
   margin: 0;
   padding-left: 7px;
 
+
   @include media-breakpoint-down(lg) {
     //margin-bottom: 100px;
     padding-bottom: 100px;
+
   }
 
   &__foto {
@@ -61,6 +63,12 @@
         width: 80%;
       }
     }
+  }
+
+  &__h {
+    color: $color-title-h2;
+    margin-bottom: 23px;
+
   }
 
   &__h {
@@ -110,6 +118,7 @@
   }
 }
 
+
 @media only screen and (max-width: 1380px) {
   .c-blokpadding {
     padding-left: 40px !important;
@@ -150,7 +159,7 @@
   margin-left: 145px;
 }
 
-.c-uur > div {
+.c-uur>div {
   background-color: $color-text2;
   height: 188px;
   width: 138px;
@@ -159,18 +168,18 @@
   color: $color-nav-item;
 }
 
-.c-uur > div > p {
+.c-uur>div>h5 {
   font-size: 140px;
   font-family: "Oxygen";
 }
 
 @media only screen and (max-width: 1500px) {
-  .c-uur > div {
+  .c-uur>div {
     height: 150px;
     width: 100px;
   }
 
-  .c-uur > div > p {
+  .c-uur>div>h5 {
     font-size: 100px;
   }
 }
@@ -182,12 +191,12 @@
 }
 
 @media only screen and (max-width: 730px) {
-  .c-uur > div {
+  .c-uur>div {
     height: 100px;
     width: 80px;
   }
 
-  .c-uur > div > p {
+  .c-uur>div>h5 {
     font-size: 60px;
   }
 }
@@ -231,7 +240,7 @@
   flex-wrap: wrap;
 }
 
-.c-icon > li {
+.c-icon>li {
   margin-right: 65px;
 
   @include media-breakpoint-down(lg) {
@@ -270,6 +279,10 @@ label {
   color: #d2b02a;
   font-size: 24px;
   font-family: "Raleway", sans-serif;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
 }
 
 .c-button__form {
@@ -288,22 +301,22 @@ label {
   color: black;
 }
 
-.form-floating > label {
-  padding-top: 10px;
-  padding-left: 10px;
-}
+// .form-floating>label {
+//   padding-top: 10px;
+//   padding-left: 10px;
+// }
 
-.form-floating > .form-select {
+.form-floating>.form-select {
   color: #d2b02a;
   font-size: 24px;
   padding: 5px;
   font-family: "Oxygen", sans-serif;
 }
 
-.form-floating > .form-control:focus,
-.form-floating > .form-control:not(:placeholder-shown) {
-  padding-left: 10px;
-  padding-top: 10px;
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+  // padding-left: 10px;
+  // padding-top: 10px;
   font-family: "Oxygen", sans-serif;
   color: #d2b02a;
   font-size: 24px;
