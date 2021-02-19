@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
 $color-nav-active: #030303;
-$color-line:#707070;
+$color-line: #707070;
 
 $color-nav-item: #ffffff;
 $color-nav-item-hover: #2d2201;
@@ -31,33 +31,45 @@ $color-usp: #fff;
 
 $border-button: 2px solid #705e16;
 
-$font-titel: 40px "Oxygen",
-sans-serif;
-$font-button: 26px "oxygen",
-sans-serif;
-$font-usp: 24px "oxygen",
-sans-serif;
+$font-titel: 40px "Oxygen", sans-serif;
+$font-button: 26px "oxygen", sans-serif;
+$font-usp: 24px "oxygen", sans-serif;
 
 $color-footer: #574e33;
 
-
 $border-button: 2px solid #705e16;
 
-$font-h1: 35px "Oxygen",
-"sans-serif";
-$font-h2: 30px "oxygen",
-"sans-serif";
-$font-h3: 24px "Raleway",
-"sans-serif";
-$font-h4: 26px "Raleway",
-"sans-serif";
-$font-text: 24px "raleway",
-"sans-serif";
-$font-text-footer: 20px "raleway",
-"sans-serif";
-
+$font-h1: 35px "Oxygen", "sans-serif";
+$font-h2: 30px "oxygen", "sans-serif";
+$font-h3: 24px "Raleway", "sans-serif";
+$font-h4: 26px "Raleway", "sans-serif";
+$font-text: 24px "raleway", "sans-serif";
+$font-text-footer: 20px "raleway", "sans-serif";
 
 body {
+
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Oxygen", sans-serif;
+}
+
+h2 {
+  font-size: 35px;
+  font-family: "Oxygen", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Oxygen", sans-serif;
+}
+
+$font-text2: 24px "Raleway", sans-serif;
+
+$font-text3: 20px "raleway", sans-serif;
+
     font-size: 1.6rem;
     overflow-x: hidden;
 }
@@ -133,6 +145,4 @@ $grid-breakpoints: (
   color: #000000;
 }
 }
-
-
 
