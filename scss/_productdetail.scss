@@ -1,150 +1,115 @@
-.breadcrumb {
-  background-color: white;
-  margin-left: 200px;
+.c-product__fotogroep {
+  margin-top: 100px;
+  @media only screen and (max-width: 1200px) {
+    margin-left: 90px !important;
+  }
 }
 
-.c-images {
-  height: auto !important;
-  width: 135px !important;
-  margin-left: 200px;
+.c-product__fotosklein {
+  position: absolute;
   z-index: 1;
-  position: relative;
+  align-items: center;
+  margin-left: -10px;
 }
 
-.c-images__klein {
+.c-product__fotogroot {
+  position: relative;
+  border: 1px solid grey;
+  padding: 20px;
+  z-index: -1;
+  max-width: 900px;
+  margin-left: 70px;
+
+  &--img {
+    max-width: 100%;
+    width: 828px;
+  }
+}
+
+.c-product__fotosklein--onderdeel {
+  width: 160px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  max-width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.ruimte {
-  margin-bottom: 8px;
-}
-
-.ruimte2 {
-  margin-top: 8px;
-}
-
-.c-images__grote {
-  border: rgb(184, 183, 183) solid 1px;
-  width: 800px;
-  height: 540px;
-  margin-top: -545px;
-  margin-left: 300px;
-}
-
-.img-fluid {
-  position: absolute;
-  margin-left: 80px;
-  margin-top: 50px;
+  @media only screen and (max-width: 1100px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  @media only screen and (max-width: 1000px) {
+    max-width: 75%;
+  }
+  @media only screen and (max-width: 800px) {
+    max-width: 50%;
+  }
+  @media only screen and (max-width: 620px) {
+    max-width: 40%;
+  }
+  @media only screen and (max-width: 520px) {
+    max-width: 30%;
+  }
 }
 
 .fa-chevron-up,
 .fa-chevron-down {
-  margin-left: 50px !important;
+  margin-left: 20px;
 }
 
-/* ---------------------------------------- */
-
-.c-info {
-  width: 350px;
-  float: right;
-  margin-right: 400px;
-  font-family: "Oxygen", sans-serif;
+.c-product__info--kleurfietsafbeelding {
+  max-width: 80px;
+  height: auto;
 }
 
-.c-h1 {
-  font-size: 40px;
-  margin-top: -550px;
+.c-product__info {
+  margin-top: 100px;
+
+  &--h1 {
+    color: #2d2201;
+  }
+  &--h2 {
+    color: #d2b02a;
+  }
+  &--h3 {
+    color: #707070;
+  }
+
+  &--kleurfietsduo {
+    text-align: center;
+    max-width: 120px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  @media only screen and (max-width: 1200px) {
+    margin-left: 100px !important;
+  }
 }
 
-.c-prijs {
-  color: #d2b02a;
-  font-size: 30px;
-  font-weight: bold;
-  margin-right: 50px;
+// .c-productdetail__select {
+//   font-size: 20px !important;
+//   width: 300px;
+// }
+
+.c-productdetail__linkverzekering {
+  text-decoration: underline solid 1px #707070;
+  color: #707070;
 }
 
-.c-fietsen {
-  margin-right: -150px !important;
-}
-
-.c-fiets {
-  width: 80px !important;
-  margin: 20px;
-}
-
-.c-fiets:hover {
-  border: #d2b02a solid 2px;
-}
-
-.c-fiets__kleurnaam {
-  font-size: 15px;
+.c-input__select--product {
+  width: 60px !important;
   text-align: center;
+  margin: 10px;
 }
 
-select {
-  width: 386px;
-  margin-bottom: 20px;
-}
+// ---------------------------------------------------------------------
 
-.c-fietsverzekering__link a {
-  text-decoration: underline;
-  color: grey;
-}
-
-.c-fietsen__aantal {
-  width: 60px;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-.c-fietsen__verzenden {
-  margin-top: 10px;
-  background-color: #d2b02a;
-  border: #705e16 solid 1px;
-  border-radius: 32px;
-}
-
-/* ------------------------------- */
-
-.c-fietsproductbeschrijving {
-  font-family: "Oxygen", sans-serif;
-}
-
-.c-productbeschrijving {
-  width: 882px;
-  margin-left: 200px;
-  margin-top: 150px;
-
-  &__pararaaf {
-    font-family: "Raleway", sans-serif !important;
-    font-size: 20px !important;
+.c-uitleg {
+  @media only screen and (max-width: 1200px) {
+    margin-left: 100px !important;
   }
-
-  &__paragraafblokken {
-    margin-bottom: 700px;
-  }
-
-  &__p--punten {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-  }
-}
-
-.c-productbeschrijving__h2 {
-  font: $font-h2;
-  color: $color-title-h2;
-}
-
-.c-productbeschrijving__paragraaf {
-  font-family: "Raleway", sans-serif !important;
-  font-size: 20px !important;
-}
-
-.c-productbeschrijving2 {
-  width: 882px;
-  margin-left: 200px;
-  margin-top: 80px;
 }
 
 .fa-plus-circle {
@@ -161,23 +126,45 @@ select {
   margin-top: 5px;
 }
 
-/* ----------------------------------------------------------------------------- */
+.c-productdetail__uitlegblok {
+  margin-top: 100px;
+}
+
+.c-productdetail__uitlegtekst {
+  margin-bottom: 100px;
+
+  &--h3 {
+    color: #705e16;
+  }
+
+  &--p {
+    max-width: 882px;
+    font-size: 20px;
+  }
+}
+
+.c-productdetail__punten {
+  max-width: 776px;
+  font-size: 20px;
+  @media only screen and (max-width: 1650px) {
+    max-width: 676px;
+  }
+}
+
+.c-productdetail__tables {
+  margin-top: 100px;
+}
 
 .c-table {
-  float: right;
-  margin-right: 250px;
-  margin-top: -1600px;
-  width: 490px;
+  max-width: 490px;
   font-family: "Oxygen", sans-serif;
 }
 
 .c-table2 {
-  float: right;
-  margin-right: 250px;
-  margin-top: -1200px;
-  width: 490px;
+  max-width: 490px;
   font-family: "Oxygen", sans-serif;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .c-table__rechts {
@@ -198,23 +185,19 @@ th {
   font-weight: normal;
 }
 
-/* --------------------------------------------------------------------------------------------- */
-
 .c-personaliseer {
-  float: right;
-  margin-right: 235px;
-  margin-top: -800px;
-  //margin-bottom: 300px;
+  border: 1px solid;
+  padding: 20px;
+  max-width: 490px;
 
-  &__form {
-    border: 1px solid #707070;
-    padding: 30px;
+  &__lijn {
+    max-width: 420px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  &__prijsbutton {
-    margin-top: 30px;
-    margin-bottom: -30px;
+  &__h3 {
+    color: #d2b02a;
   }
 }
-
-/* -------------------------------------------------------------------------------------- */

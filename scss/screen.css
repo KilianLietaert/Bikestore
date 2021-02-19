@@ -15287,151 +15287,142 @@ label {
   height: 27px;
 }
 
-.breadcrumb {
-  background-color: white;
-  margin-left: 200px;
+.c-product__fotogroep {
+  margin-top: 100px;
 }
 
-.c-images {
-  height: auto !important;
-  width: 135px !important;
-  margin-left: 200px;
+@media only screen and (max-width: 1200px) {
+  .c-product__fotogroep {
+    margin-left: 90px !important;
+  }
+}
+
+.c-product__fotosklein {
+  position: absolute;
   z-index: 1;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -10px;
 }
 
-.c-images__klein {
+.c-product__fotogroot {
+  position: relative;
+  border: 1px solid grey;
+  padding: 20px;
+  z-index: -1;
+  max-width: 900px;
+  margin-left: 70px;
+}
+
+.c-product__fotogroot--img {
+  max-width: 100%;
+  width: 828px;
+}
+
+.c-product__fotosklein--onderdeel {
+  width: 160px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: -20px;
+  max-width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.ruimte {
-  margin-bottom: 8px;
+@media only screen and (max-width: 1100px) {
+  .c-product__fotosklein--onderdeel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
-.ruimte2 {
-  margin-top: 8px;
+@media only screen and (max-width: 1000px) {
+  .c-product__fotosklein--onderdeel {
+    max-width: 75%;
+  }
 }
 
-.c-images__grote {
-  border: #b8b7b7 solid 1px;
-  width: 800px;
-  height: 540px;
-  margin-top: -545px;
-  margin-left: 300px;
+@media only screen and (max-width: 800px) {
+  .c-product__fotosklein--onderdeel {
+    max-width: 50%;
+  }
 }
 
-.img-fluid {
-  position: absolute;
-  margin-left: 80px;
-  margin-top: 50px;
+@media only screen and (max-width: 620px) {
+  .c-product__fotosklein--onderdeel {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .c-product__fotosklein--onderdeel {
+    max-width: 30%;
+  }
 }
 
 .fa-chevron-up,
 .fa-chevron-down {
-  margin-left: 50px !important;
+  margin-left: 20px;
 }
 
-/* ---------------------------------------- */
-.c-info {
-  width: 350px;
-  float: right;
-  margin-right: 400px;
-  font-family: "Oxygen", sans-serif;
+.c-product__info--kleurfietsafbeelding {
+  max-width: 80px;
+  height: auto;
 }
 
-.c-h1 {
-  font-size: 40px;
-  margin-top: -550px;
+.c-product__info {
+  margin-top: 100px;
 }
 
-.c-prijs {
+.c-product__info--h1 {
+  color: #2d2201;
+}
+
+.c-product__info--h2 {
   color: #d2b02a;
-  font-size: 30px;
-  font-weight: bold;
-  margin-right: 50px;
 }
 
-.c-fietsen {
-  margin-right: -150px !important;
+.c-product__info--h3 {
+  color: #707070;
 }
 
-.c-fiets {
-  width: 80px !important;
-  margin: 20px;
-}
-
-.c-fiets:hover {
-  border: #d2b02a solid 2px;
-}
-
-.c-fiets__kleurnaam {
-  font-size: 15px;
+.c-product__info--kleurfietsduo {
   text-align: center;
-}
-
-select {
-  width: 386px;
-  margin-bottom: 20px;
-}
-
-.c-fietsverzekering__link a {
-  text-decoration: underline;
-  color: grey;
-}
-
-.c-fietsen__aantal {
-  width: 60px;
-  margin-right: 20px;
+  max-width: 120px;
+  padding: 5px;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
-.c-fietsen__verzenden {
-  margin-top: 10px;
-  background-color: #d2b02a;
-  border: #705e16 solid 1px;
-  border-radius: 32px;
+@media only screen and (max-width: 1200px) {
+  .c-product__info {
+    margin-left: 100px !important;
+  }
 }
 
-/* ------------------------------- */
-.c-fietsproductbeschrijving {
-  font-family: "Oxygen", sans-serif;
+.c-productdetail__linkverzekering {
+  -webkit-text-decoration: underline solid 1px #707070;
+          text-decoration: underline solid 1px #707070;
+  color: #707070;
 }
 
-.c-productbeschrijving {
-  width: 882px;
-  margin-left: 200px;
-  margin-top: 150px;
+.c-input__select--product {
+  width: 60px !important;
+  text-align: center;
+  margin: 10px;
 }
 
-.c-productbeschrijving__pararaaf {
-  font-family: "Raleway", sans-serif !important;
-  font-size: 20px !important;
-}
-
-.c-productbeschrijving__paragraafblokken {
-  margin-bottom: 700px;
-}
-
-.c-productbeschrijving__p--punten {
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-}
-
-.c-productbeschrijving__h2 {
-  font: 30px "oxygen", "sans-serif";
-  color: #705e16;
-}
-
-.c-productbeschrijving__paragraaf {
-  font-family: "Raleway", sans-serif !important;
-  font-size: 20px !important;
-}
-
-.c-productbeschrijving2 {
-  width: 882px;
-  margin-left: 200px;
-  margin-top: 80px;
+@media only screen and (max-width: 1200px) {
+  .c-uitleg {
+    margin-left: 100px !important;
+  }
 }
 
 .fa-plus-circle {
@@ -15448,22 +15439,48 @@ select {
   margin-top: 5px;
 }
 
-/* ----------------------------------------------------------------------------- */
+.c-productdetail__uitlegblok {
+  margin-top: 100px;
+}
+
+.c-productdetail__uitlegtekst {
+  margin-bottom: 100px;
+}
+
+.c-productdetail__uitlegtekst--h3 {
+  color: #705e16;
+}
+
+.c-productdetail__uitlegtekst--p {
+  max-width: 882px;
+  font-size: 20px;
+}
+
+.c-productdetail__punten {
+  max-width: 776px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1650px) {
+  .c-productdetail__punten {
+    max-width: 676px;
+  }
+}
+
+.c-productdetail__tables {
+  margin-top: 100px;
+}
+
 .c-table {
-  float: right;
-  margin-right: 250px;
-  margin-top: -1600px;
-  width: 490px;
+  max-width: 490px;
   font-family: "Oxygen", sans-serif;
 }
 
 .c-table2 {
-  float: right;
-  margin-right: 250px;
-  margin-top: -1200px;
-  width: 490px;
+  max-width: 490px;
   font-family: "Oxygen", sans-serif;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .c-table__rechts {
@@ -15484,22 +15501,20 @@ th {
   font-weight: normal;
 }
 
-/* --------------------------------------------------------------------------------------------- */
 .c-personaliseer {
-  float: right;
-  margin-right: 235px;
-  margin-top: -800px;
+  border: 1px solid;
+  padding: 20px;
+  max-width: 490px;
 }
 
-.c-personaliseer__form {
-  border: 1px solid #707070;
-  padding: 30px;
+.c-personaliseer__lijn {
+  max-width: 420px;
+  border: 1px solid grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.c-personaliseer__prijsbutton {
-  margin-top: 30px;
-  margin-bottom: -30px;
+.c-personaliseer__h3 {
+  color: #d2b02a;
 }
-
-/* -------------------------------------------------------------------------------------- */
 /*# sourceMappingURL=screen.css.map */
