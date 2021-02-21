@@ -2,9 +2,12 @@ $(function () {
     $(window).resize(function () {
       var reswidth=screen.width;
       if (reswidth<990){
-        var x = document.getElementsById("zoekimg");
-        x.src="../images/colbysmall.png"
+        var x = document.getElementsById("zoeking");
+        x.src="./img/winkelmand-icoonwhite.png"
       }
-      else
+      else{
+        var x = document.getElementsById("zoeking");
+        x.src="./img/winkelmand-icoon.png"
+      }
     });
   });
