@@ -27,7 +27,6 @@
       display: flex;
       flex-direction: column;
       margin: auto;
-      text-align: center;
       padding-bottom: 2rem;
     }
 
@@ -51,7 +50,6 @@
       display: flex;
       flex-direction: column;
       margin: auto;
-      text-align: center;
       padding-bottom: 2rem;
     }
 
@@ -66,11 +64,15 @@
   }
 
   &__contact {
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 50px;
+    }
+
     @include media-breakpoint-down(sm) {
       display: flex;
       flex-direction: column;
       margin: auto;
-      text-align: center;
       padding-bottom: 2rem;
     }
   }
@@ -80,11 +82,15 @@
   }
 
   &__overons {
+    
+    @include media-breakpoint-down(lg) {
+      margin-top: 50px;
+    }
+
     @include media-breakpoint-down(sm) {
       display: flex;
       flex-direction: column;
       margin: auto;
-      text-align: center;
       padding-bottom: 2rem;
 
       @media only screen and (max-width: 576px) {
@@ -116,31 +122,22 @@
     }
 
     @media only screen and (max-width: 576px) {
-      max-width: 30%;
+      max-width: 70%;
     }
-
 
     &-facebook {
       margin-right: 1.04rem;
 
-
       @include media-breakpoint-down(sm) {
         width: 3rem;
         margin-right: 1.2rem;      
-
       }
-
     }
 
     &-instagram {
       margin-right: 1.04rem;
 
       @include media-breakpoint-down(sm) {
-        margin-right: 0;
-        width: 3rem;
-      }
-
-      @include media-breakpoint-down(xs) {
         margin-right: 0;
         width: 3rem;
       }
@@ -154,6 +151,10 @@
       margin: auto;
       text-align: center;
       padding-bottom: 2rem;
+      
+      @media only screen and (max-width: 576px) {
+        max-width: 70%;
+      }
     }
 
     &-text {
@@ -161,7 +162,8 @@
       padding-top: 15px;
 
       @include media-breakpoint-down(sm) { 
-        text-align: center;
+        text-align: start;
+        margin-left: -15px;
       }
     }
   }
