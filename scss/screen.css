@@ -13787,15 +13787,16 @@ ul .c-usp__tekst--extra {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #FFFFFF;
+  border: 1px solid  #705e16;
 }
 
 .c-filter-container__checkmark:after {
   content: "";
   position: absolute;
   display: none;
-  left: 9px;
-  top: 5px;
+  left: 8px;
+  top: 4px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -13805,7 +13806,7 @@ ul .c-usp__tekst--extra {
 }
 
 .c-filter-container:hover input ~ .c-filter-container__checkmark {
-  background-color: #ccc;
+  background-color: #eee;
 }
 
 .c-filter-container input:checked ~ .c-filter-container__checkmark {
@@ -13817,13 +13818,120 @@ ul .c-usp__tekst--extra {
 }
 
 .c-filter-container__checkmark:after {
-  left: 9px;
-  top: 5px;
+  left: 8px;
+  top: 4px;
   width: 8px;
   height: 14px;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.c-filter-section-color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c-filter-section-color input {
+  position: absolute;
+  top: 3px;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.c-filter-section-color-checkbox {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid  #705e16;
+}
+
+.c-filter-section-color-checkbox__black {
+  background-color: black;
+}
+
+.c-filter-section-color-checkbox__darkgreenblue {
+  background-color: #293133;
+}
+
+.c-filter-section-color-checkbox__greenblue {
+  background-color: #727875;
+}
+
+.c-filter-section-color-checkbox__gray {
+  background-color: #878681;
+}
+
+.c-filter-section-color-checkbox__lightgray {
+  background-color: #BFBFBF;
+}
+
+.c-filter-section-color-checkbox__white {
+  background-color: #FFFFFF;
+}
+
+.c-filter-section-color-checkbox__darkblue {
+  background-color: #001399;
+}
+
+.c-filter-section-color-checkbox__blue {
+  background-color: #4169E1;
+}
+
+.c-filter-section-color-checkbox__green {
+  background-color: #77DD77;
+}
+
+.c-filter-section-color-checkbox__red {
+  background-color: #FF0000;
+}
+
+.c-filter-section-color-checkbox__brown {
+  background-color: #B87333;
+}
+
+.c-filter-section-color-checkbox__allcolors {
+  /*background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+      background-blend-mode: screen;*/
+  /* Colorwheel */
+  background: conic-gradient(red, #ff00bf, #8000ff, #0040ff, cyan, #00ff40, #80ff00, #ffbf00, red);
+}
+
+.c-filter-section-color:hover input ~ .c-filter-section-color-checkbox {
+  border: 3px solid #d2b02a;
+}
+
+.c-filter-section-color input:checked ~ .c-filter-section-color-checkbox {
+  border: 3px solid #d2b02a;
+}
+
+.c-filter-section-color input:checked ~ .c-filter-section-color-checkbox:after {
+  display: block;
+}
+
+.c-filter-section-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=screen.css.map */
