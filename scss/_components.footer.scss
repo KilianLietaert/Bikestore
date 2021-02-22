@@ -2,10 +2,11 @@
   background-color: $color-footer;
   color: white;
   font: $font-text-footer;
-  font-size: 1.11rem;
+  width: 100%;
+  overflow-x: hidden;
 
   &__title {
-    font-size: 1.38rem;
+    font-size: 25px;
     font-weight: bold;
   }
 
@@ -14,6 +15,7 @@
     padding-top: 4.18rem;
     margin-bottom: 4.85rem;
     margin-right: 0;
+    width: 100%;
 
     @include media-breakpoint-down(sm) {
       display: flex;
