@@ -15572,7 +15572,7 @@ label {
 
 @media only screen and (max-width: 576px) {
   .c-folder__aanvraag-foto {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -15591,7 +15591,7 @@ label {
 
 @media only screen and (max-width: 576px) {
   .c-folder__aanvraag-foto-brochure {
-    width: 35vw;
+    width: 50vw;
   }
 }
 

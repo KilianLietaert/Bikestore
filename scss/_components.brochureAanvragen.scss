@@ -33,7 +33,6 @@
         width: 100%;
 
         &-foto{
-
             @include media-breakpoint-down(lg) { 
                 margin-right: 0;
                 margin-left: 0;
@@ -41,7 +40,7 @@
             }
 
             @media only screen and (max-width: 576px) {
-                width: 80%
+                width: 100%
               }
 
             &-brochure{
@@ -54,15 +53,12 @@
                 }
 
                 @media only screen and (max-width: 576px) {
-                    width: 35vw
+                    width: 50vw
                   }
-
             }
         }
 
         &-formulier{
-
-
 
             &-title{
                 font: $font-h2;
