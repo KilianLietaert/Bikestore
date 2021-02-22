@@ -14452,31 +14452,8 @@ label {
 
 .c-blogoverzicht__berichtinfo--p {
   margin-top: -50px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   margin-left: 10px;
-}
-
-.c-blogoverzicht__berichtinfo--p2 {
-  margin-bottom: 95px;
-}
-
-@media only screen and (max-width: 440px) {
-  .c-blogoverzicht__berichtinfo--p2 {
-    margin-top: 95px;
-    margin-left: -10px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .c-blogoverzicht__berichtinfo--p2 {
-    margin-top: -50px;
-    margin-bottom: 70px;
-    margin-left: 10px;
-  }
-}
-
-.c-blogoverzicht__berichtinfo--p3 {
-  margin-bottom: 40px;
 }
 
 .c-blogoverzicht__berichtinfo--small {
@@ -14506,6 +14483,7 @@ label {
   font-size: 18px;
   color: white;
   margin-top: 30px;
+  margin-left: 10px;
 }
 
 .c-blogoverzicht__button2 {
