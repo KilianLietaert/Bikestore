@@ -57,7 +57,7 @@
   .c-webshopfietsen-titel{
     margin-top: 40px;
     margin-left: 25px;
-    font: $font-subtitel;
+    //font: $font-subtitel;
     font-weight: bold;
   }
 
@@ -84,20 +84,20 @@
       }
       &-modelname{
         text-align: center;
-        font: $font-text-16;
+        //font: $font-text-16;
         font-weight: bold;
         margin-top: 20px;
       }
       &-price{
         text-align: center;
-        color: $color-brown;
+        //color: $color-brown;
         font-size: 33px;
         font-family: "Oxygen", "sans-serif";
         font-weight: bold;
         margin-top: 15px;
       }
       &__button{
-        font: $font-button-small;
+        //font: $font-button-small;
         font-weight: bold;
         display: block;
         margin-left: auto;
