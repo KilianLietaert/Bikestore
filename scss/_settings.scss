@@ -72,6 +72,12 @@ $font-text2: 24px "Raleway", sans-serif;
 
 $font-text3: 20px "raleway", sans-serif;
 
+
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
 $font-text2: 24px'Raleway',
 sans-serif;
 
@@ -91,8 +97,11 @@ $grid-breakpoints: (
   h1 {font-size: 32px  !important;}
   h2 {font-size: 30px !important;}
   h3{font-size: 24px !important;}
-  p {font-size: 24px !important;}
-  strong {font-size: 24px !important;}
+  p {font-size: 20px !important;}
+  li {font-size: 20px !important;}
+  label {font-size: 20px !important;}
+
+  strong {font-size: 20px !important;}
   .o-button {
     border-radius: 32px;
     background-color: #d2b02a;
@@ -100,7 +109,7 @@ $grid-breakpoints: (
     padding: 8px !important;
     padding-left: 25px !important;
     padding-right: 25px !important;
-    font: 22px "oxygen", sans-serif;
+    font: 22px "oxygen", sans-serif !important;
     color: #000000;
   }
 }
@@ -109,8 +118,11 @@ $grid-breakpoints: (
   h1 {font-size: 30px !important;}
   h2 {font-size: 28px !important;}
   h3{font-size: 22px !important;}
-  p {font-size: 22px !important;}
-  strong {font-size: 22px !important;}
+  p {font-size: 20px !important;}
+  li {font-size: 20px !important;}
+  label {font-size: 20px !important;}
+
+  strong {font-size: 20px !important;}
 
   .o-button {
     border-radius: 32px;
@@ -119,7 +131,7 @@ $grid-breakpoints: (
     padding: 8px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
-    font: 20px "oxygen", sans-serif;
+    font: 20px "oxygen", sans-serif !important;
     color: #000000;
   }
 }
@@ -128,8 +140,10 @@ $grid-breakpoints: (
   h1 {font-size: 26px !important;}
   h2 {font-size: 24px !important;}
   h3{font-size: 18px !important;}
-  p {font-size: 16px !important;
-  font-weight: 500 !important;}
+  p {font-size: 16px !important;}
+  li {font-size: 16px !important;}
+  li {font-size: 16px !important;}
+  label {font-size: 16px !important;}
   strong {font-size: 16px !important;}
   
   .o-button {
@@ -139,7 +153,7 @@ $grid-breakpoints: (
   padding: 8px !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
-  font: 16px "oxygen", sans-serif;
+  font: 17px "oxygen", sans-serif !important;
   color: #000000;
 }
 }
