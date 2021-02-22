@@ -56,14 +56,18 @@
 
   .c-webshopfietsen-titel{
     margin-top: 40px;
-    margin-left: 25px;
-    //font: $font-subtitel;
+    margin-left: 85px;
+    font: $font-h1;
     font-weight: bold;
+    color: $color-brown;
   }
 
   .c-webshopfietsen-resultaten{
-    margin-bottom: 20px;
-    margin-left: 25px;
+    margin-bottom: 40px;
+    margin-left: 85px;
+    margin-top: 25px;
+    font: $font-text-footer;
+    font-weight: bold;
   }
 
   .c-webshopfietsen-card{
@@ -74,8 +78,8 @@
       margin-bottom: 40px;
       height: 445px;
       width: 377px;
-      -webkit-box-shadow: -2px 3px 6px 0px rgba(0,0,0,0.65); 
-      box-shadow: -2px 3px 6px 0px rgba(0,0,0,0.65);
+      -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15); 
+      box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.15);
       &-image{
         display: block;
         margin-left: auto;
@@ -84,20 +88,20 @@
       }
       &-modelname{
         text-align: center;
-        //font: $font-text-16;
+        font: $font-text-16;
         font-weight: bold;
         margin-top: 20px;
       }
       &-price{
         text-align: center;
-        //color: $color-brown;
+        color: $color-brown;
         font-size: 33px;
         font-family: "Oxygen", "sans-serif";
         font-weight: bold;
         margin-top: 15px;
       }
       &__button{
-        //font: $font-button-small;
+        font: $font-button-small;
         font-weight: bold;
         display: block;
         margin-left: auto;
@@ -138,6 +142,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: black;
 
   & input{
     position: absolute;
