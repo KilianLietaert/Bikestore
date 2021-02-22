@@ -16121,21 +16121,21 @@ th {
 }
 
 .c-bedankt > h2 {
-  margin-bottom: 24px;
-  margin-top: 58px;
+  margin-bottom: 25px;
+  margin-top: 54px;
   color: #705e16;
   font: 35px "Oxygen", "sans-serif";
 }
 
 .c-bedankt__p {
-  margin-bottom: 19px;
+  margin-bottom: 25px;
   font: 24px "raleway", "sans-serif";
   font-weight: bold;
   color: #000000;
 }
 
 .c-bedankt__p--margin {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font: 24px "raleway", "sans-serif";
   color: #000000;
 }
@@ -16149,5 +16149,23 @@ th {
 
 .c-bedankt__p--margin > a:hover {
   color: #d2b02a;
+}
+
+@media (max-width: 1199.98px) {
+  .c-bedankt__p--margin > a {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-bedankt__p--margin > a {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .c-bedankt__p--margin > a {
+    font-size: 16px !important;
+  }
 }
 /*# sourceMappingURL=screen.css.map */
