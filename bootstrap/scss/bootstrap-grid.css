@@ -19,6 +19,7 @@ html {
 
 .container,
 .container-fluid,
+.container-xs,
 .container-sm,
 .container-md,
 .container-lg,
@@ -29,6 +30,10 @@ html {
   padding-left: 7.5px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.container {
+  max-width: 85vw;
 }
 
 @media (min-width: 576px) {
