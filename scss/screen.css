@@ -16248,13 +16248,18 @@ th {
 
 .c-webshopfietsen-titel {
   margin-top: 40px;
-  margin-left: 25px;
+  margin-left: 85px;
+  font: 35px "Oxygen", "sans-serif";
   font-weight: bold;
+  color: #705e16;
 }
 
 .c-webshopfietsen-resultaten {
-  margin-bottom: 20px;
-  margin-left: 25px;
+  margin-bottom: 40px;
+  margin-left: 85px;
+  margin-top: 25px;
+  font: 20px "raleway", "sans-serif";
+  font-weight: bold;
 }
 
 .c-webshopfietsen-card {
@@ -16265,8 +16270,8 @@ th {
   margin-bottom: 40px;
   height: 445px;
   width: 377px;
-  -webkit-box-shadow: -2px 3px 6px 0px rgba(0, 0, 0, 0.65);
-  box-shadow: -2px 3px 6px 0px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .c-webshopfietsen-card-image {
@@ -16278,12 +16283,14 @@ th {
 
 .c-webshopfietsen-card-modelname {
   text-align: center;
+  font: 16px "Raleway", "sans-serif";
   font-weight: bold;
   margin-top: 20px;
 }
 
 .c-webshopfietsen-card-price {
   text-align: center;
+  color: #705e16;
   font-size: 33px;
   font-family: "Oxygen", "sans-serif";
   font-weight: bold;
@@ -16291,6 +16298,7 @@ th {
 }
 
 .c-webshopfietsen-card__button {
+  font: 13px "Raleway", "sans-serif";
   font-weight: bold;
   display: block;
   margin-left: auto;
@@ -16351,6 +16359,7 @@ th {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: black;
 }
 
 .c-filter-container input {
