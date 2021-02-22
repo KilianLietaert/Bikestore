@@ -12373,6 +12373,7 @@ body {
   .c-toplist {
     margin-bottom: 20px;
     padding-left: 15px !important;
+    min-width: 500px;
   }
 }
 
@@ -12501,6 +12502,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  .c-topnavigation {
+    font-size: 16px !important;
+  }
+}
+
 .c-topnavigation > li {
   margin-right: 8px;
   padding-right: 8px;
@@ -12529,11 +12536,12 @@ body {
 /* responsive nav structuur*/
 .c-navover {
   padding: 0;
+  width: 100%;
 }
 
 @media (max-width: 991.98px) {
   .c-navover__nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 9999;
@@ -12593,6 +12601,17 @@ body {
 @media (max-width: 991.98px) {
   .navbar-brand {
     display: inline-block !important;
+  }
+}
+
+.c-svgnav {
+  width: 32px;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .c-svgnav {
+    fill: white;
   }
 }
 
