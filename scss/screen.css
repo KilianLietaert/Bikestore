@@ -12076,12 +12076,11 @@ h2 {
 h3 {
   font-size: 30px;
   font-family: "Oxygen", sans-serif;
-
+}
 
 body {
   font-size: 1.6rem;
   overflow-x: hidden;
-
 }
 
 @media (max-width: 1199.98px) {
@@ -13315,11 +13314,9 @@ ul .c-usp__tekst--extra {
   border-radius: 32px;
   background-color: #d2b02a;
   border: 2px solid #705e16;
-
   padding: 10px !important;
   padding-left: 40px;
   padding-right: 40px;
-
   font: 26px "oxygen", sans-serif;
   color: #000000;
 }
@@ -16234,7 +16231,6 @@ th {
   color: #d2b02a;
 }
 
-
 @media (max-width: 1199.98px) {
   .c-bedankt__p--margin > a {
     font-size: 20px !important;
@@ -16251,6 +16247,7 @@ th {
   .c-bedankt__p--margin > a {
     font-size: 16px !important;
   }
+}
 
 .c-bannerwebshopfietsen {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/monaco.jpg");
@@ -16601,6 +16598,5 @@ th {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
 }
 /*# sourceMappingURL=screen.css.map */
