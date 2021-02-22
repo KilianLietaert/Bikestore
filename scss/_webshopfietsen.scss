@@ -1,0 +1,306 @@
+.c-bannerwebshopfietsen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/img/monaco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    color: white;
+    //margin-bottom: 112px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    //padding-left: 40px;
+    //padding-right: 40px;
+    z-index: 1;
+    &-content {
+      text-align: center;
+      min-height: 805px !important;
+      align-content: center;
+    }
+    &__hoofd--h1 {
+      font: $font-titel;
+      color: white;
+      font-weight: bold;
+      @media only screen and (max-width: 990px) {
+        font-size: 30px;
+      }
+    }
+  
+    &__h1 {
+      font: $font-h1;
+      color: white;
+  
+      @media only screen and (max-width: 990px) {
+        font-size: 30px;
+      }
+  
+      &--onder {
+        margin-top: 100px;
+        margin-bottom: 40px;
+        font: $font-h4; 
+      }
+    }
+    &__deel1 {
+      margin-top: -20px;
+      margin-bottom: 80px;
+    }
+    &__deel2 {
+      margin-top: 80px !important;
+      margin-bottom: -100px !important;
+    }
+  }
+
+  .c-webshopfietsen-titel{
+    margin-top: 40px;
+    margin-left: 25px;
+    font: $font-subtitel;
+    font-weight: bold;
+  }
+
+  .c-webshopfietsen-resultaten{
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+
+  .c-webshopfietsen-card{
+      display: inline-block;
+      background-color: white;
+      margin: 10px;
+      margin-top: 0px;
+      margin-bottom: 40px;
+      height: 445px;
+      width: 377px;
+      -webkit-box-shadow: -2px 3px 6px 0px rgba(0,0,0,0.65); 
+      box-shadow: -2px 3px 6px 0px rgba(0,0,0,0.65);
+      &-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 64px;
+      }
+      &-modelname{
+        text-align: center;
+        font: $font-text-16;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      &-price{
+        text-align: center;
+        color: $color-brown;
+        font-size: 33px;
+        font-family: "Oxygen", "sans-serif";
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      &__button{
+        font: $font-button-small;
+        font-weight: bold;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 32px;
+        margin-top: 15px;
+      }
+  }
+
+.c-filter-section{
+  margin-bottom: 50px;
+  &__titel{
+    font-weight: bold;
+  }
+  &__pricerange{
+    margin-left: -10px;
+    & input{
+      
+      display: inline-block;
+      width: 100px;
+      transform: scale(.8);
+      &::placeholder{
+        color: #C4C3BF;
+        font-family: "raleway", "sans-serif";
+      }
+    }
+  }
+}
+
+.c-filter-container{
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  & input{
+    position: absolute;
+    top: 3px;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &__checkmark{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid  #705e16;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }    
+  }
+
+  &:hover input ~ .c-filter-container__checkmark{
+    background-color: #eee;
+  }
+
+  & input:checked ~ .c-filter-container__checkmark {
+    background-color: #d2b02a;
+  }
+
+  & input:checked ~ .c-filter-container__checkmark:after {
+    display: block;
+  }
+
+  &__checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.c-filter-section-color{
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  & input{
+    position: absolute;
+    top: 3px;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &-checkbox{
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid  #705e16;
+    
+
+    &__black{
+      background-color: black;
+    }
+    &__darkgreenblue{
+      background-color: #293133;
+    }
+    &__greenblue{
+      background-color: #727875;
+    }
+    &__gray{
+      background-color: #878681;
+    }
+    &__lightgray{
+      background-color: #BFBFBF;
+    }
+    &__white{
+      background-color: #FFFFFF;
+    }
+    &__darkblue{
+      background-color: #001399;
+    }
+    &__blue{
+      background-color: #4169E1;
+    }
+    &__green{
+      background-color: #77DD77;
+    }
+    &__red{
+      background-color: #FF0000;
+    }
+    &__brown{
+      background-color: #B87333;
+    }
+    &__allcolors{
+      /*background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+      background-blend-mode: screen;*/
+
+/* Colorwheel */
+background: conic-gradient(
+    hsl(360, 100%, 50%),
+    hsl(315, 100%, 50%),
+    hsl(270, 100%, 50%),
+    hsl(225, 100%, 50%),
+    hsl(180, 100%, 50%),
+    hsl(135, 100%, 50%),
+    hsl(90, 100%, 50%),
+    hsl(45, 100%, 50%),
+    hsl(0, 100%, 50%)
+);
+    }
+    }
+
+  
+
+  &:hover input ~ .c-filter-section-color-checkbox{
+    border: 3px solid #d2b02a;
+  }
+
+  & input:checked ~ .c-filter-section-color-checkbox {
+    border: 3px solid #d2b02a;
+  }
+
+  & input:checked ~ .c-filter-section-color-checkbox:after {
+    display: block;
+  }
+  
+}
+
+.c-filter-section-flexbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  
