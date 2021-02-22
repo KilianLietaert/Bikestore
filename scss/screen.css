@@ -932,7 +932,7 @@ pre code {
 
 @media (min-width: 1688px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 90vw;
+    max-width: 85.45vw;
   }
 }
 

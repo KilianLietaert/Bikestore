@@ -215,7 +215,7 @@ $container-max-widths: (
   md: 80vw,
   lg: 80vw,
   xl: 90vw,
-  xxl: 90vw,
+  xxl: 85.45vw,
 ) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
