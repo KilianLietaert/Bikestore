@@ -12481,6 +12481,7 @@ body {
   .c-toplist {
     margin-bottom: 20px;
     padding-left: 15px !important;
+    min-width: 500px;
   }
 }
 
@@ -12606,6 +12607,13 @@ body {
 @media only screen and (max-width: 1264px) {
   .c-topnavigation {
     font-size: 16px;
+
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .c-topnavigation {
+    font-size: 16px !important;
   }
 }
 
@@ -12637,11 +12645,13 @@ body {
 /* responsive nav structuur*/
 .c-navover {
   padding: 0;
+  width: 100%;
+
 }
 
 @media (max-width: 991.98px) {
   .c-navover__nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 9999;
@@ -12701,6 +12711,18 @@ body {
 @media (max-width: 991.98px) {
   .navbar-brand {
     display: inline-block !important;
+  }
+}
+
+
+.c-svgnav {
+  width: 32px;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .c-svgnav {
+    fill: white;
   }
 }
 
@@ -15925,7 +15947,6 @@ th {
   .c-productdetail__gerelateerd {
     margin-left: 80px;
   }
-=======
 .c-contactform {
   max-width: 813px;
   margin: auto;
