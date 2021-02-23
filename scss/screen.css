@@ -15958,19 +15958,15 @@ th {
   }
 }
 
+.c-contact {
+  margin-bottom: 103px;
+}
+
 .c-contactform {
   max-width: 813px;
   margin: auto;
   margin-top: 90px;
-  margin-bottom: 90px;
-}
-
-.c-contactform__textarea {
-  height: 201px !important;
-}
-
-.c-formcontact {
-  margin: auto;
+  margin-bottom: 120px;
 }
 
 .c-contactform__text {
@@ -15983,6 +15979,18 @@ th {
   .c-contactform__text {
     font-size: 20px;
   }
+}
+
+.c-contactform__button {
+  margin-top: 30px;
+}
+
+.c-contactform__textarea {
+  height: 201px !important;
+}
+
+.c-formcontact {
+  margin: auto;
 }
 
 .c-form__h1--contactpagina {
@@ -16033,54 +16041,30 @@ th {
   }
 }
 
-.c-googlemap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .c-googlemap__map {
-  width: 100%;
-  max-width: 830px;
+  width: 42.3vw;
+  height: 27vw;
 }
 
-.c-contactinfo {
-  position: relative;
-  min-height: 519px;
+@media (max-width: 991.98px) {
+  .c-googlemap__map {
+    width: 58.3vw;
+    height: 37.7vw;
+    margin-bottom: 50px;
+  }
+}
+
+.c-contactinfo__button {
+  margin-top: 30px;
 }
 
 .c-contactinfo__plaats {
-  position: absolute;
-  bottom: 10px;
-}
-
-@media (max-width: 767.98px) {
-  .c-contactinfo__plaats {
-    margin-left: -10px;
-  }
-  .c-contactinfo__plaats__map {
-    width: 100%;
-    max-width: 830px;
-    height: auto;
-  }
+  margin-top: 8vw;
 }
 
 @media (max-width: 991.98px) {
   .c-contactinfo__plaats {
-    min-height: 500px;
-    padding: 100px !important;
-    padding-bottom: 0;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .c-contactinfo__plaats {
-    min-height: 500px;
-    padding: 40px !important;
-    padding-bottom: 0;
+    padding-left: 0;
   }
 }
 
