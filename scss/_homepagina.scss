@@ -108,17 +108,13 @@ ul .c-usp__tekst {
 .nb-usp-content {
   padding-top: 15px;
   text-align: center;
+
+  &-row{
+    margin-right: 20px;
+    padding-left: 0 !important;
+  }
 }
 
-@media only screen and (max-width: 767px) {
-  .nb-usp-container {
-    margin: -10px -10px 0 !important;
-  }
-  .nb-usp-content {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
 // ------------------------------------------------------------------------------------------------------------------
 .c-uitleg {
   background-color: #fff;
@@ -149,6 +145,10 @@ ul .c-usp__tekst {
       margin-top: 10vw;
       width: 60.5vw;
     }
+
+    @media only screen and (max-width: 576px) {
+      width: 75.5vw;
+    }
   }
 
   &__button {
@@ -165,7 +165,7 @@ ul .c-usp__tekst {
   background-color: transparent !important;
   z-index: 1;
   max-height: 470px;
-  transform: translateY(-400px);
+  transform: translateY(-370px);
   &__tekst {
     text-align: center;
   }
@@ -190,6 +190,15 @@ ul .c-usp__tekst {
     color: $color-text-important;
     font: $font-text;
   }
+
+  &__button{
+    margin-top: 40px;
+
+    @include media-breakpoint-down(md) { 
+      margin-top: 20px;
+    }
+    
+  }
 }
 // ---------------------------------------------------------------------
 .o-button {
@@ -208,174 +217,70 @@ ul .c-usp__tekst {
 // -----------------------------------------------------------------------------------------------------
 
 .c-repair {
-  //transform: translateY(-300px);
+  margin-top: -150px;
 
+  @include media-breakpoint-down(lg) { 
+    margin-top: -280px;
+  }
+
+  @include media-breakpoint-down(md) { 
+    margin-top: -250px;
+  }
+  @include media-breakpoint-down(sm) { 
+    margin-top: -250px;
+  }
+
+@media only screen and (max-width: 400px) {
+    margin-top: -300px;
+  }
   &__img {
-    max-width: 812px;
-    margin-top: 50px;
-    @media only screen and (max-width: 1919px) {
-      max-width: 612px;
-    }
-    @media only screen and (max-width: 1520px) {
-      max-width: 412px;
-    }
-    @media only screen and (max-width: 990px) {
-      margin-left: 100px;
-    }
-    @media only screen and (max-width: 730px) {
-      margin-left: 50px;
-    }
-    @media only screen and (max-width: 500px) {
-      margin-left: -20px;
-    }
-    @media only screen and (max-width: 430px) {
-      margin-left: -40px;
-      max-width: 312px;
-    }
+  width: 42.5vw;
+
+  @include media-breakpoint-down(lg) { 
+    margin-top: 10vw;
+    width: 60.5vw;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    width: 75.5vw;
+  }
   }
 
   &__h1 {
     font: $font-h1;
-    color: $color-title-h1;
-    margin-top: -250px;
-    margin-left: -140px;
-    margin-right: 350px;
-    @media only screen and (max-width: 1919px) {
-      margin-right: 50px;
-    }
-    @media only screen and (max-width: 1520px) {
-      font-size: 28px !important;
-      margin-right: 50px;
-    }
+    color: $color-title-h1;    
   }
 
   &__p {
-    margin-left: -140px;
-    margin-right: 100px;
     font: $font-text;
     color: $color-text2;
-    @media only screen and (max-width: 1520px) {
-      font-size: 20px !important;
-    }
   }
 
   &__2 {
-    float: right;
-    transform: translateY(-300px);
-    @media only screen and (max-width: 1919px) {
-      transform: translateY(-150px);
-    }
-    @media only screen and (max-width: 1520px) {
-      transform: translateY(-50px);
-    }
-    @media only screen and (max-width: 1130px) {
-      transform: translate(-60px, 300px);
-      margin-bottom: 100px;
-      max-width: 800px;
-    }
-    @media only screen and (max-width: 1050px) {
-      transform: translate(30px, 300px);
-    }
-    @media only screen and (max-width: 930px) {
-      transform: translate(30px, 300px);
-      max-width: 600px;
-    }
-    @media only screen and (max-width: 730px) {
-      transform: translate(30px, 300px);
-      max-width: 400px;
-    }
-    @media only screen and (max-width: 530px) {
-      transform: translate(30px, 300px);
-      max-width: 300px;
-    }
-    @media only screen and (max-width: 500px) {
-      transform: translate(20px, 300px);
-      max-width: 300px;
-    }
-    @media only screen and (max-width: 430px) {
-      transform: translate(50px, 300px);
-      max-width: 300px;
-    }
-    @media only screen and (max-width: 395px) {
-      transform: translate(70px, 300px);
-      max-width: 250px;
-    }
+  margin-left:70px;   
+
+  @include media-breakpoint-down(lg) { 
+    margin-left: 0px;
+    margin-top: 50px;
   }
-  &__inhoud {
-    @media only screen and (max-width: 1050px) {
-      margin-left: 50px;
-    }
-  }
-  @media only screen and (max-width: 1130px) {
-    margin-bottom: 400px !important;
-  }
-  @media only screen and (max-width: 395px) {
-    margin-bottom: 600px !important;
-  }
+}
+
 }
 
 // ---------------------------------------------------------------------------------------------
 
 .c-brochure {
   background-color: #fff;
+  margin-top: 20px;
 
   &__inhoud {
     text-align: center !important;
-    // margin: auto !important;
     padding-bottom: 100px;
   }
   &__h1 {
     color: $color-title-h1;
     padding-top: 50px;
-    margin-bottom: 20px;
-    padding-left: 800px;
-    padding-right: 800px;
-    @media only screen and (max-width: 1880px) {
-      padding-left: 750px;
-      padding-right: 400px;
-    }
-    @media only screen and (max-width: 1755px) {
-      padding-left: 700px;
-      padding-right: 400px;
-    }
-    @media only screen and (max-width: 1668px) {
-      padding-left: 650px;
-      padding-right: 400px;
-    }
-    @media only screen and (max-width: 1583px) {
-      padding-left: 600px;
-      padding-right: 400px;
-    }
-    @media only screen and (max-width: 1330px) {
-      padding-left: 500px;
-      padding-right: 400px;
-    }
-    @media only screen and (max-width: 1320px) {
-      padding-left: 300px;
-      padding-right: 400px;
-    }
-    @media only screen and (max-width: 1080px) {
-      padding-left: 200px;
-      padding-right: 200px;
-    }
-    @media only screen and (max-width: 682px) {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    @media only screen and (max-width: 530px) {
-      padding-top: 150px;
-    }
-    @media only screen and (max-width: 480px) {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @media only screen and (max-width: 400px) {
-      padding-top: 50px;
-    }
-    @media only screen and (max-width: 380px) {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+    margin-bottom: 20px;    
   }
 
   &__p {
