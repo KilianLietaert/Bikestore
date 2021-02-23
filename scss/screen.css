@@ -13922,6 +13922,7 @@ ul .c-usp__tekst--extra {
 /*achtergrond-afbeelding*/
 .c-container {
   padding: 0;
+  overflow-x: hidden;
 }
 
 .c-container__padding {
@@ -13976,15 +13977,10 @@ ul .c-usp__tekst--extra {
 }
 
 .c-intro__foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 97px;
 }
 
 .c-intro__foto--g {
@@ -14106,12 +14102,18 @@ ul .c-usp__tekst--extra {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 145px;
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 576px) {
+  .c-uur {
+    margin-right: 30px;
+  }
 }
 
 .c-uur > div {
   background-color: #2d2201;
-  height: 188px;
+  height: 175px;
   width: 138px;
   margin-left: 24px;
   text-align: center;
@@ -14125,7 +14127,7 @@ ul .c-usp__tekst--extra {
 
 @media only screen and (max-width: 1500px) {
   .c-uur > div {
-    height: 150px;
+    height: 130px;
     width: 100px;
   }
   .c-uur > div > h5 {
@@ -14141,7 +14143,7 @@ ul .c-usp__tekst--extra {
 
 @media only screen and (max-width: 730px) {
   .c-uur > div {
-    height: 100px;
+    height: 80px;
     width: 80px;
   }
   .c-uur > div > h5 {
@@ -14172,6 +14174,7 @@ ul .c-usp__tekst--extra {
   display: -ms-flexbox;
   display: flex;
   padding-top: 14px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1199.98px) {
@@ -14202,6 +14205,12 @@ ul .c-usp__tekst--extra {
   list-style: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 541px) {
+  .c-icon {
+    margin-left: 10vw;
+  }
 }
 
 .c-icon > li {
