@@ -211,7 +211,6 @@
 
   &__blok1 {
     margin-top: 100px;
-    max-width: 706px;
 
     @include media-breakpoint-down(lg) {
       margin: auto;
