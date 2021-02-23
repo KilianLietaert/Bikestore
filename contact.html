@@ -85,7 +85,8 @@
     </nav>
 
   </header>
-  <div class="container">
+  <main>
+  <div class="c-contact container">
     <div class="c-contactform">
       <div class="c-formcontact">
         <h1 class="c-form__h1--contactpagina">Contacteer ons</h1>
@@ -110,32 +111,30 @@
             <label class="c-floatingcontact" for="floatingTextarea2">Bericht</label>
           </div>
           <div class="col-12">
-            <div class="form-check c-form-check">
-              <input class="form-check-input" type="checkbox" value="" id="nieuwsbrief" />
-              <label class="form-check-label labelcheck" for="flexCheckDefault">
-                Ik ontvang graag de nieuwsbrief
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="privacy" />
-              <label class="form-check-label labelcheck" for="flexCheckDefault">
-                Ik ga akkoord met het privacy statement
-              </label>
-            </div>
+            <label class="c-filter-container">Ik ontvang graag de nieuwsbrief
+              <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief" value="nieuwsbrief">
+              <span class="c-filter-container__checkmark"></span>
+            </label>
+            <label class="c-filter-container">Ik ga akkoord met het privacy statement
+              <input type="checkbox" id="privacy" name="privacy" value="privacy">
+              <span class="c-filter-container__checkmark"></span>
+            </label>
           </div>
-          <a class="c-folder__aanvraag-form-link" href="#">
-            <button class="o-button c-folder__aanvraag-form-button">
-              Versturen
-            </button>
+          <div class="text-center">
+            <a class="c-contacform-link" href="#">
+              <button class="o-button c-contactform__button">
+                Versturen
+              </button>
+          </div>
           </a>
         </form>
       </div>
     </div>
     <div class="row">
-      <div class="c-googlemap col-xl-7 col-lg-7 col-md-12">
+      <div class="c-googlemap col-xl-7 col-lg-7 col-md-12 col-sm-12">
         <img class="c-googlemap__map" src="./img/googlmap.png" alt="google map">
       </div>
-      <div class="c-contactinfo col-xl-5 col-lg-5 col-md-12">
+      <div class="c-contactinfo col-xl-5 col-lg-5 col-md-12 col-sm-12">
         <h2 class="c-titel__2">Bikestore</h2>
         <ul class="c-listcontact">
           <li>N50 154</li>
@@ -149,15 +148,16 @@
 
         <div class="c-contactinfo__plaats">
           <p class="c-listcontact__text">Wil je graag meer weten over onze elektrische fietsen? </p>
-          <a class="c-folder__aanvraag-form-link" href="#">
-            <button class="o-button c-folder__aanvraag-form-button">
-                Proefrit aanvragen
+          <a class="c-contactinfo__link" href="#">
+            <button class="o-button c-contactinfo__-button">
+              Proefrit aanvragen
             </button>
-        </a>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</main>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -91,8 +91,24 @@
     padding-top: 37.5px;
     padding-bottom: 37.5px;
 
+    @include media-breakpoint-down(lg) {
+      width: 60%;
+    }
+
     &-levering {
-      padding-right: 20.65vw;
+      margin-right: 4vw;
+
+      @include media-breakpoint-down(xl) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 5vw;
+      }
+      
+      @include media-breakpoint-down(lg) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 5vw;
+      }
 
       @include media-breakpoint-down(md) {
         width: 80%;
@@ -153,12 +169,18 @@
     }
 
     &-onderhoud {
-      margin-right: 4.65vw;
+      margin-right: 4vw;
+
+      @include media-breakpoint-down(lg) {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 5vw;
+      }
 
       @include media-breakpoint-down(md) {
         width: 80%;
         margin-right: 0;
-        margin-bottom: 5vw;
+        margin-bottom: 10vw;
       }
 
       @include media-breakpoint-down(sm) {
@@ -173,7 +195,7 @@
         font-weight: bold;
 
         @include media-breakpoint-down(lg) {
-          width: 800px;
+          width: 820px;
           height: auto;
         }
 
@@ -234,7 +256,7 @@
         margin-top: 0;
 
         @include media-breakpoint-down(lg) {
-          width: 800px;
+          width: 820px;
           height: auto;
         }
 

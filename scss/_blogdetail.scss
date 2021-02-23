@@ -1,11 +1,12 @@
 .c-titel__blogdetail {
+  justify-content: end;
   align-items: left;
   margin-top: 50px;
   margin-bottom: 50px;
   font: $font-h1;
   color: $color-title-h1;
 
-  &--h1 {
+  /*&--h1 {
     padding-left: 20px;
     @media only screen and (max-width: 1040px) {
       font-size: 30px;
@@ -19,7 +20,7 @@
     @media only screen and (max-width: 476px) {
       max-width: 350px;
     }
-  }
+  }*/
 
   &--p {
     font: $font-text3;
@@ -28,18 +29,9 @@
     padding-top: 20px;  
     text-align: right;
 
-    @media only screen and (max-width: 1630px) {
-      margin-left: 30px;
-    }
-    @media only screen and (max-width: 1390px) {
-      margin-left: 20px;
-    }
-    @media only screen and (max-width: 990px) {
-      margin-left: 40px;
-    }
-    @media only screen and (max-width: 936px) {
-      margin-left: 50px;
-    }
+    @include media-breakpoint-down(xl) {
+    text-align: left;    
+  }
   }
 }
 
@@ -48,14 +40,27 @@
 .c-blogdetail {
   background-color: rgba(112, 94, 22, 0.1) !important;
   margin-bottom: 100px;
+  height: 1359px;
+
+  @media only screen and (max-width: 1300px) {
+    height: 1500px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    height: 1900px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 1700px;
+  }
+
 
   &__div1 {
-    max-width: 1364px;
     font: $font-text3;
     padding: 20px;
+    padding-top: 5.8vw;
   }
   &__div2 {
-    max-width: 1364px;
     font: $font-text3;
     padding: 20px;
 
@@ -68,13 +73,13 @@
   &__div3 {
     font: $font-text3;
     padding: 20px;
+    margin-top: 107px;
 
     &--p {
-      max-width: 1360px;
-      margin-top: -475px;
-      padding-bottom: 150px;
+     // margin-top: -475px;
+      //padding-bottom: 150px;
       padding-left: 15px;
-      @media only screen and (max-width: 1434px) {
+      /*@media only screen and (max-width: 1434px) {
         margin-top: -500px !important;
       }
       @media only screen and (max-width: 1420px) {
@@ -108,12 +113,13 @@
       }
       @media only screen and (max-width: 420px) {
         max-width: 200px;
-      }
+      }*/
     }
   }
 
   &__lijn {
-    @media only screen and (max-width: 1120px) {
+    margin-top: -10.5px;
+    /*@media only screen and (max-width: 1120px) {
       margin-left: 9.33333% !important;
     }
     @media (min-width: 992px) {
@@ -122,7 +128,7 @@
     @media only screen and (max-width: 990px) {
       margin-left: 7.33333% !important;
       margin-right: 1.3333%;
-    }
+    }*/
   }
 }
 
@@ -178,14 +184,27 @@
 
 .circle-d2 {
   margin-top: 55px;
-  @media only screen and (max-width: 1100px) {
+
+  @media only screen and (max-width: 1709px) {
+    margin-top: 80px !important;
+  }
+  @media only screen and (max-width: 1688px) {
+    margin-top: 60px !important;
+  }
+  @media only screen and (max-width: 1622px) {
     margin-top: 75px !important;
   }
-  @media only screen and (max-width: 1080px) {
-    margin-top: 95px !important;
+  @media only screen and (max-width: 1244px) {
+    margin-top: 100px !important;
   }
-  @media only screen and (max-width: 990px) {
-    margin-top: 130px !important;
+  @media only screen and (max-width: 1147px) {
+    margin-top: 128px !important;
+  }
+  @media only screen and (max-width: 955px) {
+    margin-top: 150px !important;
+  }
+  @media only screen and (max-width: 857px) {
+    margin-top: 160px !important;
   }
   @media only screen and (max-width: 750px) {
     margin-top: 180px !important;
