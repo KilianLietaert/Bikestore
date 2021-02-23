@@ -166,6 +166,11 @@ ul .c-usp__tekst {
   z-index: 1;
   max-height: 470px;
   transform: translateY(-370px);
+
+  @include media-breakpoint-down(sm) { 
+    transform: translateY(-420px);
+  }
+
   &__tekst {
     text-align: center;
   }
