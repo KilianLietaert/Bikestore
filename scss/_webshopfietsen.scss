@@ -143,7 +143,10 @@
   -ms-user-select: none;
   user-select: none;
   color: black;
-
+  //margin-left:-10px !important;
+  &__productdetail{
+    margin-left: -14px;
+  }
   & input{
     position: absolute;
     top: 3px;

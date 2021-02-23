@@ -15335,6 +15335,8 @@ label {
   width: 60px !important;
   text-align: center;
   margin: 10px;
+  height: 60px;
+  margin-top: 48px;
 }
 
 .fa-plus-circle {
@@ -15923,6 +15925,10 @@ th {
   -ms-user-select: none;
   user-select: none;
   color: black;
+}
+
+.c-filter-container__productdetail {
+  margin-left: -14px;
 }
 
 .c-filter-container input {
