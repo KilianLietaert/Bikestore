@@ -12990,6 +12990,13 @@ ul .c-usp__tekst {
           transform: translateY(-370px);
 }
 
+@media (max-width: 767.98px) {
+  .c-uitproberen {
+    -webkit-transform: translateY(-420px);
+            transform: translateY(-420px);
+  }
+}
+
 .c-uitproberen__tekst {
   text-align: center;
 }
