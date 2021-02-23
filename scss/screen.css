@@ -15078,8 +15078,30 @@ label {
   padding-bottom: 37.5px;
 }
 
+@media (max-width: 1199.98px) {
+  .c-service__services {
+    width: 60%;
+  }
+}
+
 .c-service__services-levering {
-  padding-right: 20.65vw;
+  margin-right: 4vw;
+}
+
+@media (max-width: 1399.98px) {
+  .c-service__services-levering {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .c-service__services-levering {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -15153,14 +15175,22 @@ label {
 }
 
 .c-service__services-onderhoud {
-  margin-right: 4.65vw;
+  margin-right: 4vw;
+}
+
+@media (max-width: 1199.98px) {
+  .c-service__services-onderhoud {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 5vw;
+  }
 }
 
 @media (max-width: 991.98px) {
   .c-service__services-onderhoud {
     width: 80%;
     margin-right: 0;
-    margin-bottom: 5vw;
+    margin-bottom: 10vw;
   }
 }
 
@@ -15180,7 +15210,7 @@ label {
 
 @media (max-width: 1199.98px) {
   .c-service__services-onderhoud-title {
-    width: 800px;
+    width: 820px;
     height: auto;
   }
 }
@@ -15251,7 +15281,7 @@ label {
 
 @media (max-width: 1199.98px) {
   .c-service__services-herstelling-title {
-    width: 800px;
+    width: 820px;
     height: auto;
   }
 }
