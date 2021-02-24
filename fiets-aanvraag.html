@@ -14,7 +14,7 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <link rel="stylesheet" href="scss/screen.css">
+  <link href="scss/screen.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -89,41 +89,43 @@
 
   </header>
 
-  <main class="container-fluid c-container">
-
-    <section class="row c-intro">
-      <div class="c-intro__foto col-xl-5 col-lg-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
-        <img class="c-intro__foto--g" src="fotos/testrit met advies_0.jpg" alt="bikster">
-      </div>
-
-      <div class="c-blokpadding col-xl-7 col-lg-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
-        <div class="c-more__blok1">
-          <h2 class="c-intro__h">E-bike proefrit aan huis</h2>
-          <p class="c-intro__text">Bij een Bikestore proefrit sturen we jou niet zomaar de straat op.
-            Neen, <span class="c-intro__text--color">wij rijden met jou mee…</span></p>
-          <p class="c-intro__text--extra">Tijdens de rit geven we <span class="c-intro__text--color">jou al wat
-              tips</span> mee en jij kan ons
-            ondertussen vertellen hoe je de fiets ervaart.</p>
-        </div>
-
-        <div class="c-more__blok2">
-          <p class="c-intro__text--tijd">We nemen onze tijd hiervoor.</p>
-
-          <div class="c-uur">
-            <div>
-              <h5>2</h5>
+  <main class="c-container">
+    <section class="c-intro">
+      <div class="container">
+        <div class="row">
+          <div class="c-intro__foto col-xxl-5 col-xl-12 col-lg-12">
+            <img class="c-intro__foto--g" src="fotos/testrit met advies_0.jpg" alt="bikster">
+          </div>
+          <div class="c-blokpadding  col-xxl-7  col-lg-12">
+            <div class="c-more__blok1 ">
+              <h2 class="c-intro__h">E-bike proefrit aan huis</h2>
+              <p class="c-intro__text">Bij een Bikestore proefrit sturen we jou niet zomaar de straat op.
+                Neen, <span class="c-intro__text--color">wij rijden met jou mee…</span></p>
+              <p class="c-intro__text--extra">Tijdens de rit geven we <span class="c-intro__text--color">jou al wat
+                  tips</span> mee en jij kan ons
+                ondertussen vertellen hoe je de fiets ervaart.</p>
             </div>
-            <div>
-              <h5>4</h5>
-            </div>
-            <div>
-              <h5>U</h5>
+
+            <div class="c-more__blok2">
+              <p class="c-intro__text--tijd">We nemen onze tijd hiervoor.</p>
+
+              <div class="c-uur">
+                <div>
+                  <h5 class="js-firstnumber"></h5>
+                </div>
+                <div>
+                  <h5 class="js-secondnumber"></h5>
+                </div>
+                <div>
+                  <h5>U</h5>
+                </div>
+              </div>
             </div>
           </div>
+          <div>
+          </div>
         </div>
-
-        <div>
-        </div>
+      </div>
     </section>
 
     <section class="c-textover">
@@ -220,19 +222,15 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12">
-                <div class="form-check c-form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="nieuwsbrief" />
-                  <label class="form-check-label labelcheck" for="flexCheckDefault">
-                    Ik ontvang graag de nieuwsbrief
+                <div class="col-12">
+                  <label class="c-filter-container">Ik ontvang graag de nieuwsbrief
+                    <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief" value="nieuwsbrief">
+                    <span class="c-filter-container__checkmark"></span>
                   </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="privacy" />
-                  <label class="form-check-label labelcheck" for="flexCheckDefault">
-                    Ik ga akkoord met het privacy statement
+                  <label class="c-filter-container">Ik ga akkoord met het privacy statement
+                    <input type="checkbox" id="pravicy" name="pravicy" value="pravicy">
+                    <span class="c-filter-container__checkmark"></span>
                   </label>
-                </div>
               </div>
               <div class="col-12 c-button__form">
                 <button class="btn btn-primary o-button" type="submit">
@@ -241,12 +239,12 @@
               </div>
             </form>
           </div>
-        </section>
-
       </div>
     </section>
 
+
   </main>
+  <script src="script/fietsaanvraag-uur.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

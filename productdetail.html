@@ -1,501 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Blogoverzicht</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <script
-      src="https://kit.fontawesome.com/61efba2fcb.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link href="./scss/screen.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <section>
-      <div class="row">
-        <div class="c-product__fotogroep offset-xl-1 col-xl-7 col-lg-10">
-          <div class="c-product__fotosklein colum">
-            <i class="fas fa-chevron-up"></i>
-            <img
-              class="img-thumbnail c-product__fotosklein--onderdeel"
-              src="img/cortina1.jpg"
-              alt=""
-            />
-            <img
-              class="img-thumbnail c-product__fotosklein--onderdeel"
-              src="img/cortina2.jpg"
-              alt=""
-            />
-            <img
-              class="img-thumbnail c-product__fotosklein--onderdeel"
-              src="img/cortina3.jpg"
-              alt=""
-            />
-            <i class="fas fa-chevron-down"></i>
+
+<head>
+  <title>Productdetail</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://kit.fontawesome.com/61efba2fcb.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="./scss/screen.css" rel="stylesheet" type="text/css" />
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <section>
+    <div class="row">
+      <div class="c-product__fotogroep offset-xl-1 col-xl-7 col-lg-10">
+        <div class="c-product__fotosklein colum">
+          <i class="fas fa-chevron-up"></i>
+          <img class="img-thumbnail c-product__fotosklein--onderdeel" src="img/cortina1.jpg" alt="" />
+          <img class="img-thumbnail c-product__fotosklein--onderdeel" src="img/cortina2.jpg" alt="" />
+          <img class="img-thumbnail c-product__fotosklein--onderdeel" src="img/cortina3.jpg" alt="" />
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="c-product__fotogroot">
+          <img class="c-product__fotogroot--img" src="img/cortina oranje.jpg" alt="" />
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-10">
+        <div class="c-product__info">
+          <h1 class="c-product__info--h1">
+            Cortina E-Common FM N7 2021 Dames
+          </h1>
+          <h2 class="c-product__info--h2">€ 1.709</h2>
+          <h3 class="c-product__info--h3">Kies een kleur</h3>
+          <div class="c-product__info--kleurfiets row">
+            <div class="column c-product__info--kleurfietsduo">
+              <img class="c-product__info--kleurfietsafbeelding" src="img/cortina oranje.jpg" alt="" />
+              <h4>Copper Matt</h4>
+            </div>
+            <div class="column c-product__info--kleurfietsduo">
+              <img class="c-product__info--kleurfietsafbeelding" src="img/cortina grijs.jpg" alt="" />
+              <h4>Mouse Grey Matt</h4>
+            </div>
+            <div class="column c-product__info--kleurfietsduo">
+              <img class="c-product__info--kleurfietsafbeelding" src="img/cortina blauw.jpg" alt="" />
+              <h4>Dull Blue Matt</h4>
+            </div>
+            <div class="column c-product__info--kleurfietsduo">
+              <img class="c-product__info--kleurfietsafbeelding" src="img/cortina donker blauw.jpg" alt="" />
+              <h4>Royal Dark Blue Matt</h4>
+            </div>
           </div>
-          <div class="c-product__fotogroot">
-            <img
-              class="c-product__fotogroot--img"
-              src="img/cortina oranje.jpg"
-              alt=""
-            />
+          <div>
+            <form action="">
+              <select class="form-select c-productdetail__select" aria-label="Default select example">
+                <option class="c-productdetail__select--option" selected>
+                  Open this select menu
+                </option>
+                <option class="c-productdetail__select--option" value="1">
+                  One
+                </option>
+                <option class="c-productdetail__select--option" value="2">
+                  Two
+                </option>
+                <option class="c-productdetail__select--option" value="3">
+                  Three
+                </option>
+              </select>
+
+              <div class="form-check">
+                <label class="c-filter-container">Fietsverzekering
+                  <input type="checkbox" id="gianttriplex" name="gianttriplex" value="gianttriplex">
+                  <span class="c-filter-container__checkmark"></span>
+                </label>
+                <a class="c-productdetail__linkverzekering" href="">
+                  <h5>Klik hier voor info omtrent de fietsverzekering</h5>
+                </a>
+              </div>
+              <div class="row">
+                <input class="c-input__select--product" type="number" name="" id="" value="1" min="1" />
+                <div class="">
+                  <a class="c-folder__aanvraag-form-link" href="#">
+                    <button class="o-button c-folder__aanvraag-form-button">
+                        Brochure aanvragen
+                    </button>
+                </a>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-10">
-          <div class="c-product__info">
-            <h1 class="c-product__info--h1">
-              Cortina E-Common FM N7 2021 Dames
-            </h1>
-            <h2 class="c-product__info--h2">€ 1.709</h2>
-            <h3 class="c-product__info--h3">Kies een kleur</h3>
-            <div class="c-product__info--kleurfiets row">
-              <div class="column c-product__info--kleurfietsduo">
-                <img
-                  class="c-product__info--kleurfietsafbeelding"
-                  src="img/cortina oranje.jpg"
-                  alt=""
-                />
-                <h4>Copper Matt</h4>
-              </div>
-              <div class="column c-product__info--kleurfietsduo">
-                <img
-                  class="c-product__info--kleurfietsafbeelding"
-                  src="img/cortina grijs.jpg"
-                  alt=""
-                />
-                <h4>Mouse Grey Matt</h4>
-              </div>
-              <div class="column c-product__info--kleurfietsduo">
-                <img
-                  class="c-product__info--kleurfietsafbeelding"
-                  src="img/cortina blauw.jpg"
-                  alt=""
-                />
-                <h4>Dull Blue Matt</h4>
-              </div>
-              <div class="column c-product__info--kleurfietsduo">
-                <img
-                  class="c-product__info--kleurfietsafbeelding"
-                  src="img/cortina donker blauw.jpg"
-                  alt=""
-                />
-                <h4>Royal Dark Blue Matt</h4>
-              </div>
-            </div>
-            <div>
-              <form action="">
-                <select
-                  class="form-select c-productdetail__select"
-                  aria-label="Default select example"
-                >
-                  <option class="c-productdetail__select--option" selected>
-                    Open this select menu
-                  </option>
-                  <option class="c-productdetail__select--option" value="1">
-                    One
-                  </option>
-                  <option class="c-productdetail__select--option" value="2">
-                    Two
-                  </option>
-                  <option class="c-productdetail__select--option" value="3">
-                    Three
-                  </option>
-                </select>
+      </div>
+    </div>
+  </section>
 
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label
-                    class="form-check-label c-personaliseer__label"
-                    for="flexCheckDefault"
-                  >
-                    Fietsverzekering
-                  </label>
-                  <a class="c-productdetail__linkverzekering" href="">
-                    <h5>Klik hier voor info omtrent de fietsverzekering</h5></a
-                  >
-                </div>
-                <div class="row">
-                  <input
-                    class="c-input__select--product"
-                    type="number"
-                    name=""
-                    id=""
-                    value="1"
-                    min="1"
-                  />
+  <section class="container-fluid">
+    <div class="row">
+      <div class="c-productdetail__uitlegblok offset-xl-1 col-xl-6 col-lg-12">
+        <div class="c-productdetail__uitlegtekst">
+          <h3 class="c-productdetail__uitlegtekst--h3">
+            Even voorstellen...
+          </h3>
+          <p class="c-productdetail__uitlegtekst--p">
+            Op zoek naar een e-bike waarmee je makkelijk van A naar B komt? Om
+            naar school te komen, om een boodschap te doen of voor andere
+            ritjes? Dan is de Cortina E-Common N7 FM jouw ideale elektrische
+            fiets! De fiets heeft een voor- en achterdrager waarop je alles
+            kwijt kunt wat je mee moet nemen. De voordrager is smaller
+            gemaakt, zo kun je jouw e-bike zonder problemen in de
+            fietsenstalling kwijt. Dat maakt hem ideaal voor bijvoorbeeld
+            scholieren!
+          </p>
+        </div>
+        <div class="c-productdetail__uitlegtekst">
+          <h3 class="c-productdetail__uitlegtekst--h3">
+            Bafang voorwielmotor
+          </h3>
+          <p class="c-productdetail__uitlegtekst--p">
+            De Cortina E-Common N7 FM heeft een Bafang voorwielmotor die erg
+            stil is, en lekker presteert. Met 9 ondersteuningsstanden en maar
+            liefst 7 versnellingen hoef je niet bang te zijn dat je ooit nog
+            ergens zwetend of uitgeput aankomt! De bediening van de
+            ondersteuning gaat veilig via de knoppen naast het handvat: dat
+            fietst nog eens lekker! Oh, nu vergeten we bijna nog de handige
+            extra's zoals een stuurslot en een dubbele standaard: alles voor
+            de veiligheid!
+          </p>
+        </div>
+        <div>
+          <h3 class="c-productdetail__uitlegtekst--h3">Plus- en minpunten</h3>
+          <div class="d-flex">
+            <i class="fas fa-plus-circle"></i>
+            <p class="c-productdetail__punten">
+              De verlichting wordt automatisch in- en uitgeschakeld bij
+              veranderend buitenlicht: dat is handig!
+            </p>
+          </div>
+          <div class="d-flex">
+            <i class="fas fa-plus-circle"></i>
+            <p class="c-productdetail__punten">
+              Keuze uit 3 accu's, dus ook als je vaak langere afstanden rijdt,
+              is er een goede accu beschikbaar
+            </p>
+          </div>
+          <div class="d-flex">
+            <i class="fas fa-plus-circle"></i>
+            <p class="c-productdetail__punten">
+              Heel praktisch met voor- en achterdrager, dubbele standaard en
+              stuurslot: ideaal voor scholieren
+            </p>
+          </div>
+          <div class="d-flex">
+            <i class="fas fa-minus-circle"></i>
+            <p class="c-productdetail__punten">
+              Voorvork en zadelpen veren niet mee, daardoor is hij iets minder
+              comfortabel op onverharde wegen
+            </p>
+          </div>
+          <div class="d-flex">
+            <i class="fas fa-minus-circle"></i>
+            <p class="c-productdetail__punten">
+              De motor heeft alleen een rotatiesensor, daardoor is de
+              ondersteuning minder nauwkeurig
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="offset-xl-1 col-xl-4 col-lg-12">
+        <div class="c-productdetail__tables">
+          <table class="c-table">
+            <th>Algemeen</th>
+            <tr>
+              <td class="c-table__links">Type fiets</td>
+              <td class="c-table__rechts">Elektrische fietsen</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Merk</td>
+              <td class="c-table__rechts">Cortina</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Serie</td>
+              <td class="c-table__rechts">Common</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Frametype</td>
+              <td class="c-table__rechts">Damesfiets</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Motorsysteem</td>
+              <td class="c-table__rechts">Voorwiel</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Aantal versnellingen</td>
+              <td class="c-table__rechts">7</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Type naaf</td>
+              <td class="c-table__rechts">Shimano Nexus 7</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Framemateriaal</td>
+              <td class="c-table__rechts">Aluminium</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table class="c-table2">
+            <th>Accu</th>
+            <tr>
+              <td class="c-table__links">Standaard accu capaciteit</td>
+              <td class="c-table__rechts">450Wh</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Uitneembare accu</td>
+              <td class="c-table__rechts">Ja</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Accu positie</td>
+              <td class="c-table__rechts">Achterdrager</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Type accu</td>
+              <td class="c-table__rechts">Lithium-ion</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Laadtijd tot volle accu</td>
+              <td class="c-table__rechts">3,5 tot 10,5 uur</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Accu keuze mogelijk</td>
+              <td class="c-table__rechts">Ja</td>
+            </tr>
+            <tr>
+              <td class="c-table__links">Accu laden in fiets</td>
+              <td class="c-table__rechts">Ja</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <div class="c-personaliseer">
+            <h3 class="c-h3__personaliseer">Personaliseer je fiets</h3>
+            <form class="c-personaliseer__form" action="">
+              <h4>Accu</h4>
+              <label class="c-personaliseer__label" for="">Type accu</label>
+              <br />
+              <select class="form-select c-personaliseer__select" aria-label="Default select example">
+                <option value="450Wh" selected>Standaard keuze - 450 Wh (50-80km)</option>
+                <option value="750Wh">
+                  Extra keuze - 750 Wh (110-130km) + <strong>€ 200 </strong>
+                </option>
+              </select>
+              <br />
+              <label class="c-personaliseer__label" for="">Type acculader</label>
+              <br />
+              <select class="form-select c-personaliseer__select" aria-label="Default select example">
+                <option selected>Standaard keuze - Acculader normaal</option>
+                <option value="1">
+                  Extra keuze - Acculader snel + <strong>€ 40</strong>
+                </option>
+              </select>
+              <div class="form-check">
+                <label class="c-filter-container">Fietsverzekering
+                  <input type="checkbox" id="gianttriplex" name="gianttriplex" value="gianttriplex">
+                  <span class="c-filter-container__checkmark"></span>
+                </label>
+                <a class="c-productdetail__linkverzekering" href="">
+                  <h5>Klik hier voor info omtrent de fietsverzekering</h5>
+                </a>
+
+                <hr />
+                <div class="row c-personaliseer__prijsbutton">
+                  <div class="mb-3">
+                    <h3 class="c-personaliseer__h3">€ 1.709</h3>
+                  </div>
                   <div class="">
-                    <button class="btn btn-primary o-button" type="submit">
-                      Toevoegen aan winkelmandje
+                    <button class="btn btn-primary o-button c-fietsen__verzenden" type="submit">
+                      In winkelmandje
                     </button>
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container-fluid">
-      <div class="row">
-        <div class="c-productdetail__uitlegblok offset-xl-1 col-xl-6 col-lg-12">
-          <div class="c-productdetail__uitlegtekst">
-            <h3 class="c-productdetail__uitlegtekst--h3">
-              Even voorstellen...
-            </h3>
-            <p class="c-productdetail__uitlegtekst--p">
-              Op zoek naar een e-bike waarmee je makkelijk van A naar B komt? Om
-              naar school te komen, om een boodschap te doen of voor andere
-              ritjes? Dan is de Cortina E-Common N7 FM jouw ideale elektrische
-              fiets! De fiets heeft een voor- en achterdrager waarop je alles
-              kwijt kunt wat je mee moet nemen. De voordrager is smaller
-              gemaakt, zo kun je jouw e-bike zonder problemen in de
-              fietsenstalling kwijt. Dat maakt hem ideaal voor bijvoorbeeld
-              scholieren!
-            </p>
-          </div>
-          <div class="c-productdetail__uitlegtekst">
-            <h3 class="c-productdetail__uitlegtekst--h3">
-              Bafang voorwielmotor
-            </h3>
-            <p class="c-productdetail__uitlegtekst--p">
-              De Cortina E-Common N7 FM heeft een Bafang voorwielmotor die erg
-              stil is, en lekker presteert. Met 9 ondersteuningsstanden en maar
-              liefst 7 versnellingen hoef je niet bang te zijn dat je ooit nog
-              ergens zwetend of uitgeput aankomt! De bediening van de
-              ondersteuning gaat veilig via de knoppen naast het handvat: dat
-              fietst nog eens lekker! Oh, nu vergeten we bijna nog de handige
-              extra's zoals een stuurslot en een dubbele standaard: alles voor
-              de veiligheid!
-            </p>
-          </div>
-          <div>
-            <h3 class="c-productdetail__uitlegtekst--h3">Plus- en minpunten</h3>
-            <div class="d-flex">
-              <i class="fas fa-plus-circle"></i>
-              <p class="c-productdetail__punten">
-                De verlichting wordt automatisch in- en uitgeschakeld bij
-                veranderend buitenlicht: dat is handig!
-              </p>
-            </div>
-            <div class="d-flex">
-              <i class="fas fa-plus-circle"></i>
-              <p class="c-productdetail__punten">
-                Keuze uit 3 accu's, dus ook als je vaak langere afstanden rijdt,
-                is er een goede accu beschikbaar
-              </p>
-            </div>
-            <div class="d-flex">
-              <i class="fas fa-plus-circle"></i>
-              <p class="c-productdetail__punten">
-                Heel praktisch met voor- en achterdrager, dubbele standaard en
-                stuurslot: ideaal voor scholieren
-              </p>
-            </div>
-            <div class="d-flex">
-              <i class="fas fa-minus-circle"></i>
-              <p class="c-productdetail__punten">
-                Voorvork en zadelpen veren niet mee, daardoor is hij iets minder
-                comfortabel op onverharde wegen
-              </p>
-            </div>
-            <div class="d-flex">
-              <i class="fas fa-minus-circle"></i>
-              <p class="c-productdetail__punten">
-                De motor heeft alleen een rotatiesensor, daardoor is de
-                ondersteuning minder nauwkeurig
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="offset-xl-1 col-xl-4 col-lg-12">
-          <div class="c-productdetail__tables">
-            <table class="c-table">
-              <th>Algemeen</th>
-              <tr>
-                <td class="c-table__links">Type fiets</td>
-                <td class="c-table__rechts">Elektrische fietsen</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Merk</td>
-                <td class="c-table__rechts">Cortina</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Serie</td>
-                <td class="c-table__rechts">Common</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Frametype</td>
-                <td class="c-table__rechts">Damesfiets</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Motorsysteem</td>
-                <td class="c-table__rechts">Voorwiel</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Aantal versnellingen</td>
-                <td class="c-table__rechts">7</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Type naaf</td>
-                <td class="c-table__rechts">Shimano Nexus 7</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Framemateriaal</td>
-                <td class="c-table__rechts">Aluminium</td>
-              </tr>
-            </table>
-          </div>
-          <div>
-            <table class="c-table2">
-              <th>Accu</th>
-              <tr>
-                <td class="c-table__links">Standaard accu capaciteit</td>
-                <td class="c-table__rechts">450Wh</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Uitneembare accu</td>
-                <td class="c-table__rechts">Ja</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Accu positie</td>
-                <td class="c-table__rechts">Achterdrager</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Type accu</td>
-                <td class="c-table__rechts">Lithium-ion</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Laadtijd tot volle accu</td>
-                <td class="c-table__rechts">3,5 tot 10,5 uur</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Accu keuze mogelijk</td>
-                <td class="c-table__rechts">Ja</td>
-              </tr>
-              <tr>
-                <td class="c-table__links">Accu laden in fiets</td>
-                <td class="c-table__rechts">Ja</td>
-              </tr>
-            </table>
-          </div>
-          <div>
-            <div class="c-personaliseer">
-              <h3 class="c-h3__personaliseer">Personaliseer je fiets</h3>
-              <form class="c-personaliseer__form" action="">
-                <h4>Accu</h4>
-                <label class="c-personaliseer__label" for="">Type accu</label>
-                <br />
-                <select
-                  class="form-select c-personaliseer__select"
-                  aria-label="Default select example"
-                >
-                  <option selected>Standaard keuze - 450 Wh (50-80km)</option>
-                  <option value="2">
-                    Extra keuze - 750 Wh (110-130km) + <strong>€ 200 </strong>
-                  </option>
-                </select>
-                <br />
-                <label class="c-personaliseer__label" for=""
-                  >Type acculader</label
-                >
-                <br />
-                <select
-                  class="form-select c-personaliseer__select"
-                  aria-label="Default select example"
-                >
-                  <option selected>Standaard keuze - Acculader normaal</option>
-                  <option value="1">
-                    Extra keuze - Acculader snel + <strong>€ 40</strong>
-                  </option>
-                </select>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="fietsverzekering"
-                  />
-                  <label
-                    class="form-check-label c-personaliseer__label"
-                    for="fietsverzekering"
-                  >
-                    Fietsverzekering
-                  </label>
-                  <br />
-                  <a class="c-productdetail__linkverzekering" href="">
-                    <h5>Klik hier voor info omtrent de fietsverzekering</h5></a
-                  >
-
-                  <hr />
-                  <div class="row c-personaliseer__prijsbutton">
-                    <div class="mb-3">
-                      <h3 class="c-personaliseer__h3">€ 1.709</h3>
-                    </div>
-                    <div class="">
-                      <button
-                        class="btn btn-primary o-button c-fietsen__verzenden"
-                        type="submit"
-                      >
-                        In winkelmandje
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+  <section class="container-fluid c-gerelateerdefietsen">
+    <div class="row">
+      <div class="offset-xl-1 col-xl-11 col-12">
+        <h1>Gerelateerde artikelen</h1>
+      </div>
+      <div class="c-productdetail__gerelateerd offset-lg-1 col-lg-3">
+        <div class="">
+          <img class="c-productdetail__gerelateerd--fiets" src="img/1280_u9psmworrgu6.png" alt="" />
+          <h2 class="c-productdetail__gerelateerd--h2">
+            Gazelle Grenoble C8 HMB 2021
+          </h2>
+          <h3>€ 2.649,00</h3>
         </div>
       </div>
-    </section>
-
-    <section class="container-fluid c-gerelateerdefietsen">
-      <div class="row">
-        <div class="offset-xl-1 col-xl-11 col-12">
-          <h1>Gerelateerde artikelen</h1>
-        </div>
-        <div class="c-productdetail__gerelateerd offset-lg-1 col-lg-3">
-          <div class="">
-            <img
-              class="c-productdetail__gerelateerd--fiets"
-              src="img/1280_u9psmworrgu6.png"
-              alt=""
-            />
-            <h2 class="c-productdetail__gerelateerd--h2">
-              Gazelle Grenoble C8 HMB 2021
-            </h2>
-            <h3>€ 2.649,00</h3>
-          </div>
-        </div>
-        <div class="c-productdetail__gerelateerd offset-lg-1 col-lg-3">
-          <div class="">
-            <img
-              class="c-productdetail__gerelateerd--fiets"
-              src="img/elektrische-fietsen-vaste-voorvork-12go-biking-6055.png"
-              alt=""
-            />
-            <h2>Gazelle</h2>
-            <h3>€ 2.999,00</h3>
-          </div>
-        </div>
-        <div class="c-productdetail__gerelateerd offset-lg-1 col-lg-3">
-          <div class="">
-            <img
-              class="c-productdetail__gerelateerd--fiets"
-              src="img/98b2562ea411d585df0d1de7e5d7f7f7.png"
-              alt=""
-            />
-            <h2>Gazelle Esprit C3</h2>
-            <h3>€ 1.999,00</h3>
-          </div>
+      <div class="c-productdetail__gerelateerd offset-lg-1 col-lg-3">
+        <div class="">
+          <img class="c-productdetail__gerelateerd--fiets"
+            src="img/elektrische-fietsen-vaste-voorvork-12go-biking-6055.png" alt="" />
+          <h2>Gazelle</h2>
+          <h3>€ 2.999,00</h3>
         </div>
       </div>
-    </section>
-
-    <footer class="c-footer">
-      <div class="c-footer__row1 row justify-content-center">
-        <div class="c-footer__menu col-2 col-xl-2 col-lg-5 col-md-5 col-sm-10">
-          <h1 class="c-footer__title">Menu</h1>
-          <ul class="c-footer__menu-list">
-            <li class="c-footer__menu-item">Home</li>
-            <li class="c-footer__menu-item">Elektrische fietsen</li>
-            <li class="c-footer__menu-item">Accessoires</li>
-            <li class="c-footer__menu-item">Over Bikestore</li>
-            <li class="c-footer__menu-item">Service</li>
-            <li class="c-footer__menu-item">Contact</li>
-          </ul>
-        </div>
-
-        <div
-          class="c-footer__informatie col-2 col-xl-2 col-lg-5 col-md-5 col-sm-10"
-        >
-          <h1 class="c-footer__title">Informatie</h1>
-          <div class="c-footer__informatie-links">
-            <a class="c-footer__informatie-link" href=""> Brochure aanvragen</a>
-            <a class="c-footer__informatie-link" href=""> Proefrit aanvragen</a>
-          </div>
-        </div>
-        <div
-          class="c-footer__contact col-2 col-xl-2 col-lg-5 col-md-5 col-sm-10"
-        >
-          <h1 class="c-footer__title">Contactgegevens</h1>
-          <div class="c-footer__contact-adres">
-            <p>N50 154</p>
-            <p>8500 Kortrijk</p>
-            <p>België</p>
-          </div>
-          <div class="c-footer__contact-gegevens">
-            <p>Tel: +32 56 56 56 16</p>
-            <p>hallo@bikestore.be</p>
-          </div>
-        </div>
-
-        <div
-          class="c-footer__overons col-3 col-xl-3 col-lg-5 col-md-5 col-sm-10"
-        >
-          <h1 class="c-footer__title">Over ons</h1>
-          <p>
-            Bikestore wil het comfort van de e-bike dichter bij de gebruiker
-            brengen. Een team van professionals staat daarom voor je klaar. Ze
-            komen vrijblijvend langs voor een gratis proefrit aan huis of op
-            locatie naar keuze en begeleiden je zo om de fiets te kiezen die
-            perfect bij jou past. Na ons bezoek is je e-bike jouw nieuwe vriend.
-          </p>
+      <div class="c-productdetail__gerelateerd offset-lg-1 col-lg-3">
+        <div class="">
+          <img class="c-productdetail__gerelateerd--fiets" src="img/98b2562ea411d585df0d1de7e5d7f7f7.png" alt="" />
+          <h2>Gazelle Esprit C3</h2>
+          <h3>€ 1.999,00</h3>
         </div>
       </div>
-      <div class="c-footer__row2 row">
-        <div class="c-footer__icon col-xl-3 col-lg-4 col-md-4 col-sm-2">
-          <img
-            class="c-footer__icon-facebook"
-            src="icons/facebook_design.svg"
-            alt="Facebook"
-          />
-          <img
-            class="c-footer__icon-instagram"
-            src="icons/instagram_design.svg"
-            alt="Instagram"
-          />
-        </div>
-        <div class="c-footer__copyright col-lg-6 col-md-6 col-sm-8">
-          <p class="c-footer__copyright-text">
-            Wordpress theme &copy; 2021 | All Rights Reserved
-          </p>
+    </div>
+  </section>
+</div>
+  <footer class="c-footer">
+    <div class="c-footer__row1 row justify-content-center">
+      <div class="c-footer__menu col-2 col-xl-2 col-lg-5 col-md-5 col-sm-10">
+        <h1 class="c-footer__title">Menu</h1>
+        <ul class="c-footer__menu-list">
+          <li class="c-footer__menu-item">Home</li>
+          <li class="c-footer__menu-item">Elektrische fietsen</li>
+          <li class="c-footer__menu-item">Accessoires</li>
+          <li class="c-footer__menu-item">Over Bikestore</li>
+          <li class="c-footer__menu-item">Service</li>
+          <li class="c-footer__menu-item">Contact</li>
+        </ul>
+      </div>
+
+      <div class="c-footer__informatie col-2 col-xl-2 col-lg-5 col-md-5 col-sm-10">
+        <h1 class="c-footer__title">Informatie</h1>
+        <div class="c-footer__informatie-links">
+          <a class="c-footer__informatie-link" href=""> Brochure aanvragen</a>
+          <a class="c-footer__informatie-link" href=""> Proefrit aanvragen</a>
         </div>
       </div>
-    </footer>
+      <div class="c-footer__contact col-2 col-xl-2 col-lg-5 col-md-5 col-sm-10">
+        <h1 class="c-footer__title">Contactgegevens</h1>
+        <div class="c-footer__contact-adres">
+          <p>N50 154</p>
+          <p>8500 Kortrijk</p>
+          <p>België</p>
+        </div>
+        <div class="c-footer__contact-gegevens">
+          <p>Tel: +32 56 56 56 16</p>
+          <p>hallo@bikestore.be</p>
+        </div>
+      </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="c-footer__overons col-3 col-xl-3 col-lg-5 col-md-5 col-sm-10">
+        <h1 class="c-footer__title">Over ons</h1>
+        <p>
+          Bikestore wil het comfort van de e-bike dichter bij de gebruiker
+          brengen. Een team van professionals staat daarom voor je klaar. Ze
+          komen vrijblijvend langs voor een gratis proefrit aan huis of op
+          locatie naar keuze en begeleiden je zo om de fiets te kiezen die
+          perfect bij jou past. Na ons bezoek is je e-bike jouw nieuwe vriend.
+        </p>
+      </div>
+    </div>
+    <div class="c-footer__row2 row">
+      <div class="c-footer__icon col-xl-3 col-lg-4 col-md-4 col-sm-2">
+        <img class="c-footer__icon-facebook" src="icons/facebook_design.svg" alt="Facebook" />
+        <img class="c-footer__icon-instagram" src="icons/instagram_design.svg" alt="Instagram" />
+      </div>
+      <div class="c-footer__copyright col-lg-6 col-md-6 col-sm-8">
+        <p class="c-footer__copyright-text">
+          Wordpress theme &copy; 2021 | All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

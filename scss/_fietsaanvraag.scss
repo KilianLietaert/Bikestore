@@ -2,6 +2,7 @@
 
 .c-container {
   padding: 0;
+  overflow-x: hidden;
 
   &__padding {
     padding-top: 80px;
@@ -43,7 +44,6 @@
   margin: 0;
   padding-left: 7px;
 
-
   @include media-breakpoint-down(lg) {
     //margin-bottom: 100px;
     padding-bottom: 100px;
@@ -51,9 +51,8 @@
   }
 
   &__foto {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    margin-top: 97px;
 
     &--g {
       min-height: 569px;
@@ -156,12 +155,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 145px;
+  margin-left: 100px;
+
+  @media only screen and (max-width: 576px) {
+    margin-right: 30px;
+  }
 }
 
 .c-uur>div {
   background-color: $color-text2;
-  height: 188px;
+  height: 175px;
   width: 138px;
   margin-left: 24px;
   text-align: center;
@@ -175,7 +178,7 @@
 
 @media only screen and (max-width: 1500px) {
   .c-uur>div {
-    height: 150px;
+    height: 130px;
     width: 100px;
   }
 
@@ -192,7 +195,7 @@
 
 @media only screen and (max-width: 730px) {
   .c-uur>div {
-    height: 100px;
+    height: 80px;
     width: 80px;
   }
 
@@ -208,7 +211,6 @@
 
   &__blok1 {
     margin-top: 100px;
-    max-width: 706px;
 
     @include media-breakpoint-down(lg) {
       margin: auto;
@@ -219,6 +221,7 @@
   &__blok2 {
     display: flex;
     padding-top: 14px;
+    margin-bottom: 50px;
 
     @include media-breakpoint-down(lg) {
       justify-content: center;
@@ -238,6 +241,11 @@
   justify-content: center;
   list-style: none;
   flex-wrap: wrap;
+
+  @media only screen and (max-width: 541px) {
+    margin-left: 10vw
+  }
+
 }
 
 .c-icon>li {
@@ -301,27 +309,25 @@ label {
   color: black;
 }
 
-// .form-floating>label {
-//   padding-top: 10px;
-//   padding-left: 10px;
-// }
-
 .form-floating>.form-select {
   color: #d2b02a;
-  font-size: 24px;
+  font-size: 20px;
   padding: 5px;
   font-family: "Oxygen", sans-serif;
 }
 
 .form-floating>.form-control:focus,
 .form-floating>.form-control:not(:placeholder-shown) {
-  // padding-left: 10px;
-  // padding-top: 10px;
   font-family: "Oxygen", sans-serif;
   color: #d2b02a;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .c-form-check {
   margin-top: 35px;
+}
+
+.form-floating>.form-control, .form-floating>.form-select {
+  height: calc(3.5rem + 2px);
+  padding: 1rem .75rem;
 }

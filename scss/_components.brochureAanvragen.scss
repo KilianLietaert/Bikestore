@@ -2,12 +2,14 @@
     margin-top: 80px;
     margin-bottom: 100px;
     overflow: hidden;
+    justify-content: center;
 
     &__info{
         margin-bottom: 70px;
 
         @media only screen and (max-width: 576px) {
-            width: 80%
+            max-width: 100%;
+            margin-bottom: 30px;
           }
 
         &-title{
@@ -31,9 +33,6 @@
         width: 100%;
 
         &-foto{
-            margin-right: 10.8vw;
-            margin-left: 70px;
-
             @include media-breakpoint-down(lg) { 
                 margin-right: 0;
                 margin-left: 0;
@@ -41,7 +40,7 @@
             }
 
             @media only screen and (max-width: 576px) {
-                width: 80%
+                width: 100%
               }
 
             &-brochure{
@@ -54,17 +53,12 @@
                 }
 
                 @media only screen and (max-width: 576px) {
-                    width: 35vw
+                    width: 50vw
                   }
-
             }
         }
 
         &-formulier{
-
-            @media only screen and (max-width: 576px) {
-                width: 80%
-              }
 
             &-title{
                 font: $font-h2;
@@ -94,11 +88,9 @@
                     font: $font-text;
                 }
             }
-
         }
 
         &-form{
-
             &-button{
                 margin-top: 50px;
                 margin-bottom: 62px;
@@ -109,10 +101,13 @@
                 font: $font-text;
             }
     }
+
+    &-box{
+        height: 6rem !important;
+    }
 }
 
-.c-folder__aanvraag-formulier-checkbox[type=checkbox]
-{
+.c-folder__aanvraag-formulier-checkbox[type=checkbox]{
  width: 27px;
  height: 27px;
 }
